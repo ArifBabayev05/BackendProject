@@ -1,0 +1,58 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Views\Default\" />
+    <None Remove="Views\LayoutPartial\" />
+    <None Remove="ViewComponents\" />
+    <None Remove="ViewComponents\Default\" />
+    <None Remove="Views\Shared\Components\" />
+    <None Remove="Views\Shared\Components\_SliderPartial\" />
+    <None Remove="Views\Shared\Components\_FindNowPartial\" />
+    <None Remove="Views\Shared\Components\_MainFocusPartial\" />
+    <None Remove="Views\Shared\Components\_PropertyPartial\" />
+    <None Remove="Views\Shared\Components\_FeaturePartial\" />
+    <None Remove="Views\Shared\Components\_VideoPartial\" />
+    <None Remove="Views\Shared\Components\_FeedbackPartial\" />
+    <None Remove="Views\Shared\Components\_BrandLogoPartial\" />
+    <None Remove="Views\Shared\Components\_NewsPartial\" />
+    <None Remove="Views\Shared\Components\_ExplorePartial\" />
+    <None Remove="Views\Shared\Components\_UtilitizeCard\" />
+    <None Remove="Views\Shared\Components\_UtilitizeMobile\" />
+    <None Remove="Views\Shared\Components\_CounterPartial\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Default\" />
+    <Folder Include="Views\LayoutPartial\" />
+    <Folder Include="ViewComponents\" />
+    <Folder Include="ViewComponents\Default\" />
+    <Folder Include="Views\Shared\Components\" />
+    <Folder Include="Views\Shared\Components\_SliderPartial\" />
+    <Folder Include="Views\Shared\Components\_FindNowPartial\" />
+    <Folder Include="Views\Shared\Components\_MainFocusPartial\" />
+    <Folder Include="Views\Shared\Components\_PropertyPartial\" />
+    <Folder Include="Views\Shared\Components\_FeaturePartial\" />
+    <Folder Include="Views\Shared\Components\_VideoPartial\" />
+    <Folder Include="Views\Shared\Components\_FeedbackPartial\" />
+    <Folder Include="Views\Shared\Components\_BrandLogoPartial\" />
+    <Folder Include="Views\Shared\Components\_NewsPartial\" />
+    <Folder Include="Views\Shared\Components\_ExplorePartial\" />
+    <Folder Include="Views\Shared\Components\_UtilitizeCard\" />
+    <Folder Include="Views\Shared\Components\_UtilitizeMobile\" />
+    <Folder Include="Views\Shared\Components\_CounterPartial\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Business\Business.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\DataEntities\DataEntities.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,58 @@
+﻿<Properties StartupConfiguration="{73B10379-1501-4F5D-9940-85767F5F99E0}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="DataEntities/Concrete/Testimonial.cs">
+    <Files>
+      <File FileName="DAL/Concrete/Context.cs" Line="21" Column="26" />
+      <File FileName="DataEntities/Concrete/Testimonial.cs" Line="12" Column="9" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="QuorterBackEnd" expanded="True">
+            <Node name="Business" expanded="True">
+              <Node name="Abstract" expanded="True" />
+              <Node name="Concrete" expanded="True" />
+              <Node name="ValidationRules" expanded="True" />
+            </Node>
+            <Node name="DAL" expanded="True">
+              <Node name="Abstract" expanded="True" />
+              <Node name="Concrete" expanded="True" />
+              <Node name="EntityFramework" expanded="True" />
+              <Node name="Repository" expanded="True" />
+            </Node>
+            <Node name="DataEntities" expanded="True">
+              <Node name="Concrete" expanded="True" />
+            </Node>
+            <Node name="QuorterBackEnd" expanded="True">
+              <Node name="ViewComponents" expanded="True">
+                <Node name="Default" expanded="True" />
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="Default" expanded="True" />
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True">
+                  <Node name="Components" expanded="True">
+                    <Node name="_CounterPartial" expanded="True" />
+                    <Node name="_MainFocusPartial" expanded="True" />
+                    <Node name="_NewsPartial" expanded="True" />
+                    <Node name="_PropertyPartial" expanded="True" />
+                    <Node name="_UtilitizeCard" expanded="True" />
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.QuorterBackEnd PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
