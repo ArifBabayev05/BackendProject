@@ -47,7 +47,7 @@ namespace QuorterBackEnd.Areas.Member.Controllers
                 var resource = Directory.GetCurrentDirectory();
                 var extension = Path.GetExtension(p.Image.FileName);
                 var imageName = Guid.NewGuid() + extension;
-                var saveLocation = resource + "/wwwroot/assets/uploads" + imageName;
+                var saveLocation = resource + "/wwwroot/assets/uploads/" + imageName;
                 var stream = new FileStream(saveLocation, FileMode.Create);
                 await p.Image.CopyToAsync(stream);
 
