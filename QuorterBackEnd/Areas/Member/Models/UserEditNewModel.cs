@@ -1,4 +1,6 @@
 ﻿using System;
+using Microsoft.AspNetCore.Http;
+
 namespace QuorterBackEnd.Areas.Member.Models
 {
     public class UserEditNewModel
@@ -16,6 +18,8 @@ namespace QuorterBackEnd.Areas.Member.Models
         public string imageUrl { get; set; }
 
         public string phonenumber { get; set; }
+
+        public IFormFile Image { get; set; }
 
 
 
