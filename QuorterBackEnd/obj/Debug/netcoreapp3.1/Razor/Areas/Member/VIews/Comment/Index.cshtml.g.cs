@@ -12,7 +12,29 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
+#nullable restore
+#line 3 "/Users/babayev_/Desktop/Quorter2/QuorterBackEnd/Areas/Member/VIews/_ViewImports.cshtml"
+using DataEntities.Concrete;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "/Users/babayev_/Desktop/Quorter2/QuorterBackEnd/Areas/Member/VIews/_ViewImports.cshtml"
+using QuorterBackEnd;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 5 "/Users/babayev_/Desktop/Quorter2/QuorterBackEnd/Areas/Member/VIews/_ViewImports.cshtml"
+using QuorterBackEnd.Areas.Member.Models;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"34e399cb21690bfb4dbcc6308f96cd984461160b", @"/Areas/Member/VIews/Comment/Index.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8fce0ac23e8cc6eb59608f5ca941c01cef7b0f2d", @"/Areas/Member/VIews/_ViewImports.cshtml")]
     #nullable restore
     public class Areas_Member_VIews_Comment_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     #nullable disable

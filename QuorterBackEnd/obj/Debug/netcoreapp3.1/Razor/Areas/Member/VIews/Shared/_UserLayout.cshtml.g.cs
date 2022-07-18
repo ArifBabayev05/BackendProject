@@ -12,7 +12,29 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
+#nullable restore
+#line 3 "/Users/babayev_/Desktop/Quorter2/QuorterBackEnd/Areas/Member/VIews/_ViewImports.cshtml"
+using DataEntities.Concrete;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "/Users/babayev_/Desktop/Quorter2/QuorterBackEnd/Areas/Member/VIews/_ViewImports.cshtml"
+using QuorterBackEnd;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 5 "/Users/babayev_/Desktop/Quorter2/QuorterBackEnd/Areas/Member/VIews/_ViewImports.cshtml"
+using QuorterBackEnd.Areas.Member.Models;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"6819c304d2fdf03ea8e633ac2ab88198f61f753c", @"/Areas/Member/VIews/Shared/_UserLayout.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8fce0ac23e8cc6eb59608f5ca941c01cef7b0f2d", @"/Areas/Member/VIews/_ViewImports.cshtml")]
     #nullable restore
     public class Areas_Member_VIews_Shared__UserLayout : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     #nullable disable
@@ -68,7 +90,7 @@ Write(await Html.PartialAsync("~/Views/MemberLayoutPartial/_HeadPartial.cshtml")
 #line hidden
 #nullable disable
             WriteLiteral("\n\n\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6819c304d2fdf03ea8e633ac2ab88198f61f753c3886", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6819c304d2fdf03ea8e633ac2ab88198f61f753c4638", async() => {
                 WriteLiteral("\n    ");
 #nullable restore
 #line 22 "/Users/babayev_/Desktop/Quorter2/QuorterBackEnd/Areas/Member/VIews/Shared/_UserLayout.cshtml"
