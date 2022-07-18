@@ -322,7 +322,11 @@ th {
   text-align: inherit;
   text-align: -webkit-match-parent;
 }
-
+.container-fluid.py-1 {
+    color: red;
+    background-color: #363636;
+    border-radius: 5px;
+}
 thead,
 tbody,
 tfoot,

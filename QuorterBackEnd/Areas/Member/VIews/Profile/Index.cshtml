@@ -3,26 +3,47 @@
 
 
     <div class="container-fluid">
-        <div class="page-header min-height-300 border-radius-xl mt-4" style="background-image: url('../assets/assets/img/curved-images/curved0.jpg'); background-position-y: 50%;">
+        <div class="page-header min-height-300 border-radius-xl mt-4" style="background-image: url('~/assets/assets/img/curved-images/curved0.jpg'); background-position-y: 50%;">
             <span class="mask bg-gradient-primary opacity-6"></span>
         </div>
         <div class="card card-body blur shadow-blur mx-4 mt-n6 overflow-hidden">
             <div class="row gx-4">
-                <div class="col-auto">
-                    <div class="avatar avatar-xl position-relative">
-                        <img src="~/assets/assets/img/bruce-mars.jpg" alt="profile_image" class="w-100 border-radius-lg shadow-sm">
+               <h2>Update Account Details</h2>
+                <form method="post" enctype="multipart/form-data">
+                    <div class="row gx-4">
+
+                        <div class=" my-auto">
+                            <div class="h-100">
+                                @Html.Label("Name")
+                                <input type="text" asp-for="name" class="form-control">
+                                <br />
+                                @Html.Label("SurName")
+                                <input type="text" asp-for="surname" class="form-control">
+                                <br />
+                                @Html.Label("Mail")
+                                <input type="text" asp-for="mail" class="form-control">
+                                <br />
+                                @Html.Label("Password")
+                                <input type="text" asp-for="password" class="form-control">
+                                <br />
+                                @Html.Label("ConfirmPassword")
+                                <input type="text" asp-for="confirmPassword" class="form-control">
+                                <br />
+                                @Html.Label("Phone Number")
+                                <input type="text" asp-for="phonenumber" class="form-control">
+                                <br />
+                                <div class="form-group">
+                                    <label>Choose Image</label>
+                                    <input type="file" asp-for="Image">
+                                </div>
+                                <br />
+                                <button class=" btn btn-primary">Update Data</button>
+                            </div>
+
+                        </div>
+
                     </div>
-                </div>
-                <div class="col-auto my-auto">
-                    <div class="h-100">
-                        <h5 class="mb-1">
-                            Alec Thompson
-                        </h5>
-                        <p class="mb-0 font-weight-bold text-sm">
-                            CEO / Co-Founder
-                        </p>
-                    </div>
-                </div>
+                </form>
                 <div class="col-lg-4 col-md-6 my-sm-auto ms-sm-auto me-sm-0 mx-auto mt-3">
                     <div class="nav-wrapper position-relative end-0">
                         <ul class="nav nav-pills nav-fill p-1 bg-transparent" role="tablist">
@@ -42,7 +63,7 @@
                                             </g>
                                         </g>
                                     </svg>
-                                    <span class="ms-1">App</span>
+                                    @*<span class="ms-1">App</span>*@
                                 </a>
                             </li>
                             <li class="nav-item">
@@ -61,7 +82,7 @@
                                             </g>
                                         </g>
                                     </svg>
-                                    <span class="ms-1">Messages</span>
+                                    @*<span class="ms-1">Messages</span>*@
                                 </a>
                             </li>
                             <li class="nav-item">
@@ -82,7 +103,7 @@
                                             </g>
                                         </g>
                                     </svg>
-                                    <span class="ms-1">Settings</span>
+                                    @*<span class="ms-1">Settings</span>*@
                                 </a>
                             </li>
                         </ul>
@@ -92,37 +113,7 @@
         </div>
 
 
-        <div class="card card-body blur d-table-cell shadow-blur mx-4 mt-n6 overflow-hidden">
-            <form method="post">
-                <div class="row gx-4">
-                    
-                    <div class="col-auto my-auto">
-                        <div class="h-100">
-                            @Html.Label("Name")
-                            <input type="text" asp-for="name" class="form-controll">
-                            <br />
-                            @Html.Label("SurName")
-                            <input type="text" asp-for="surname" class="form-controll">
-                            <br />
-                            @Html.Label("Mail")
-                            <input type="text" asp-for="mail" class="form-controll">
-                            <br />
-                            @Html.Label("Password")
-                            <input type="text" asp-for="password" class="form-controll">
-                            <br />
-                            @Html.Label("ConfirmPassword")
-                            <input type="text" asp-for="confirmPassword" class="form-controll">
-                            <br />
-                            @Html.Label("Phone Number")
-                            <input type="text" asp-for="phonenumber" class="form-controll">
-                            <br />
-
-                        </div>
-                    </div>
-                    
-                </div>
-            </form>
-        </div>
+  
     </div>
 
 
