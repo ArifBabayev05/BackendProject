@@ -1,4 +1,4 @@
-﻿
+﻿@model QuorterBackEnd.Models.UserSignInViewModel
 
 <div class="ltn__utilize-overlay"></div>
 
@@ -44,7 +44,8 @@
                         </span>
 
                         <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-                            <input class="input100" type="text" name="email" placeholder="Email">
+                            <input class="input100" type="text" asp-for="userName" placeholder="UserName">
+                            <span asp-validation-for="userName"></span>
                             <span class="focus-input100"></span>
                             <span class="symbol-input100">
                                 <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -52,7 +53,8 @@
                         </div>
 
                         <div class="wrap-input100 validate-input" data-validate="Password is required">
-                            <input class="input100" type="password" name="pass" placeholder="Password">
+                            <input class="input100" type="password" asp-for="password" placeholder="Password">
+                            <span asp-validation-for="password"></span>
                             <span class="focus-input100"></span>
                             <span class="symbol-input100">
                                 <i class="fa fa-lock" aria-hidden="true"></i>

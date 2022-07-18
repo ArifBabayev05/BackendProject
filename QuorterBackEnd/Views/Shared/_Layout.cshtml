@@ -1,4 +1,5 @@
-﻿<!doctype html>
+﻿
+<!doctype html>
 <html class="no-js" lang="zxx">
 
 <head>
@@ -74,6 +75,8 @@
 
                                                     <li><a href="#" title="Instagram"><i class="fab fa-instagram"></i></a></li>
                                                     <li><a href="#" title="Dribbble"><i class="fab fa-dribbble"></i></a></li>
+
+                                                    
                                                 </ul>
                                             </div>
                                         </li>
@@ -98,7 +101,7 @@
                         <div class="col">
                             <div class="site-logo-wrap">
                                 <div class="site-logo">
-                                    <a href="index.html"><img src="~/assets/img/logo.png" alt="Logo"></a>
+                                    <a href="/Default/Index"><img src="~/assets/img/logo.png" alt="Logo"></a>
                                 </div>
                                 <div class="get-support clearfix d-none">
                                     <div class="get-support-icon">
@@ -118,7 +121,7 @@
                                         <ul>
                                             <li class="menu-icon">
                                                 <a href="#">Home</a>
-                                                
+
                                             </li>
                                             <li class="menu-icon">
                                                 <a href="#">About</a>
@@ -231,19 +234,41 @@
                                 </div>
                             </div>
                             <!-- user-menu -->
-                            <div class="ltn__drop-menu user-menu">
-                                <ul>
-                                    <li>
-                                        <a href="#"><i class="icon-user"></i></a>
-                                        <ul>
-                                            <li><a href="login.html">Sign in</a></li>
-                                            <li><a href="register.html">Register</a></li>
-                                            <li><a href="account.html">My Account</a></li>
-                                            <li><a href="wishlist.html">Wishlist</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
+                            @if (@User.Identity.IsAuthenticated)
+                            {
+                                <div class="ltn__drop-menu user-menu">
+                                    <ul>
+                                        <li>
+                                            <a href="#"><i class="icon-user"></i></a>
+                                            <ul>
+                                                <li><a href="">Hi @User.Identity.Name!</a></li>
+
+                                                <li><a href="account.html">My Account</a></li>
+                                                <li><a href="wishlist.html">Wishlist</a></li>
+                                                <li><a asp-controller="Login" asp-action="SignIn">Another Account</a></li>
+                                                <li><a href="wishlist.html">Sign Out</a></li>
+
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            }
+                            else
+                         {
+                        <div class="ltn__drop-menu user-menu">
+                            <ul>
+                                <li>
+                                    <a href="#"><i class="icon-user"></i></a>
+                                    <ul>
+                                        <li><a asp-controller="Login" asp-action="SignIn">Sign in</a></li>
+                                        <li><a asp-controller="Login" asp-action="SignUp">Register</a></li>
+                                        <li><a href="account.html">My Account</a></li>
+                                        <li><a href="wishlist.html">Wishlist</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                     }
                             <!-- mini-cart -->
                             <div class="mini-cart-icon">
                                 <a href="#ltn__utilize-cart-menu" class="ltn__utilize-toggle">

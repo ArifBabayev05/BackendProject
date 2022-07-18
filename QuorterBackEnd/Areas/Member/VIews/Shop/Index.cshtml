@@ -1,0 +1,33 @@
+﻿@using DataEntities.Concrete
+@model List<Feature2>
+
+<h1>Current Products</h1>
+
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>City</th>
+        <th>Build Year</th>
+        <th>Create Date</th>
+        <th>Main Photo</th> 
+        <th>Price</th>
+
+
+
+    </tr>
+
+    @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.AuthorName</td>
+                <td>@item.BuildYear</td>
+                <td>@item.CreateDate</td>
+                <td>@item.MainPhoto</td>
+                <td>@item.Price</td>
+
+</tr>
+        }
+
+</table>    
