@@ -13,7 +13,11 @@ namespace QuorterBackEnd.Areas.Member.Models
 
         public string mail { get; set; }
 
-        
+        public string imageUrl { get; set; }
+
+        public string phonenumber { get; set; }
+
+
 
 
     }
