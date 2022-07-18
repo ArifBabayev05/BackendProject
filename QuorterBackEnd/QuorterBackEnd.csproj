@@ -36,6 +36,11 @@
     <None Remove="Areas\Member\Data\" />
     <None Remove="Areas\Member\Models\" />
     <None Remove="Areas\Member\VIews\" />
+    <None Remove="Areas\Member\VIews\Comment\" />
+    <None Remove="Areas\Member\VIews\Profile\" />
+    <None Remove="Areas\Member\VIews\Message\" />
+    <None Remove="Areas\Member\VIews\Shared\" />
+    <None Remove="Views\MemberLayoutPartial\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Default\" />
@@ -67,6 +72,11 @@
     <Folder Include="Areas\Member\Data\" />
     <Folder Include="Areas\Member\Models\" />
     <Folder Include="Areas\Member\VIews\" />
+    <Folder Include="Areas\Member\VIews\Comment\" />
+    <Folder Include="Areas\Member\VIews\Profile\" />
+    <Folder Include="Areas\Member\VIews\Message\" />
+    <Folder Include="Areas\Member\VIews\Shared\" />
+    <Folder Include="Views\MemberLayoutPartial\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Business\Business.csproj">
