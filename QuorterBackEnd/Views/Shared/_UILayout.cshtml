@@ -1,0 +1,25 @@
+﻿<!doctype html>
+<html class="no-js" lang="zxx">
+
+@await Html.PartialAsync("~/Views/LayoutPartial/_HeaderPartial.cshtml")
+<body>
+    @await Html.PartialAsync("~/Views/LayoutPartial/_NavbarPartial.cshtml")
+
+    @RenderBody()
+
+    @*-- Footer Partial --*@
+    @await Html.PartialAsync("~/Views/LayoutPartial/_FooterPartial.cshtml")
+
+    @*-- Modal Partial --*@
+    @await Html.PartialAsync("~/Views/LayoutPartial/_ModalPartial.cshtml")
+
+    @*-- Loader Partial --*@
+    @await Html.PartialAsync("~/Views/LayoutPartial/_LoaderPartial.cshtml")
+
+    @*-- Script Partial --*@
+    @await Html.PartialAsync("~/Views/LayoutPartial/_ScriptPartial.cshtml")
+
+
+</body>
+</html>
+

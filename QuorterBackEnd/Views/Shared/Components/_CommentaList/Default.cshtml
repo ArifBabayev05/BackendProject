@@ -1,0 +1,33 @@
+﻿@using DataEntities.Concrete
+@model List<CommentModel>
+    <div class="ltn__comment-area mb-30">
+                                <div class="ltn__comment-inner">
+                                    <ul>
+                                        @foreach (var comment in Model)
+                                        {
+                                            <li>
+                                                <div class="ltn__comment-item clearfix">
+                                                    <div class="ltn__commenter-img">
+                                                        <img src="~/assets/img/testimonial/1.jpg" alt="Image">
+                                                    </div>
+                                                    <div class="ltn__commenter-comment">
+                                                        <h6><a href="#">@comment.CommentUser</a></h6>
+                                                        <div class="product-ratting">
+                                                            <ul>
+                                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                                <li><a href="#"><i class="fas fa-star-half-alt"></i></a></li>
+                                                                <li><a href="#"><i class="far fa-star"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <p>@comment.CommentContent</p>
+                                                        <span class="ltn__comment-reply-btn">@comment.CommentDate</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        }
+
+                                    </ul>
+                                </div>
+                            </div>
