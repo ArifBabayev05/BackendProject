@@ -349,3 +349,4 @@
 /Users/babayev_/Desktop/Quorter2/QuorterBackEnd/obj/Debug/netcoreapp3.1/Razor/Views/MemberLayoutPartial/_JsPartial.cshtml.g.cs
 /Users/babayev_/Desktop/Quorter2/QuorterBackEnd/obj/Debug/netcoreapp3.1/Razor/Views/MemberLayoutPartial/_Navbar2Partial.cshtml.g.cs
 /Users/babayev_/Desktop/Quorter2/QuorterBackEnd/obj/Debug/netcoreapp3.1/Razor/Views/MemberLayoutPartial/_RightBarPartial.cshtml.g.cs
+/Users/babayev_/Desktop/Quorter2/QuorterBackEnd/obj/Debug/netcoreapp3.1/Razor/Areas/Member/VIews/Shop/Index.cshtml.g.cs

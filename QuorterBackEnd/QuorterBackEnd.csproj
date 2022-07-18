@@ -41,6 +41,7 @@
     <None Remove="Areas\Member\VIews\Message\" />
     <None Remove="Areas\Member\VIews\Shared\" />
     <None Remove="Views\MemberLayoutPartial\" />
+    <None Remove="Areas\Member\VIews\Shop\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Default\" />
@@ -77,6 +78,7 @@
     <Folder Include="Areas\Member\VIews\Message\" />
     <Folder Include="Areas\Member\VIews\Shared\" />
     <Folder Include="Views\MemberLayoutPartial\" />
+    <Folder Include="Areas\Member\VIews\Shop\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Business\Business.csproj">
