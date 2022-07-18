@@ -42,6 +42,7 @@
     <None Remove="Areas\Member\VIews\Shared\" />
     <None Remove="Views\MemberLayoutPartial\" />
     <None Remove="Areas\Member\VIews\Shop\" />
+    <None Remove="Areas\Member\VIews\Dashboard\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Default\" />
@@ -79,6 +80,7 @@
     <Folder Include="Areas\Member\VIews\Shared\" />
     <Folder Include="Views\MemberLayoutPartial\" />
     <Folder Include="Areas\Member\VIews\Shop\" />
+    <Folder Include="Areas\Member\VIews\Dashboard\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Business\Business.csproj">
