@@ -1,31 +1,43 @@
 ﻿<Properties StartupConfiguration="{73B10379-1501-4F5D-9940-85767F5F99E0}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.QuorterBackEnd PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="DataEntities/Concrete/AppRole.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="QuorterBackEnd/Views/_ViewStart.cshtml">
     <Files>
       <File FileName="QuorterBackEnd/Controllers/CommentController.cs" Line="28" Column="13" />
       <File FileName="QuorterBackEnd/Views/Comment/AddComment.cshtml" Line="1" Column="1" />
       <File FileName="QuorterBackEnd/ViewComponents/Commenta/_CommentaList.cs" Line="1" Column="1" />
       <File FileName="QuorterBackEnd/Views/Shared/Components/_CommentaList/Default.cshtml" Line="1" Column="1" />
-      <File FileName="DataEntities/Concrete/AppUser.cs" Line="6" Column="18" />
-      <File FileName="DataEntities/Concrete/AppRole.cs" Line="8" Column="9" />
-      <File FileName="DAL/Concrete/Context.cs" Line="8" Column="65" />
-      <File FileName="QuorterBackEnd/Controllers/LoginController.cs" Line="27" Column="12" />
-      <File FileName="QuorterBackEnd/Views/Login/SignUp.cshtml" Line="39" Column="27" />
-      <File FileName="QuorterBackEnd/Views/Login/SignIn.cshtml" Line="64" Column="11" />
-      <File FileName="QuorterBackEnd/Views/Shared/_Layout.cshtml" Line="467" Column="27" />
+      <File FileName="DataEntities/Concrete/AppRole.cs" Line="8" Column="7" />
+      <File FileName="DAL/Concrete/Context.cs" Line="12" Column="80" />
+      <File FileName="QuorterBackEnd/Controllers/LoginController.cs" Line="58" Column="1" />
+      <File FileName="QuorterBackEnd/Views/Login/SignUp.cshtml" Line="1" Column="23" />
+      <File FileName="QuorterBackEnd/Views/Login/SignIn.cshtml" Line="41" Column="40" />
+      <File FileName="QuorterBackEnd/Views/Shared/_Layout.cshtml" Line="1" Column="1" />
       <File FileName="QuorterBackEnd/Views/Shared/_UILayout.cshtml" Line="1" Column="1" />
-      <File FileName="QuorterBackEnd/Views/_ViewImports.cshtml" Line="1" Column="1" />
-      <File FileName="QuorterBackEnd/Views/_ViewStart.cshtml" Line="2" Column="16" />
+      <File FileName="QuorterBackEnd/Views/_ViewImports.cshtml" Line="4" Column="22" />
+      <File FileName="QuorterBackEnd/Views/_ViewStart.cshtml" Line="5" Column="1" />
       <File FileName="QuorterBackEnd/Views/Default/Index.cshtml" Line="5" Column="1" />
-      <File FileName="QuorterBackEnd/Startup.cs" Line="32" Column="46" />
-      <File FileName="QuorterBackEnd/Models/UserRegisterViewModel.cs" Line="6" Column="39" />
+      <File FileName="QuorterBackEnd/Startup.cs" Line="38" Column="26" />
+      <File FileName="QuorterBackEnd/Models/UserRegisterViewModel.cs" Line="23" Column="33" />
       <File FileName="QuorterBackEnd/Controllers/HomeController.cs" Line="12" Column="1" />
       <File FileName="QuorterBackEnd/Models/ErrorViewModel.cs" Line="10" Column="2" />
       <File FileName="QuorterBackEnd/Controllers/DefaultController.cs" Line="1" Column="1" />
-      <File FileName="QuorterBackEnd/appsettings.json" Line="9" Column="23" />
+      <File FileName="QuorterBackEnd/appsettings.json" Line="9" Column="22" />
       <File FileName="QuorterBackEnd/Program.cs" Line="16" Column="1" />
       <File FileName="QuorterBackEnd/Controllers/ShopController.cs" Line="1" Column="1" />
       <File FileName="QuorterBackEnd/Views/Shared/Error.cshtml" Line="1" Column="1" />
+      <File FileName="DataEntities/Concrete/AppUser.cs" Line="17" Column="1" />
+      <File FileName="DataEntities/Concrete/Contact.cs" Line="1" Column="1" />
+      <File FileName="DataEntities/Concrete/CommentModel.cs" Line="1" Column="1" />
+      <File FileName="DataEntities/Concrete/Feature2.cs" Line="1" Column="1" />
+      <File FileName="DataEntities/Concrete/MainFocus.cs" Line="1" Column="1" />
+      <File FileName="DataEntities/Concrete/Newsletter.cs" Line="1" Column="1" />
+      <File FileName="DataEntities/Concrete/Property.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -44,11 +56,8 @@
               <Node name="Views" expanded="True">
                 <Node name="Default" expanded="True" />
                 <Node name="Login" expanded="True" />
-                <Node name="Shared" expanded="True">
-                  <Node name="Components" expanded="True">
-                    <Node name="_CommentaList" expanded="True" />
-                  </Node>
-                </Node>
+                <Node name="Shared" expanded="True" />
+                <Node name="_ViewStart.cshtml" selected="True" />
               </Node>
               <Node name="wwwroot" expanded="True" />
               <Node name="appsettings.json" expanded="True" />
@@ -61,10 +70,4 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.QuorterBackEnd PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
