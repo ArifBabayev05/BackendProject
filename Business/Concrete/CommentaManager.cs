@@ -31,7 +31,7 @@ namespace Business.Concrete
 
         public List<CommentModel> TGetList()
         {
-            throw new NotImplementedException();
+            return _commentaDal.GetList();
         }
 
         public List<CommentModel> TGetShop(int id)

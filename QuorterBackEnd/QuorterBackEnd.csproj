@@ -48,6 +48,9 @@
     <None Remove="Views\Property\" />
     <None Remove="Views\RightBar\" />
     <None Remove="Views\News\" />
+    <None Remove="Views\About\" />
+    <None Remove="ViewComponents\About\" />
+    <None Remove="Views\Shared\Components\_FeedBackPartial\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Default\" />
@@ -91,6 +94,9 @@
     <Folder Include="Views\Property\" />
     <Folder Include="Views\RightBar\" />
     <Folder Include="Views\News\" />
+    <Folder Include="Views\About\" />
+    <Folder Include="ViewComponents\About\" />
+    <Folder Include="Views\Shared\Components\_FeedBackPartial\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Business\Business.csproj">
