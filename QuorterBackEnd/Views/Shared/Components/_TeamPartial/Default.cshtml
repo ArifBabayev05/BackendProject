@@ -1,0 +1,40 @@
+﻿@using DataEntities.Concrete
+@model List<Team>
+
+
+    <div class="ltn__feature-area pt-120 pb-90 mb-120---">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title-area ltn__section-title-2--- text-center">
+                        <h6 class="section-subtitle section-subtitle-2 ltn__secondary-color"> Team Agency</h6>
+                        <h1 class="section-title">Our Team Members</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row ltn__custom-gutter--- justify-content-center">
+                @foreach (var item in Model)
+                {
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="ltn__team-item ltn__team-item-3---">
+                            <div class="team-img">
+                                <img src="~/assets/uploads/@item.Image" alt="Image">
+                            </div>
+                            <div class="team-info">
+                                <h4><a href="/Team/TeamDetails/@item.Id">@item.Name</a></h4>
+                                <h6 class="ltn__secondary-color">@item.Position</h6>
+                                <div class="ltn__social-media">
+                                    <ul>
+                                        <li><a href="@item.FacebookUrl"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="@item.TwitterUrl"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="@item.LinkedinUrl"><i class="fab fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+            </div>
+        </div>
+    </div>

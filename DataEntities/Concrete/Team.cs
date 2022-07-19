@@ -14,6 +14,14 @@ namespace DataEntities.Concrete
         public string TwitterUrl { get; set; }
         public string LinkedinUrl { get; set; }
 
+        public string Text1 { get; set; }
+        public string Text2 { get; set; }
+        public string Text3 { get; set; }
+
+        public int ExperienceYear { get; set; }
+        public string Mail { get; set; }
+        public string PhoneNumber { get; set; }
+
     }
 }
 
