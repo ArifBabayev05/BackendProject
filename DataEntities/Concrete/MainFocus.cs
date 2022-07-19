@@ -12,6 +12,9 @@ namespace DataEntities.Concrete
         public string BannerImage { get; set; }
         public string ExampleImage1 { get; set; }
         public string ExampleImage2 { get; set; }
+        public string ExampleImage3 { get; set; }
+
+
 
 
     }
