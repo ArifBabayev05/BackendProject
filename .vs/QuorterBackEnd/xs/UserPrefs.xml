@@ -6,38 +6,21 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="QuorterBackEnd/Views/_ViewStart.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="QuorterBackEnd/Areas/Member/Controllers/ShopController.cs">
     <Files>
-      <File FileName="QuorterBackEnd/Controllers/CommentController.cs" Line="28" Column="13" />
-      <File FileName="QuorterBackEnd/Views/Comment/AddComment.cshtml" Line="1" Column="1" />
-      <File FileName="QuorterBackEnd/ViewComponents/Commenta/_CommentaList.cs" Line="1" Column="1" />
-      <File FileName="QuorterBackEnd/Views/Shared/Components/_CommentaList/Default.cshtml" Line="1" Column="1" />
-      <File FileName="DataEntities/Concrete/AppRole.cs" Line="8" Column="7" />
-      <File FileName="DAL/Concrete/Context.cs" Line="12" Column="80" />
-      <File FileName="QuorterBackEnd/Controllers/LoginController.cs" Line="58" Column="1" />
-      <File FileName="QuorterBackEnd/Views/Login/SignUp.cshtml" Line="1" Column="23" />
-      <File FileName="QuorterBackEnd/Views/Login/SignIn.cshtml" Line="41" Column="40" />
-      <File FileName="QuorterBackEnd/Views/Shared/_Layout.cshtml" Line="1" Column="1" />
-      <File FileName="QuorterBackEnd/Views/Shared/_UILayout.cshtml" Line="1" Column="1" />
-      <File FileName="QuorterBackEnd/Views/_ViewImports.cshtml" Line="4" Column="22" />
-      <File FileName="QuorterBackEnd/Views/_ViewStart.cshtml" Line="5" Column="1" />
-      <File FileName="QuorterBackEnd/Views/Default/Index.cshtml" Line="5" Column="1" />
-      <File FileName="QuorterBackEnd/Startup.cs" Line="38" Column="26" />
-      <File FileName="QuorterBackEnd/Models/UserRegisterViewModel.cs" Line="23" Column="33" />
-      <File FileName="QuorterBackEnd/Controllers/HomeController.cs" Line="12" Column="1" />
-      <File FileName="QuorterBackEnd/Models/ErrorViewModel.cs" Line="10" Column="2" />
+      <File FileName="QuorterBackEnd/Areas/Member/Controllers/ProfileController.cs" Line="50" Column="72" />
+      <File FileName="QuorterBackEnd/Views/Login/SignIn.cshtml" Line="1" Column="1" />
+      <File FileName="QuorterBackEnd/Views/Login/SignUp.cshtml" Line="1" Column="1" />
+      <File FileName="QuorterBackEnd/Areas/Member/VIews/Profile/Index.cshtml" Line="9" Column="44" />
+      <File FileName="QuorterBackEnd/Areas/Member/Controllers/DashboardController.cs" Line="23" Column="30" />
+      <File FileName="QuorterBackEnd/Areas/Member/Controllers/ShopController.cs" Line="25" Column="10" />
+      <File FileName="QuorterBackEnd/Areas/Member/VIews/Dashboard/Index.cshtml" Line="10" Column="21" />
+      <File FileName="QuorterBackEnd/Startup.cs" Line="67" Column="1" />
+      <File FileName="QuorterBackEnd/Program.cs" Line="23" Column="42" />
       <File FileName="QuorterBackEnd/Controllers/DefaultController.cs" Line="1" Column="1" />
-      <File FileName="QuorterBackEnd/appsettings.json" Line="9" Column="22" />
-      <File FileName="QuorterBackEnd/Program.cs" Line="16" Column="1" />
-      <File FileName="QuorterBackEnd/Controllers/ShopController.cs" Line="1" Column="1" />
-      <File FileName="QuorterBackEnd/Views/Shared/Error.cshtml" Line="1" Column="1" />
-      <File FileName="DataEntities/Concrete/AppUser.cs" Line="17" Column="1" />
-      <File FileName="DataEntities/Concrete/Contact.cs" Line="1" Column="1" />
-      <File FileName="DataEntities/Concrete/CommentModel.cs" Line="1" Column="1" />
-      <File FileName="DataEntities/Concrete/Feature2.cs" Line="1" Column="1" />
-      <File FileName="DataEntities/Concrete/MainFocus.cs" Line="1" Column="1" />
-      <File FileName="DataEntities/Concrete/Newsletter.cs" Line="1" Column="1" />
-      <File FileName="DataEntities/Concrete/Property.cs" Line="1" Column="1" />
+      <File FileName="QuorterBackEnd/Views/Default/Index.cshtml" Line="1" Column="1" />
+      <File FileName="QuorterBackEnd/Views/MemberLayoutPartial/_JsPartial.cshtml" Line="1" Column="1" />
+      <File FileName="QuorterBackEnd/Controllers/CommentController.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -50,16 +33,30 @@
               <Node name="Concrete" expanded="True" />
             </Node>
             <Node name="QuorterBackEnd" expanded="True">
+              <Node name="Areas" expanded="True">
+                <Node name="Member" expanded="True">
+                  <Node name="Controllers" expanded="True" />
+                  <Node name="VIews" expanded="True">
+                    <Node name="Dashboard" expanded="True" />
+                    <Node name="Profile" expanded="True" />
+                  </Node>
+                </Node>
+              </Node>
               <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="ViewComponents" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Default" expanded="True" />
                 <Node name="Login" expanded="True" />
-                <Node name="Shared" expanded="True" />
-                <Node name="_ViewStart.cshtml" selected="True" />
+                <Node name="MemberLayoutPartial" expanded="True" />
+                <Node name="Shop" expanded="True" />
               </Node>
-              <Node name="wwwroot" expanded="True" />
+              <Node name="wwwroot" expanded="True">
+                <Node name="assets" expanded="True">
+                  <Node name="assets" expanded="True" />
+                  <Node name="uploads" expanded="True" />
+                </Node>
+              </Node>
               <Node name="appsettings.json" expanded="True" />
             </Node>
           </Node>

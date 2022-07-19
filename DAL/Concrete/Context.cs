@@ -22,6 +22,7 @@ namespace DAL.Concrete
         public DbSet<Testimonial> Testimonials { get; set; }
 
         public DbSet<CommentModel> CommentModels { get; set; }
+        public DbSet<Slider> Sliders { get; set; }
 
 
     }
