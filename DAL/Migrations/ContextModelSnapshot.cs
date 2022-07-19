@@ -176,9 +176,14 @@ namespace DAL.Migrations
                     b.Property<int>("Feature2Id")
                         .HasColumnType("int");
 
+                    b.Property<int?>("PropertyId")
+                        .HasColumnType("int");
+
                     b.HasKey("CommentId");
 
                     b.HasIndex("Feature2Id");
+
+                    b.HasIndex("PropertyId");
 
                     b.ToTable("CommentModels");
                 });
@@ -385,7 +390,31 @@ namespace DAL.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<string>("AuthorDesc")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("AuthorImage")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("AuthorName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("BannerImage")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("City")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ExampleImage1")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ExampleImage2")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ExampleImage3")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Image")
@@ -396,6 +425,18 @@ namespace DAL.Migrations
 
                     b.Property<int>("PropertyCount")
                         .HasColumnType("int");
+
+                    b.Property<string>("SliderImage1")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("SliderImage2")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("SliderImage3")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("SliderImage4")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Title")
                         .HasColumnType("nvarchar(max)");
@@ -588,6 +629,10 @@ namespace DAL.Migrations
                         .HasForeignKey("Feature2Id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.HasOne("DataEntities.Concrete.Property", null)
+                        .WithMany("CommentModels")
+                        .HasForeignKey("PropertyId");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>
