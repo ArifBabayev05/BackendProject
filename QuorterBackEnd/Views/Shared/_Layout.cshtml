@@ -159,13 +159,12 @@
                                                 </ul>
                                             </li>
                                             <li class="menu-icon">
-                                                <a href="#">News</a>
+                                                <a asp-action="Index" asp-controller="news">News</a>
                                                 <ul>
-                                                    <li><a href="blog.html">News</a></li>
-                                                    <li><a href="blog-grid.html">News Grid</a></li>
-                                                    <li><a href="blog-left-sidebar.html">News Left sidebar</a></li>
-                                                    <li><a href="blog-right-sidebar.html">News Right sidebar</a></li>
-                                                    <li><a href="blog-details.html">News details</a></li>
+                                                    <li><a asp-action="Index" asp-controller="news">News</a></li>
+                                                    <li><a asp-action="Grid" asp-controller="news">News Grid</a></li>
+                                                    
+                                                    <li><a asp-action="NewsDetails" asp-controller="news">News details</a></li>
                                                 </ul>
                                             </li>
                                             <li class="menu-icon">

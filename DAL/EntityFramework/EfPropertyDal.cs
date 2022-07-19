@@ -5,7 +5,7 @@ using DataEntities.Concrete;
 
 namespace DAL.EntityFramework
 {
-    public class EfPropertyDal : GenericRepository<Property>, IPropertyDal
+    public class EfNewsDal : GenericRepository<Property>, IPropertyDal
     {
        
     }

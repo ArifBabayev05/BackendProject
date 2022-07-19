@@ -13,7 +13,7 @@ namespace QuorterBackEnd.Controllers
 {
     public class PropertyController : Controller
     {
-        PropertyManager propertyManager = new PropertyManager(new EfPropertyDal());
+        PropertyManager propertyManager = new PropertyManager(new EfNewsDal());
         // GET: /<controller>/
         public IActionResult Index()
         {
