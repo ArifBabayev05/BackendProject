@@ -19,6 +19,7 @@ namespace QuorterBackEnd.Controllers
             var values = mainFocusManager.TGetList();
             return View(values);
         }
+
         [HttpGet]
         public IActionResult ServiceDetails(int id)
         {

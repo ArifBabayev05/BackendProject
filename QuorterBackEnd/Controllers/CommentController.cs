@@ -23,7 +23,7 @@ namespace QuorterBackEnd.Controllers
         [HttpPost]
         public IActionResult AddComment(CommentModel p)
         {
-            p.CommentDate = Convert.ToDateTime(DateTime.Now.ToShortDateString());
+            p.CommentDate = Convert.ToDateTime(DateTime.Now.ToString("MM/dd/yyyy"));
             p.CommentState = true;
             
             commentaManager.TAdd(p);
