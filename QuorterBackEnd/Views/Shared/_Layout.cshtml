@@ -76,7 +76,7 @@
                                                     <li><a href="#" title="Instagram"><i class="fab fa-instagram"></i></a></li>
                                                     <li><a href="#" title="Dribbble"><i class="fab fa-dribbble"></i></a></li>
 
-                                                    
+
                                                 </ul>
                                             </div>
                                         </li>
@@ -126,14 +126,14 @@
                                             <li class="menu-icon">
                                                 <a href="#">About</a>
                                                 <ul>
-                                                    <li><a href="about.html">About</a></li>
+                                                    <li><a asp-action="Index" asp-controller="About">About</a></li>
                                                     <li><a href="service.html">Services</a></li>
-                                                    
+
                                                     <li><a href="portfolio.html">Portfolio</a></li>
                                                     <li><a href="portfolio-2.html">Portfolio - 02</a></li>
                                                     <li><a href="portfolio-details.html">Portfolio Details</a></li>
-                                                    <li><a href="team.html">Team</a></li>
-                                                    <li><a href="team-details.html">Team Details</a></li>
+                                                    <li><a asp-controller="Team" asp-action="Index">Team</a></li>
+                                                    
                                                     <li><a href="faq.html">FAQ</a></li>
                                                     <li><a href="locations.html">Google Map Locations</a></li>
                                                 </ul>
@@ -143,7 +143,7 @@
                                                 <ul>
                                                     <li><a asp-controller="Shop" asp-action="Index">Shop</a></li>
                                                     <li><a asp-controller="Shop" asp-action="ShopGrid">Shop Grid</a></li>
-                                                    
+
                                                     <li>
                                                         <a href="#">Other Pages <span class="float-end">>></span></a>
                                                         <ul>
@@ -163,7 +163,7 @@
                                                 <ul>
                                                     <li><a asp-action="Index" asp-controller="news">News</a></li>
                                                     <li><a asp-action="Grid" asp-controller="news">News Grid</a></li>
-                                                    
+
                                                     <li><a asp-action="NewsDetails" asp-controller="news">News details</a></li>
                                                 </ul>
                                             </li>
@@ -176,8 +176,8 @@
                                                             <li><a href="portfolio.html">Portfolio</a></li>
                                                             <li><a href="portfolio-2.html">Portfolio - 02</a></li>
                                                             <li><a href="portfolio-details.html">Portfolio Details</a></li>
-                                                            <li><a href="team.html">Team</a></li>
-                                                            <li><a href="team-details.html">Team Details</a></li>
+                                                            <li><a asp-controller="Team" asp-action="index">Team</a></li>
+                                                            
                                                             <li><a href="faq.html">FAQ</a></li>
                                                         </ul>
                                                     </li>
@@ -199,7 +199,7 @@
                                                             <li><a href="shop-left-sidebar.html">Shop Left sidebar</a></li>
                                                             <li><a href="shop-right-sidebar.html">Shop right sidebar</a></li>
                                                             <li><a href="shop-grid.html">Shop Grid</a></li>
-                                                            
+
                                                             <li><a href="cart.html">Cart</a></li>
                                                         </ul>
                                                     </li>
@@ -253,21 +253,21 @@
                                 </div>
                             }
                             else
-                         {
-                        <div class="ltn__drop-menu user-menu">
-                            <ul>
-                                <li>
-                                    <a href="#"><i class="icon-user"></i></a>
+                            {
+                                <div class="ltn__drop-menu user-menu">
                                     <ul>
-                                        <li><a asp-controller="Login" asp-action="SignIn">Sign in</a></li>
-                                        <li><a asp-controller="Login" asp-action="SignUp">Register</a></li>
-                                        <li><a href="account.html">My Account</a></li>
-                                        <li><a href="wishlist.html">Wishlist</a></li>
+                                        <li>
+                                            <a href="#"><i class="icon-user"></i></a>
+                                            <ul>
+                                                <li><a asp-controller="Login" asp-action="SignIn">Sign in</a></li>
+                                                <li><a asp-controller="Login" asp-action="SignUp">Register</a></li>
+                                                <li><a href="account.html">My Account</a></li>
+                                                <li><a href="wishlist.html">Wishlist</a></li>
+                                            </ul>
+                                        </li>
                                     </ul>
-                                </li>
-                            </ul>
-                        </div>
-                     }
+                                </div>
+                            }
                             <!-- mini-cart -->
                             <div class="mini-cart-icon">
                                 <a href="#ltn__utilize-cart-menu" class="ltn__utilize-toggle">
@@ -297,7 +297,23 @@
                 @RenderBody()
             </main>
         </div>
-
+        <div class="ltn__call-to-action-area call-to-action-6 before-bg-bottom" data-bs-bg="img/1.jpg--">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="call-to-action-inner call-to-action-inner-6 ltn__secondary-bg position-relative text-center---">
+                            <div class="coll-to-info text-color-white">
+                                <h1>Looking for a dream home?</h1>
+                                <p>We can help you realize your dream of a new home</p>
+                            </div>
+                            <div class="btn-wrapper">
+                                <a class="btn btn-effect-3 btn-white" href="contact.html">Explore Properties <i class="icon-next"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- FOOTER AREA START -->
         <footer class="ltn__footer-area  ">
             <div class="footer-top-area  section-bg-2 plr--5">
@@ -384,7 +400,7 @@
                                 <h4 class="footer-title">Customer Care</h4>
                                 <div class="footer-menu">
                                     <ul>
-                                        <li><a asp-controller="Login" asp-action="SignIn" >Login</a></li>
+                                        <li><a asp-controller="Login" asp-action="SignIn">Login</a></li>
                                         <li><a href="account.html">My account</a></li>
                                         <li><a href="wishlist.html">Wish List</a></li>
                                         <li><a href="order-tracking.html">Order tracking</a></li>
