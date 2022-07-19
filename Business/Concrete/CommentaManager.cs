@@ -36,9 +36,7 @@ namespace Business.Concrete
 
         public List<CommentModel> TGetShop(int id)
         {
-            //return _commentaDal.GetListByFilter(x=>x.Feature2Id == id);
             return _commentaDal.GetListByFilter(x => x.Feature2Id == id);
-
         }
 
         public void TUpdate(CommentModel t)

@@ -27,7 +27,7 @@ namespace Business.Concrete
 
         public MainFocus TGetById(int id)
         {
-            throw new NotImplementedException();
+            return _mainFocusDal.GetById(id);
         }
 
         public List<MainFocus> TGetList()

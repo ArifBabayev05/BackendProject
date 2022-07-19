@@ -41,17 +41,17 @@
                                 <div class="product-img-location">
                                     <ul>
                                         <li>
-                                            <a href="locations.html"><i class="flaticon-pin"></i> @feature.CityName </a>
+                                            <a href=""><i class="flaticon-pin"></i> @feature.CityName </a>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="product-img-gallery">
                                     <ul>
                                         <li>
-                                            <a href="product-details.html"><i class="fas fa-camera"></i> 4</a>
+                                            <a href="/Shop/ShopDetails/@feature.Id"><i class="fas fa-camera"></i> 4</a>
                                         </li>
                                         <li>
-                                            <a href="product-details.html"><i class="fas fa-film"></i> 2</a>
+                                            <a href="/Shop/ShopDetails/@feature.Id"><i class="fas fa-film"></i> 2</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -85,10 +85,10 @@
                         <div class="product-info-bottom">
                             <div class="real-estate-agent">
                                 <div class="agent-img">
-                                    <a href="team-details.html"><img src="img/blog/author.jpg" alt="#"></a>
+                                    <a href="team-details.html"><img src="~/assets/uploads/@feature.AuthorImage" alt="#"></a>
                                 </div>
                                 <div class="agent-brief">
-                                    <h6><a href="team-details.html">William Seklo</a></h6>
+                                    <h6><a href="team-details.html">@feature.AuthorName</a></h6>
                                     <small>Estate Agents</small>
                                 </div>
                             </div>
@@ -105,7 +105,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="product-details.html" title="Product Details">
+                                        <a href="/Shop/ShopDetails/@feature.Id" title="Product Details">
                                             <i class="flaticon-add"></i>
                                         </a>
                                     </li>
