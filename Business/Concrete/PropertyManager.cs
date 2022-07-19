@@ -17,17 +17,17 @@ namespace Business.Concrete
 
         public void TAdd(Property t)
         {
-            throw new NotImplementedException();
+            _propertyDal.Insert(t);
         }
 
         public void TDelete(Property t)
         {
-            throw new NotImplementedException();
+            _propertyDal.Delete(t);
         }
 
         public Property TGetById(int id)
         {
-            throw new NotImplementedException();
+            return _propertyDal.GetById(id);
         }
 
         public List<Property> TGetList()

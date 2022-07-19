@@ -45,6 +45,8 @@
     <None Remove="Areas\Member\VIews\Dashboard\" />
     <None Remove="Areas\Member\VIews\Service\" />
     <None Remove="Views\Service\" />
+    <None Remove="Views\Property\" />
+    <None Remove="Views\RightBar\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Default\" />
@@ -85,6 +87,8 @@
     <Folder Include="Areas\Member\VIews\Dashboard\" />
     <Folder Include="Areas\Member\VIews\Service\" />
     <Folder Include="Views\Service\" />
+    <Folder Include="Views\Property\" />
+    <Folder Include="Views\RightBar\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Business\Business.csproj">
