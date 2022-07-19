@@ -25,6 +25,8 @@ namespace DAL.Concrete
         public DbSet<Slider> Sliders { get; set; }
 
         public DbSet<News> News{ get; set; }
+        public DbSet<Faq> Faqs { get; set; }
+        public DbSet<Counter> Counters { get; set; }
 
 
     }

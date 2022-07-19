@@ -55,6 +55,9 @@
     <None Remove="Views\Team\" />
     <None Remove="Views\Shared\Components\_TeamPartial\" />
     <None Remove="Views\Shared\Components\_AboutPartial\" />
+    <None Remove="Views\Faq\" />
+    <None Remove="ViewComponents\Faq\" />
+    <None Remove="Views\Shared\Components\_FaqPartial\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Default\" />
@@ -105,6 +108,9 @@
     <Folder Include="Views\Team\" />
     <Folder Include="Views\Shared\Components\_TeamPartial\" />
     <Folder Include="Views\Shared\Components\_AboutPartial\" />
+    <Folder Include="Views\Faq\" />
+    <Folder Include="ViewComponents\Faq\" />
+    <Folder Include="Views\Shared\Components\_FaqPartial\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Business\Business.csproj">
