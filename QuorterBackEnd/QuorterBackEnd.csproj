@@ -47,6 +47,7 @@
     <None Remove="Views\Service\" />
     <None Remove="Views\Property\" />
     <None Remove="Views\RightBar\" />
+    <None Remove="Views\News\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Default\" />
@@ -89,6 +90,7 @@
     <Folder Include="Views\Service\" />
     <Folder Include="Views\Property\" />
     <Folder Include="Views\RightBar\" />
+    <Folder Include="Views\News\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Business\Business.csproj">

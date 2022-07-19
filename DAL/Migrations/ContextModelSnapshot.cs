@@ -176,12 +176,17 @@ namespace DAL.Migrations
                     b.Property<int>("Feature2Id")
                         .HasColumnType("int");
 
+                    b.Property<int?>("NewsId")
+                        .HasColumnType("int");
+
                     b.Property<int?>("PropertyId")
                         .HasColumnType("int");
 
                     b.HasKey("CommentId");
 
                     b.HasIndex("Feature2Id");
+
+                    b.HasIndex("NewsId");
 
                     b.HasIndex("PropertyId");
 
@@ -366,6 +371,84 @@ namespace DAL.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("MainFocuses");
+                });
+
+            modelBuilder.Entity("DataEntities.Concrete.News", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("AuthorDesc")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("AuthorImage")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("AuthorName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("BannerImage")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Content1")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreateDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Image2")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Image3")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Image4")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LastContext")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("MainImage")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("MainTitle")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Quote")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Text1")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Text2")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Text3")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Text4")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title1")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title2")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title3")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title4")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("News");
                 });
 
             modelBuilder.Entity("DataEntities.Concrete.Newsletter", b =>
@@ -629,6 +712,10 @@ namespace DAL.Migrations
                         .HasForeignKey("Feature2Id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.HasOne("DataEntities.Concrete.News", null)
+                        .WithMany("CommentModels")
+                        .HasForeignKey("NewsId");
 
                     b.HasOne("DataEntities.Concrete.Property", null)
                         .WithMany("CommentModels")

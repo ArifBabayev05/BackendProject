@@ -8,7 +8,7 @@ namespace QuorterBackEnd.ViewComponents.Default
     public class _PropertyPartial : ViewComponent
     {
 
-        PropertyManager propertyManager = new PropertyManager(new EfPropertyDal()); 
+        PropertyManager propertyManager = new PropertyManager(new EfNewsDal()); 
         public IViewComponentResult Invoke()
         {
             var values = propertyManager.TGetList();

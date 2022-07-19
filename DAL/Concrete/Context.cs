@@ -24,6 +24,8 @@ namespace DAL.Concrete
         public DbSet<CommentModel> CommentModels { get; set; }
         public DbSet<Slider> Sliders { get; set; }
 
+        public DbSet<News> News{ get; set; }
+
 
     }
 }

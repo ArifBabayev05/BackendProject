@@ -6,12 +6,28 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="QuorterBackEnd/Views/Shop/ShopDetails.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DataEntities/Concrete/News.cs">
     <Files>
-      <File FileName="DAL/EntityFramework/EfMainFocusDal.cs" Line="1" Column="1" />
+      <File FileName="QuorterBackEnd/Views/RightBar/RightBarInShopPage.cshtml" Line="340" Column="7" />
+      <File FileName="QuorterBackEnd/Views/Shop/ShopDetails.cshtml" Line="620" Column="1" />
+      <File FileName="QuorterBackEnd/Views/Shared/Components/_NewsPartial/Default.cshtml" Line="1" Column="1" />
+      <File FileName="QuorterBackEnd/ViewComponents/Default/_SliderPartial.cs" Line="1" Column="1" />
+      <File FileName="DAL/Concrete/Context.cs" Line="26" Column="1" />
+      <File FileName="DataEntities/Concrete/Property.cs" Line="35" Column="1" />
+      <File FileName="DAL/Repository/GenericRepository.cs" Line="28" Column="40" />
+      <File FileName="DataEntities/Concrete/Newsletter.cs" Line="1" Column="1" />
+      <File FileName="DataEntities/Concrete/Feature2.cs" Line="58" Column="9" />
+      <File FileName="DataEntities/Concrete/Contact.cs" Line="1" Column="1" />
+      <File FileName="DataEntities/Concrete/CommentModel.cs" Line="1" Column="1" />
+      <File FileName="DataEntities/Concrete/Testimonial.cs" Line="1" Column="1" />
+      <File FileName="DataEntities/Concrete/Team.cs" Line="1" Column="1" />
+      <File FileName="QuorterBackEnd/ViewComponents/Default/_NewsPartial.cs" Line="1" Column="1" />
       <File FileName="DataEntities/Concrete/Slider.cs" Line="1" Column="1" />
-      <File FileName="QuorterBackEnd/Areas/Member/VIews/Shop/Index.cshtml" Line="1" Column="1" />
-      <File FileName="QuorterBackEnd/Views/Shop/ShopDetails.cshtml" Line="569" Column="1" />
+      <File FileName="DataEntities/Concrete/About.cs" Line="1" Column="1" />
+      <File FileName="DataEntities/Concrete/AppRole.cs" Line="1" Column="1" />
+      <File FileName="DataEntities/Concrete/AppUser.cs" Line="1" Column="1" />
+      <File FileName="DataEntities/Concrete/News.cs" Line="37" Column="62" />
+      <File FileName="DataEntities/Concrete/MainFocus.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -24,36 +40,26 @@
             <Node name="DAL" expanded="True">
               <Node name="Abstract" expanded="True" />
               <Node name="Concrete" expanded="True" />
-              <Node name="EntityFramework" expanded="True" />
               <Node name="Repository" expanded="True" />
             </Node>
             <Node name="DataEntities" expanded="True">
               <Node name="Concrete" expanded="True" />
             </Node>
             <Node name="QuorterBackEnd" expanded="True">
-              <Node name="Areas" expanded="True">
-                <Node name="Member" expanded="True">
-                  <Node name="Controllers" expanded="True" />
-                  <Node name="Models" expanded="True" />
-                  <Node name="VIews" expanded="True">
-                    <Node name="Service" expanded="True" />
-                    <Node name="Shop" expanded="True" />
-                  </Node>
-                </Node>
-              </Node>
-              <Node name="Models" expanded="True" />
+              <Node name="Areas" expanded="True" />
               <Node name="ViewComponents" expanded="True">
+                <Node name="Commenta" expanded="True" />
                 <Node name="Default" expanded="True" />
               </Node>
               <Node name="Views" expanded="True">
-                <Node name="Default" expanded="True" />
-                <Node name="Shop" expanded="True" />
-              </Node>
-              <Node name="wwwroot" expanded="True">
-                <Node name="assets" expanded="True">
-                  <Node name="assets" expanded="True" />
-                  <Node name="uploads" expanded="True" />
+                <Node name="Property" expanded="True" />
+                <Node name="RightBar" expanded="True" />
+                <Node name="Shared" expanded="True">
+                  <Node name="Components" expanded="True">
+                    <Node name="_NewsPartial" expanded="True" />
+                  </Node>
                 </Node>
+                <Node name="Shop" expanded="True" />
               </Node>
               <Node name="appsettings.json" expanded="True" />
             </Node>
