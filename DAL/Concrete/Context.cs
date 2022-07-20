@@ -30,6 +30,7 @@ namespace DAL.Concrete
         public DbSet<Location2> Location2s { get; set; }
         public DbSet<Map> Maps{ get; set; }
         public DbSet<MainSlider> MainSliders { get; set; }
+        public DbSet<Email> Emails { get; set; }
 
 
     }
