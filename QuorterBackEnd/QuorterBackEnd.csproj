@@ -61,6 +61,7 @@
     <None Remove="Views\Location\" />
     <None Remove="ViewComponents\Location\" />
     <None Remove="Views\Shared\Components\_LocationPartial\" />
+    <None Remove="Views\MailPartial\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Default\" />
@@ -117,6 +118,7 @@
     <Folder Include="Views\Location\" />
     <Folder Include="ViewComponents\Location\" />
     <Folder Include="Views\Shared\Components\_LocationPartial\" />
+    <Folder Include="Views\MailPartial\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Business\Business.csproj">

@@ -557,6 +557,9 @@ namespace DAL.Migrations
                     b.Property<string>("Mail")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("MailStatus")
+                        .HasColumnType("bit");
+
                     b.HasKey("Id");
 
                     b.ToTable("Newsletters");
