@@ -40,7 +40,7 @@
                             <div class="ltn__top-bar-menu">
                                 <ul>
                                     <li><a href="mailto:info@webmail.com?Subject=Flower%20greetings%20to%20you"><i class="icon-mail"></i> info@webmail.com</a></li>
-                                    <li><a href="locations.html"><i class="icon-placeholder"></i> 15/A, Nest Tower, NYC</a></li>
+                                    <li><a asp-controller="location" asp-action='index'><i class="icon-placeholder"></i> 15/A, Nest Tower, NYC</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -133,7 +133,7 @@
                                                     <li><a asp-controller="Team" asp-action="Index">Team</a></li>
                                                     
                                                     <li><a asp-controller="Faq" asp-action="Index">FAQ</a></li>
-                                                    <li><a href="locations.html">Google Map Locations</a></li>
+                                                    <li><a asp-controller="location" asp-action='index'>Google Map Locations</a></li>
                                                 </ul>
                                             </li>
                                             <li class="menu-icon">
@@ -181,7 +181,7 @@
                                                         <ul>
                                                             <li><a href="history.html">History</a></li>
                                                             <li><a href="add-listing.html">Add Listing</a></li>
-                                                            <li><a href="locations.html">Google Map Locations</a></li>
+                                                            <li><a asp-controller="location" asp-action='index'>Google Map Locations</a></li>
                                                             <li><a href="404.html">404</a></li>
                                                             <li><a href="contact.html">Contact</a></li>
                                                             <li><a href="coming-soon.html">Coming Soon</a></li>
@@ -368,7 +368,7 @@
                                         <li><a asp-controller="About" asp-action="Index">About</a></li>
                                         <li><a asp-controller="News" asp-action="Index">Blog</a></li>
                                         <li><a href="shop.html">All Products</a></li>
-                                        <li><a href="locations.html">Locations Map</a></li>
+                                        <li><a asp-controller="location" asp-action='index'>Locations Map</a></li>
                                         <li><a asp-controller="Faq" asp-action="Index">FAQ</a></li>
                                         <li><a href="contact.html">Contact us</a></li>
                                     </ul>
