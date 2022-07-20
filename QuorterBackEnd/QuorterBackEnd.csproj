@@ -65,6 +65,8 @@
     <None Remove="ViewComponents\Slider\" />
     <None Remove="ViewComponents\MemberDashboard\" />
     <None Remove="Views\Shared\Components\TeamList\" />
+    <None Remove="Views\SendMail\" />
+    <None Remove="Views\Email\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Default\" />
@@ -124,7 +126,9 @@
     <Folder Include="Views\Newsletter\" />
     <Folder Include="ViewComponents\Slider\" />
     <Folder Include="ViewComponents\MemberDashboard\" />
-    <Folder Include="Views\Shared\Components\TeamList\" />
+    <Folder Include="Views\Shared\Components\_TeamList\" />
+    <Folder Include="Views\SendMail\" />
+    <Folder Include="Views\Email\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Business\Business.csproj">
