@@ -27,6 +27,8 @@ namespace DAL.Concrete
         public DbSet<News> News{ get; set; }
         public DbSet<Faq> Faqs { get; set; }
         public DbSet<Counter> Counters { get; set; }
+        public DbSet<Location> Locations{ get; set; }
+
 
 
     }
