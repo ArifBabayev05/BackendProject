@@ -391,6 +391,27 @@ namespace DAL.Migrations
                     b.ToTable("Features");
                 });
 
+            modelBuilder.Entity("DataEntities.Concrete.Location2", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("Adress")
+                        .HasColumnType("int");
+
+                    b.Property<string>("CityName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("TelNumber")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Location2s");
+                });
+
             modelBuilder.Entity("DataEntities.Concrete.MainFocus", b =>
                 {
                     b.Property<int>("Id")
@@ -425,6 +446,27 @@ namespace DAL.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("MainFocuses");
+                });
+
+            modelBuilder.Entity("DataEntities.Concrete.Map", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Adress")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CityName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("TelNumber")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Maps");
                 });
 
             modelBuilder.Entity("DataEntities.Concrete.News", b =>
