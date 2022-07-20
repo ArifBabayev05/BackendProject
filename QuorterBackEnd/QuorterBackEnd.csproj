@@ -63,6 +63,8 @@
     <None Remove="Views\Shared\Components\_LocationPartial\" />
     <None Remove="Views\MailPartial\" />
     <None Remove="ViewComponents\Slider\" />
+    <None Remove="ViewComponents\MemberDashboard\" />
+    <None Remove="Views\Shared\Components\TeamList\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Default\" />
@@ -121,6 +123,8 @@
     <Folder Include="Views\Shared\Components\_LocationPartial\" />
     <Folder Include="Views\Newsletter\" />
     <Folder Include="ViewComponents\Slider\" />
+    <Folder Include="ViewComponents\MemberDashboard\" />
+    <Folder Include="Views\Shared\Components\TeamList\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Business\Business.csproj">
