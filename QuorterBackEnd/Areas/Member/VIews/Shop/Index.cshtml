@@ -10,7 +10,8 @@
         <th>City</th>
         <th>Build Year</th>
         <th>Create Date</th>
-        <th>Main Photo</th> 
+        <th>Main Photo</th>
+        <th>City</th>
         <th>Price</th>
 
 
@@ -19,13 +20,14 @@
 
     @foreach (var item in Model)
         {
-            <tr>
-                <td>@item.Id</td>
-                <td>@item.AuthorName</td>
-                <td>@item.BuildYear</td>
-                <td>@item.CreateDate</td>
-                <td>@item.MainPhoto</td>
-                <td>@item.Price</td>
+<tr>
+    <td>@item.Id</td>
+    <td>@item.CityName</td>
+    <td>@item.BuildYear</td>
+    <td>@item.CreateDate</td>
+    <td>@item.MainPhoto</td>
+    <td>@item.AuthorName</td>
+    <td>@item.Price</td>
 
 </tr>
         }

@@ -38,6 +38,7 @@ namespace Business.Concrete
         public void TUpdate(Property t)
         {
             throw new NotImplementedException();
+            //_propertyDal.Update(t);
         }
     }
 }
