@@ -448,6 +448,27 @@ namespace DAL.Migrations
                     b.ToTable("MainFocuses");
                 });
 
+            modelBuilder.Entity("DataEntities.Concrete.MainSlider", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Body")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Image")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("MainSliders");
+                });
+
             modelBuilder.Entity("DataEntities.Concrete.Map", b =>
                 {
                     b.Property<int>("Id")

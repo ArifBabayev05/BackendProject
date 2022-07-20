@@ -29,6 +29,7 @@ namespace DAL.Concrete
         public DbSet<Counter> Counters { get; set; }
         public DbSet<Location2> Location2s { get; set; }
         public DbSet<Map> Maps{ get; set; }
+        public DbSet<MainSlider> MainSliders { get; set; }
 
 
     }

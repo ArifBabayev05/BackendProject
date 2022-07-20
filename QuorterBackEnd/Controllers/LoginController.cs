@@ -76,7 +76,7 @@ namespace QuorterBackEnd.Controllers
                 var result = await _signInManager.PasswordSignInAsync(p.userName, p.password, false, true);
                 if (result.Succeeded )
                 {
-                    return RedirectToAction("Index", "Profile", new {area = "Member"});
+                    return RedirectToAction("Index", "Member", new {area = "Member"});
                 }
                 else
                 {

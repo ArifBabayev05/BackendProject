@@ -21,6 +21,7 @@ namespace QuorterBackEnd.Areas.Member.Controllers
             var values = await _userManager.FindByNameAsync(User.Identity.Name);
             ViewBag.userName = values.Name + " " + values.Surname;
             ViewBag.userImage = values.ImageUrl;
+            ViewBag.telNum = values.PhoneNumber;
             return View();
         }
     }
