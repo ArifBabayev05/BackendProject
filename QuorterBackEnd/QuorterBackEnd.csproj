@@ -58,6 +58,7 @@
     <None Remove="Views\Faq\" />
     <None Remove="ViewComponents\Faq\" />
     <None Remove="Views\Shared\Components\_FaqPartial\" />
+    <None Remove="ViewComponents\Location\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Default\" />
@@ -111,6 +112,7 @@
     <Folder Include="Views\Faq\" />
     <Folder Include="ViewComponents\Faq\" />
     <Folder Include="Views\Shared\Components\_FaqPartial\" />
+    <Folder Include="ViewComponents\Location\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Business\Business.csproj">

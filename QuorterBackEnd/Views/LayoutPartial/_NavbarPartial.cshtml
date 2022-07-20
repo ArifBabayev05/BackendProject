@@ -85,12 +85,12 @@
                                     <li class="menu-icon">
                                         <a href="#">About</a>
                                         <ul>
-                                            <li><a asp-controller="About" asp-action="Index" >About</a></li>
-                                            <li><a asp-controller="Service" asp-action="Index" >Services</a></li>
-                                            
-                                           
+                                            <li><a asp-controller="About" asp-action="Index">About</a></li>
+                                            <li><a asp-controller="Service" asp-action="Index">Services</a></li>
+
+
                                             <li><a asp-controller="team" asp-action="index">Team</a></li>
-                                            
+
                                             <li><a asp-controller="Faq" asp-action="Index">FAQ</a></li>
                                             <li><a href="locations.html">Google Map Locations</a></li>
                                         </ul>
@@ -100,7 +100,7 @@
                                         <ul>
                                             <li><a asp-controller="Shop" asp-action="Index">Shop</a></li>
                                             <li><a asp-controller="Shop" asp-action="ShopGrid">Shop Grid</a></li>
-                                            
+
                                             <li>
                                                 <a href="#">Other Pages <span class="float-end">>></span></a>
                                                 <ul>
@@ -131,9 +131,9 @@
                                             <li>
                                                 <a href="#">Inner Pages</a>
                                                 <ul>
-                                                   
+
                                                     <li><a asp-controller="team" asp-action="index">Team</a></li>
-                                                    
+
                                                     <li><a asp-controller="Faq" asp-action="Index">FAQ</a></li>
                                                 </ul>
                                             </li>
@@ -155,7 +155,7 @@
                                                     <li><a href="shop-left-sidebar.html">Shop Left sidebar</a></li>
                                                     <li><a href="shop-right-sidebar.html">Shop right sidebar</a></li>
                                                     <li><a href="shop-grid.html">Shop Grid</a></li>
-                                                    
+
                                                     <li><a href="cart.html">Cart</a></li>
                                                 </ul>
                                             </li>
@@ -165,8 +165,16 @@
                                         </ul>
                                     </li>
                                     <li><a href="contact.html">Contact</a></li>
-                                    <li><a asp-controller="Login" asp-action="SignUp">Register</a></li>
-                                    <li><a asp-controller="Login" asp-action="SignIn">Login</a></li>
+                                    @if (User.Identity.IsAuthenticated)
+                                    {
+                                        <li><a >Hi @User.Identity.Name!</a></li>
+                                        <li><a asp-controller="Login" asp-action="SignIn">Sign Out</a></li>
+                                    }
+                                    else
+                                    {
+                                        <li><a asp-controller="Login" asp-action="SignUp">Register</a></li>
+                                        <li><a asp-controller="Login" asp-action="SignIn">Login</a></li>
+                                    }
 
                                     <li class="special-link">
                                         <a href="add-listing.html">Add Listing</a>
