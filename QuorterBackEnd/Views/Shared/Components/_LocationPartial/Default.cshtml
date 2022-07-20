@@ -1,0 +1,18 @@
+﻿@using DataEntities.Concrete
+@model List<Location>
+
+@foreach (var item in Model)
+{
+    <div class="col-lg-4">
+        <div class="ltn__map-item">
+            <h3 class="ltn__location-name">@item.CityName</h3>
+            <h5 class="ltn__location-single-info"><i class="fas fa-map-marked-alt"></i>@item.Adress</h5>
+            <h4 class="ltn__location-single-info"><i class="fas fa-phone-volume"></i>@item.TelephoneNumber</h4>
+            <div class="btn-wrapper">
+                <a href="appointment.html" class="btn btn-transparent btn-border btn-effect-4"><i class="fas fa-location-arrow"></i> Get An Appointment</a>
+                <a href="#" class="btn btn-transparent btn-border btn-effect-3"><i class="fas fa-globe"></i> View Website</a>
+            </div>
+        </div>
+    </div>
+
+}
