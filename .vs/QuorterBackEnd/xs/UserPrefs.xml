@@ -1,19 +1,24 @@
 ﻿<Properties StartupConfiguration="{73B10379-1501-4F5D-9940-85767F5F99E0}|Default">
-  <MonoDevelop.Ide.ItemProperties.QuorterBackEnd PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="DataEntities/Concrete/Map.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="QuorterBackEnd/Views/News/Index.cshtml">
     <Files>
-      <File FileName="QuorterBackEnd/Views/LayoutPartial/_NavbarPartial.cshtml" Line="128" Column="54" />
       <File FileName="QuorterBackEnd/ViewComponents/Team/_TeamPartial.cs" Line="16" Column="1" />
       <File FileName="QuorterBackEnd/ViewComponents/Faq/_FaqPartial.cs" Line="1" Column="1" />
       <File FileName="QuorterBackEnd/ViewComponents/Faq/_CounterPartial.cs" Line="1" Column="1" />
-      <File FileName="QuorterBackEnd/Views/Shared/Components/_BrandLogoPartial/Default.cshtml" Line="14" Column="13" />
+      <File FileName="QuorterBackEnd/Views/Shared/Components/_BrandLogoPartial/Default.cshtml" Line="14" Column="1" />
       <File FileName="QuorterBackEnd/Views/LayoutPartial/_LoaderPartial.cshtml" Line="1" Column="1" />
       <File FileName="QuorterBackEnd/Views/LayoutPartial/_FooterPartial.cshtml" Line="1" Column="1" />
-      <File FileName="DAL/Concrete/Context.cs" Line="31" Column="24" />
+      <File FileName="DAL/Concrete/Context.cs" Line="31" Column="1" />
       <File FileName="DataEntities/Concrete/MainFocus.cs" Line="1" Column="1" />
       <File FileName="DataEntities/Concrete/News.cs" Line="1" Column="1" />
-      <File FileName="DataEntities/Concrete/Map.cs" Line="6" Column="18" />
       <File FileName="DataEntities/Concrete/Feature2.cs" Line="1" Column="1" />
+      <File FileName="QuorterBackEnd/Views/LayoutPartial/_ScriptPartial.cshtml" Line="6" Column="1" />
+      <File FileName="QuorterBackEnd/Views/Shop/Index.cshtml" Line="876" Column="4" />
+      <File FileName="QuorterBackEnd/Views/Service/Index.cshtml" Line="263" Column="1" />
+      <File FileName="QuorterBackEnd/Views/RightBar/RightBarInShopPage.cshtml" Line="1" Column="1" />
+      <File FileName="QuorterBackEnd/Views/News/Index.cshtml" Line="579" Column="1" />
+      <File FileName="QuorterBackEnd/Views/Location/Index.cshtml" Line="9" Column="69" />
+      <File FileName="QuorterBackEnd/Views/Faq/Index.cshtml" Line="1" Column="1" />
+      <File FileName="QuorterBackEnd/Views/About/Index.cshtml" Line="15" Column="19" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -35,23 +40,11 @@
             <Node name="QuorterBackEnd" expanded="True">
               <Node name="Areas" expanded="True" />
               <Node name="Controllers" expanded="True" />
-              <Node name="ViewComponents" expanded="True">
-                <Node name="Faq" expanded="True" />
-                <Node name="Team" expanded="True" />
-              </Node>
+              <Node name="ViewComponents" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="About" expanded="True" />
-                <Node name="LayoutPartial" expanded="True" />
-                <Node name="Shared" expanded="True">
-                  <Node name="Components" expanded="True">
-                    <Node name="_BrandLogoPartial" expanded="True" />
-                    <Node name="_CounterPartial" expanded="True" />
-                    <Node name="_FaqPartial" expanded="True" />
-                  </Node>
-                </Node>
+                <Node name="Location" expanded="True" />
+                <Node name="News" expanded="True" />
               </Node>
-              <Node name="wwwroot" expanded="True" />
-              <Node name="appsettings.json" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -62,7 +55,10 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.ItemProperties.QuorterBackEnd PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>
