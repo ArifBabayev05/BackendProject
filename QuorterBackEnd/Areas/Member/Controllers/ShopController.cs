@@ -41,9 +41,25 @@ namespace QuorterBackEnd.Areas.Member.Controllers
         {
             featureManager.TAdd(feature2);
             return RedirectToAction("Index", "Shop");
+
             
         }
-        
+
+        [HttpGet]
+        public IActionResult Delete()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Delete(Feature2 feature2)
+        {
+            featureManager.TAdd(feature2);
+            return RedirectToAction("Index", "Shop");
+
+
+        }
+
+
     }
 }
 

@@ -27,7 +27,7 @@ namespace Business.Concrete
 
         public Feature2 TGetById(int id)
         {
-            return _featureDal.GetById(id);
+            return _featureDal.GetById(id) ;
         }
 
         public List<Feature2> TGetList()

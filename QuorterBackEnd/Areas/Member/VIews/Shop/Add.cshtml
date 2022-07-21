@@ -1,50 +1,5 @@
 ﻿@model DataEntities.Concrete.Feature2
 
-@*<div class="ltn__comment-reply-area ltn__form-box mb-30">
-    <form asp-action="Add" asp-controller="Shop" method="post">
-        <h4>Add a Product</h4>
-
-        <div class="input-item form-group input-item-website ltn__custom-icon">
-            <input type="text" class="form-control" asp-for="Title" placeholder="Title of Product">
-        </div>
-
-
-        <div class="input-item form-group input-item-website ltn__custom-icon">
-            <input type="text" asp-for="Description" placeholder="Description of Product">
-        </div>
-
-        <div class="input-item form-group input-item-website ltn__custom-icon">
-            <input type="text" asp-for="Description" placeholder="Description of Product">
-        </div>
-
-        <div class="input-item form-group input-item-website ltn__custom-icon">
-            <input type="text" asp-for="Description" placeholder="Description of Product">
-        </div>
-
-        <div class="input-item form-group input-item-website ltn__custom-icon">
-            <input type="text" asp-for="Description" placeholder="Description of Product">
-        </div>
-
-
-
-        <div class="input-item form-group input-item-website ltn__custom-icon">
-            <input type="text" asp-for="AuthorName" placeholder="Type your post Id....">
-        </div>
-
-
-
-        <div class="input-item form-group input-item-website ltn__custom-icon">
-            <input type="text" asp-for="MainPhoto" placeholder="Photo">
-        </div>
-
-
-        <div class="btn-wrapper">
-            <button class="btn theme-btn-1 btn-effect-1 text-uppercase" type="submit">Submit</button>
-        </div>
-    </form>
-</div>*@
-
-
 
 <div class="container-fluid">
     <div class="page-header min-height-300 border-radius-xl mt-4" style="background-image: url('~/assets/assets/img/curved-images/curved0.jpg'); background-position-y: 50%;">
@@ -73,18 +28,25 @@
                             @Html.Label("Total Room Count")
                             <input type="text" class="form-control" asp-for="TotalRoomCount" placeholder="Title of Product">
                             <br />
-                            @Html.Label("BedRoom Count")
-                            <input type="text" class="form-control" asp-for="BedCount" placeholder="Title of Product">
+                            @Html.Label("Price")
+                            <input type="text" class="form-control" asp-for="Price" placeholder="Price">
                             <br />
 
-                            <input />
+                            @Html.Label("Saler Man Name")
+                            <input type="text" class="form-control" asp-for="AuthorName" placeholder="Name of Saler">
+                            <br />
 
-
+                            
 
                             <div class="form-group">
                                 <label>Choose Main Image</label>
-                                <input type="file" asp-for="MainPhoto">
+                                <input type="text" asp-for="MainPhoto">
                             </div>
+
+
+
+
+
                             <br />
                             <button class=" btn btn-primary">Add Product</button>
                         </div>

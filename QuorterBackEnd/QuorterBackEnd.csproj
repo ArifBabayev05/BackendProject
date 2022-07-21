@@ -69,6 +69,8 @@
     <None Remove="Views\Email\" />
     <None Remove="ViewComponents\Email\" />
     <None Remove="Views\Shared\Components\_Email\" />
+    <None Remove="Views\Shared\Components\_DeletePartial\" />
+    <None Remove="Areas\Member\VIews\Team\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Default\" />
@@ -133,6 +135,8 @@
     <Folder Include="Views\Email\" />
     <Folder Include="ViewComponents\Email\" />
     <Folder Include="Views\Shared\Components\_Email\" />
+    <Folder Include="Views\Shared\Components\_DeletePartial\" />
+    <Folder Include="Areas\Member\VIews\Team\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Business\Business.csproj">

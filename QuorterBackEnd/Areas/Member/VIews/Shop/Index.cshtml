@@ -1,5 +1,5 @@
 ﻿@using DataEntities.Concrete
-@model List<Feature2>
+@model List<Feature2> 
 
 <h1>Current Products</h1>
 
@@ -11,7 +11,7 @@
         <th>Build Year</th>
         <th>Create Date</th>
 
-        <th>City</th>
+        <th>Saler Man Name</th>
         <th>Price</th>
 
         <th>Update</th>
@@ -27,17 +27,17 @@
     <td>@item.Id</td>
     <td>@item.CityName</td>
     <td>@item.BuildYear</td>
-    <td>@item.CreateDate.ToShortDateString()</td>
+    <td>@item.CreateDate </td>
 
     <td>@item.AuthorName</td>
     <td>@item.Price</td>
 
     <td><a href="/Shop/Update/@item.Id" class="btn btn-info">Update</a></td>
-    <td><a href="/Shop/Delete/@item.Id" class="btn btn-danger">Delete</a></td>
+    <td><a href="/Member/Shop/Delete/@item.Id"  class="btn btn-danger">Delete</a></td>
 
 
 </tr>
         }
 
 </table>
-<a href="/Shop/Add" class="btn btn-success">Add New Product</a>
+<a href="/Member/Shop/Add" class="btn btn-success">Add New Product</a>
