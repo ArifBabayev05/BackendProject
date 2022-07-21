@@ -58,7 +58,7 @@ namespace DataEntities.Concrete
 
         public List<CommentModel> CommentModels { get; set; }
 
-        public IFormFile CoverImage { get; set; }
+        //public IFormFile CoverImage { get; set; }
 
 
 
