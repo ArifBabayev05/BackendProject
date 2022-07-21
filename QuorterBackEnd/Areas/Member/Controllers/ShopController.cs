@@ -14,6 +14,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace QuorterBackEnd.Areas.Member.Controllers
 {
+
     [Area("Member")]
     [Route("Member/[controller]/[action]")]
     [AllowAnonymous]
@@ -29,13 +30,7 @@ namespace QuorterBackEnd.Areas.Member.Controllers
             return View(values);
         }
 
-        //[HttpPost]
-        //public IActionResult Add(Feature2 p)
-        //{
-        //    featureManager.TAdd(p);
-        //    return RedirectToAction("Add");
-            
-        //}
+    
         [HttpGet]
         public IActionResult Add()
         {
@@ -44,11 +39,11 @@ namespace QuorterBackEnd.Areas.Member.Controllers
         [HttpPost]
         public IActionResult Add(Feature2 feature2)
         {
-            BlogValidator validations = new BlogValidator();
-            ValidationResult result = validations.Validate(feature2);
-            //return RedirectToAction("Add");
-            return View();
+            featureManager.TAdd(feature2);
+            return RedirectToAction("Index", "Shop");
+            
         }
+        
     }
 }
 
