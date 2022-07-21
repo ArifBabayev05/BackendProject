@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{73B10379-1501-4F5D-9940-85767F5F99E0}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="QuorterBackEnd/Views/News/Index.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="QuorterBackEnd/Views/Shared/Components/_Email/Default.cshtml">
     <Files>
       <File FileName="QuorterBackEnd/ViewComponents/Team/_TeamPartial.cs" Line="16" Column="1" />
-      <File FileName="QuorterBackEnd/ViewComponents/Faq/_FaqPartial.cs" Line="1" Column="1" />
+      <File FileName="QuorterBackEnd/ViewComponents/Faq/_FaqPartial.cs" Line="15" Column="10" />
       <File FileName="QuorterBackEnd/ViewComponents/Faq/_CounterPartial.cs" Line="1" Column="1" />
       <File FileName="QuorterBackEnd/Views/Shared/Components/_BrandLogoPartial/Default.cshtml" Line="14" Column="1" />
       <File FileName="QuorterBackEnd/Views/LayoutPartial/_LoaderPartial.cshtml" Line="1" Column="1" />
@@ -11,14 +11,42 @@
       <File FileName="DataEntities/Concrete/MainFocus.cs" Line="1" Column="1" />
       <File FileName="DataEntities/Concrete/News.cs" Line="1" Column="1" />
       <File FileName="DataEntities/Concrete/Feature2.cs" Line="1" Column="1" />
-      <File FileName="QuorterBackEnd/Views/LayoutPartial/_ScriptPartial.cshtml" Line="6" Column="1" />
+      <File FileName="QuorterBackEnd/Views/LayoutPartial/_ScriptPartial.cshtml" Line="1" Column="1" />
       <File FileName="QuorterBackEnd/Views/Shop/Index.cshtml" Line="876" Column="4" />
       <File FileName="QuorterBackEnd/Views/Service/Index.cshtml" Line="263" Column="1" />
       <File FileName="QuorterBackEnd/Views/RightBar/RightBarInShopPage.cshtml" Line="1" Column="1" />
-      <File FileName="QuorterBackEnd/Views/News/Index.cshtml" Line="579" Column="1" />
-      <File FileName="QuorterBackEnd/Views/Location/Index.cshtml" Line="9" Column="69" />
-      <File FileName="QuorterBackEnd/Views/Faq/Index.cshtml" Line="1" Column="1" />
+      <File FileName="QuorterBackEnd/Views/News/Index.cshtml" Line="1" Column="1" />
+      <File FileName="QuorterBackEnd/Views/Location/Index.cshtml" Line="9" Column="28" />
+      <File FileName="QuorterBackEnd/Views/Faq/Index.cshtml" Line="57" Column="1" />
       <File FileName="QuorterBackEnd/Views/About/Index.cshtml" Line="15" Column="19" />
+      <File FileName="QuorterBackEnd/ViewComponents/Email/_Email.cs" Line="15" Column="10" />
+      <File FileName="QuorterBackEnd/Controllers/EmailController.cs" Line="18" Column="20" />
+      <File FileName="QuorterBackEnd/Controllers/FaqController.cs" Line="20" Column="15" />
+      <File FileName="QuorterBackEnd/ViewComponents/Default/_BrandLogoPartial.cs" Line="1" Column="1" />
+      <File FileName="QuorterBackEnd/Views/Email/Index.cshtml" Line="63" Column="1" />
+      <File FileName="QuorterBackEnd/Views/News/NewsDetails.cshtml" Line="1" Column="1" />
+      <File FileName="QuorterBackEnd/Views/Shared/_UILayout.cshtml" Line="1" Column="1" />
+      <File FileName="QuorterBackEnd/Views/LayoutPartial/_NavbarPartial.cshtml" Line="147" Column="83" />
+      <File FileName="DataEntities/Concrete/Email.cs" Line="1" Column="1" />
+      <File FileName="DAL/EntityFramework/EfEmailDal.cs" Line="1" Column="1" />
+      <File FileName="DAL/EntityFramework/EfFaqDal.cs" Line="1" Column="1" />
+      <File FileName="DAL/Abstract/IEmailDal.cs" Line="1" Column="1" />
+      <File FileName="DAL/Abstract/IFaqDal.cs" Line="1" Column="1" />
+      <File FileName="Business/Concrete/EmailManager.cs" Line="1" Column="1" />
+      <File FileName="Business/Concrete/FaqManager.cs" Line="1" Column="1" />
+      <File FileName="Business/Abstract/IEmailService.cs" Line="1" Column="1" />
+      <File FileName="Business/Abstract/IFaqService.cs" Line="1" Column="1" />
+      <File FileName="DataEntities/Concrete/Counter.cs" Line="1" Column="1" />
+      <File FileName="DAL/Repository/GenericRepository.cs" Line="1" Column="1" />
+      <File FileName="DAL/EntityFramework/EfTeamDal.cs" Line="1" Column="1" />
+      <File FileName="DAL/EntityFramework/EfMainFocusDal.cs" Line="1" Column="1" />
+      <File FileName="DAL/EntityFramework/EfFeatureDal.cs" Line="1" Column="1" />
+      <File FileName="QuorterBackEnd/ViewComponents/Default/_CounterPartial.cs" Line="1" Column="1" />
+      <File FileName="QuorterBackEnd/Views/Shared/Components/_Email/Default.cshtml" Line="12" Column="46" />
+      <File FileName="QuorterBackEnd/Views/Shared/Components/_ExplorePartial/Default.cshtml" Line="1" Column="1" />
+      <File FileName="QuorterBackEnd/Views/Shared/Components/_CounterPartial/Default.cshtml" Line="1" Column="1" />
+      <File FileName="QuorterBackEnd/Views/Shared/Components/_CommentaList/Default.cshtml" Line="1" Column="1" />
+      <File FileName="QuorterBackEnd/Views/Shared/Components/_AboutPartial/Default.cshtml" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -40,10 +68,28 @@
             <Node name="QuorterBackEnd" expanded="True">
               <Node name="Areas" expanded="True" />
               <Node name="Controllers" expanded="True" />
-              <Node name="ViewComponents" expanded="True" />
+              <Node name="ViewComponents" expanded="True">
+                <Node name="Default" expanded="True" />
+                <Node name="Email" expanded="True" />
+                <Node name="Faq" expanded="True" />
+              </Node>
               <Node name="Views" expanded="True">
+                <Node name="Email" expanded="True" />
+                <Node name="Faq" expanded="True" />
+                <Node name="LayoutPartial" expanded="True" />
                 <Node name="Location" expanded="True" />
+                <Node name="MemberLayoutPartial" expanded="True" />
                 <Node name="News" expanded="True" />
+                <Node name="Shared" expanded="True">
+                  <Node name="Components" expanded="True">
+                    <Node name="_AboutPartial" expanded="True" />
+                    <Node name="_BrandLogoPartial" expanded="True" />
+                    <Node name="_CommentaList" expanded="True" />
+                    <Node name="_CounterPartial" expanded="True" />
+                    <Node name="_Email" expanded="True" />
+                    <Node name="_ExplorePartial" expanded="True" />
+                  </Node>
+                </Node>
               </Node>
             </Node>
           </Node>
@@ -54,11 +100,11 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.QuorterBackEnd PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
 </Properties>

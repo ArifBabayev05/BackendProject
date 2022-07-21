@@ -10,9 +10,12 @@
         <th>City</th>
         <th>Build Year</th>
         <th>Create Date</th>
-        <th>Main Photo</th>
+
         <th>City</th>
         <th>Price</th>
+
+        <th>Update</th>
+        <th>Delete</th>
 
 
 
@@ -24,12 +27,17 @@
     <td>@item.Id</td>
     <td>@item.CityName</td>
     <td>@item.BuildYear</td>
-    <td>@item.CreateDate</td>
-    <td>@item.MainPhoto</td>
+    <td>@item.CreateDate.ToShortDateString()</td>
+
     <td>@item.AuthorName</td>
     <td>@item.Price</td>
+
+    <td><a href="/Shop/Update/@item.Id" class="btn btn-info">Update</a></td>
+    <td><a href="/Shop/Delete/@item.Id" class="btn btn-danger">Delete</a></td>
+
 
 </tr>
         }
 
-</table>    
+</table>
+<a href="/Shop/Add" class="btn btn-success">Add New Product</a>

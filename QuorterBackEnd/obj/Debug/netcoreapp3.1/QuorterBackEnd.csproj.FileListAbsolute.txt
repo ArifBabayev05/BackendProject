@@ -373,3 +373,4 @@
 /Users/babayev_/Desktop/Quorter2/QuorterBackEnd/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Components/_TeamList/Default.cshtml.g.cs
 /Users/babayev_/Desktop/Quorter2/QuorterBackEnd/obj/Debug/netcoreapp3.1/Razor/Views/Email/Index.cshtml.g.cs
 /Users/babayev_/Desktop/Quorter2/QuorterBackEnd/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Components/_Email/Default.cshtml.g.cs
+/Users/babayev_/Desktop/Quorter2/QuorterBackEnd/obj/Debug/netcoreapp3.1/Razor/Areas/Member/VIews/Shop/Add.cshtml.g.cs
