@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Pl25Kzdme3LCQKlODa1Ml82BnLSBWh+NsMv2FH9KqeI52Q/poMt4wHytmA5wEC56MooJ4cl9b9mnk9H9008EBg==",
+  "dgSpecHash": "yhV3UFiDiXv4qID1VhdyHl4XXkmg5RqbRrhnc7/XKnyyuZUgWMhNxzlBxo919UyryoelT3rMNOzeov/9Fl2XxA==",
   "success": true,
-  "projectFilePath": "/Users/babayev_/Desktop/Quorter2/DAL/DAL.csproj",
+  "projectFilePath": "/Users/babayev_/Desktop/Quorter2/DAl/DAL.csproj",
   "expectedPackageFiles": [
     "/Users/babayev_/.nuget/packages/microsoft.aspnetcore.authentication/2.2.0/microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "/Users/babayev_/.nuget/packages/microsoft.aspnetcore.authentication.abstractions/2.2.0/microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
