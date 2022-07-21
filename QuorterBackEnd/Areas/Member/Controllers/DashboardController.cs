@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace QuorterBackEnd.Areas.Member.Controllers
 {
     [Area("Member")]
+
     public class DashboardController : Controller
     {
         private readonly UserManager<AppUser> _userManager;

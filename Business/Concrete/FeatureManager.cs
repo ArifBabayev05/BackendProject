@@ -17,12 +17,12 @@ namespace Business.Concrete
 
         public void TAdd(Feature2 t)
         {
-            throw new NotImplementedException();
+            _featureDal.Insert(t);
         }
 
         public void TDelete(Feature2 t)
         {
-            throw new NotImplementedException();
+            _featureDal.Delete(t);
         }
 
         public Feature2 TGetById(int id)

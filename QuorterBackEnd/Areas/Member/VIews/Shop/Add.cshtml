@@ -1,0 +1,26 @@
+﻿@model DataEntities.Concrete.Feature2
+
+@using (Html.BeginForm("Add", "Shop", FormMethod.Post))
+{
+    @Html.Label("Product Title")
+    @Html.TextAreaFor(x => x.Title, new { @class = "form-control " })
+    @Html.ValidationMessageFor(x => x.Title)
+
+    <br />
+
+    @Html.Label("Product Image")
+    @Html.TextAreaFor(x => x.MainPhoto, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.MainPhoto)
+    <br />
+
+    @Html.Label("Product Title")
+    @Html.TextAreaFor(x => x.Description, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.Description)
+
+    <button asp-controller="Shop" asp-action="Index" asp-area="Member" class="btn btn-info my-2">Save</button>
+
+
+
+
+}
+

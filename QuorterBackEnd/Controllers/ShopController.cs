@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Business.Concrete;
+using Business.ValidationRules;
 using DAL.EntityFramework;
 using DataEntities.Concrete;
+using FluentValidation.Results;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -34,6 +36,15 @@ namespace QuorterBackEnd.Controllers
         {
             return View();
         }
+
+
+        //[HttpGet]
+        //public IActionResult Add()
+        //{
+        //    return View();
+        //}
+
+        
     }
 }
 

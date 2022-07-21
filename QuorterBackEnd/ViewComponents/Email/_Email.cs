@@ -13,7 +13,7 @@ namespace QuorterBackEnd.ViewComponents.Email
             var values = manager.TGetList();
             return View(values);
         }
-
+        
     }
 }
 
