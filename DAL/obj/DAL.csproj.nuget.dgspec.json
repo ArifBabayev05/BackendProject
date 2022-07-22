@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/babayev_/Desktop/Quorter2/DAl/DAL.csproj": {}
+    "/Users/babayev_/Desktop/Quorter2/DAL/DAL.csproj": {}
   },
   "projects": {
-    "/Users/babayev_/Desktop/Quorter2/DAl/DAL.csproj": {
+    "/Users/babayev_/Desktop/Quorter2/DAL/DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/babayev_/Desktop/Quorter2/DAl/DAL.csproj",
+        "projectUniqueName": "/Users/babayev_/Desktop/Quorter2/DAL/DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "/Users/babayev_/Desktop/Quorter2/DAl/DAL.csproj",
+        "projectPath": "/Users/babayev_/Desktop/Quorter2/DAL/DAL.csproj",
         "packagesPath": "/Users/babayev_/.nuget/packages/",
-        "outputPath": "/Users/babayev_/Desktop/Quorter2/DAl/obj/",
+        "outputPath": "/Users/babayev_/Desktop/Quorter2/DAL/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/babayev_/.nuget/NuGet/NuGet.Config"
