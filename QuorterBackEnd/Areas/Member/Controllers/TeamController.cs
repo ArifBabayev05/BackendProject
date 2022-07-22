@@ -33,6 +33,15 @@ namespace QuorterBackEnd.Areas.Member.Controllers
             return RedirectToAction("Index", "Member");
 
         }
+        [HttpGet]
+        public IActionResult Delete(int id)
+        {
+            var element = teamManager.TGetById(id);
+            teamManager.TDelete(element);
+
+            return RedirectToAction("Index", "Member");
+
+        }
     }
 }
 

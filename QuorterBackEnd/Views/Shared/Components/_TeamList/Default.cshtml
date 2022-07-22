@@ -6,7 +6,8 @@
         <div class="card-header pb-0 p-3">
             <h6 class="mb-0">Our Team Members</h6>
         </div>
-        <div class="col-md-4 text-end">
+        <div class="col-md-4 position-absolute  align-items-start flex-column justify-content-end" style="display:grid; float:right; right:20px;
+top:18px"
             <a asp-controller="Team" asp-action="Add" asp-area="Member">
                 <i class="fas fa-user-edit text-secondary text-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit Profile"></i>
             </a>
@@ -15,16 +16,21 @@
             <ul class="list-group">
                 @foreach (var person in Model)
                 {
-                    <li class="list-group-item border-0 d-flex align-items-center px-0 mb-2">
-                        <div class="avatar me-3">
-                            <img src="~/assets/assets/img/@person.Image" alt="kal" class="border-radius-lg shadow">
-                        </div>
-                        <div class="d-flex align-items-start flex-column justify-content-center">
-                            <h6><a href="/Team/TeamDetails/@person.Id">@person.Name</a></h6>
-                            <p class="mb-0 text-xs">@person.Position</p>
-                        </div>
-                        @*<a class="btn btn-link pe-3 ps-0 mb-0 ms-auto" href="javascript:;">Reply</a>*@
-                    </li>
+                <li class="list-group-item border-0 d-flex align-items-center px-0 mb-2">
+                    <div class="avatar me-3">
+                        <img src="~/assets/assets/img/@person.Image" alt="kal" class="border-radius-lg shadow">
+                    </div>
+                    <div class="d-flex align-items-start flex-column justify-content-center">
+                        <h6><a href="/Team/TeamDetails/@person.Id">@person.Name</a></h6>
+                        <p class="mb-0 text-xs">@person.Position</p>
+                    </div>
+                    <div class="d-flex position-absolute  align-items-start flex-column justify-content-end" style="right: 5px">
+                        <a asp-controller="Team" asp-action="Delete" asp-area="Member" asp-route-id="@person.Id">
+                            <i class="fas fa-trash text-secondary text-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete Member"></i>
+                        </a>
+                    </div>
+                    @*<a class="btn btn-link pe-3 ps-0 mb-0 ms-auto" href="javascript:;">Reply</a>*@
+                </li>
                 }
 
             </ul>
