@@ -33,7 +33,7 @@
     <td>@item.Price</td>
 
     <td><a href="/Shop/Update/@item.Id" class="btn btn-info">Update</a></td>
-    <td><a href="/Member/Shop/Delete/@item.Id"  class="btn btn-danger">Delete</a></td>
+    <td><a asp-controller="shop" asp-action="Delete" asp-route-id="@item.Id" asp-area="Member"  class="btn btn-danger">Delete</a></td>
 
 
 </tr>

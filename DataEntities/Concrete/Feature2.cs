@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.AspNetCore.Http;
 
 namespace DataEntities.Concrete
@@ -57,9 +58,6 @@ namespace DataEntities.Concrete
         public string AuthorDesc { get; set; }
 
         public List<CommentModel> CommentModels { get; set; }
-
-        //public IFormFile CoverImage { get; set; }
-
 
 
 

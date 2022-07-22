@@ -1,5 +1,6 @@
 ﻿ using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Business.Concrete;
@@ -44,6 +45,7 @@ namespace QuorterBackEnd.Controllers
         [HttpPost]
         public IActionResult Add(Feature2 feature2)
         {
+            //string fileName = Path.GetFileName(Request.)
             _featureManager.TAdd(feature2);
             return RedirectToAction("Index", "Shop");
 

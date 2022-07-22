@@ -356,7 +356,7 @@
                                                 </div>
                                                 <div class="product-info-bottom">
                                                     <div class="product-price">
-                                                        <span>$34,900<label>/Month</label></span>
+                                                        <span>@shop.Price<label>/Month</label></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -402,7 +402,7 @@
                                                             </ul>
                                                         </div>
                                                         <div class="product-price">
-                                                            <span>$34,900<label>/Month</label></span>
+                                                            <span>@item.Price<label>/Month</label></span>
                                                         </div>
                                                     </div>
                                                     <h2 class="product-title"><a href="/Shop/ShopDetails/@item.Id">@item.Title</a></h2>
@@ -431,10 +431,10 @@
                                                 <div class="product-info-bottom">
                                                     <div class="real-estate-agent">
                                                         <div class="agent-img">
-                                                            <a href="team-details.html"><img src="~/assets/uplaods/@item.AuthorImage" alt="#"></a>
+                                                            <a asp-controller="team" asp-action="Index"><img src="~/assets/uplaods/@item.AuthorImage" alt="#"></a>
                                                         </div>
                                                         <div class="agent-brief">
-                                                            <h6><a href="team-details.html">@item.AuthorName</a></h6>
+                                                            <h6><a asp-controller="team" asp-action="Index">@item.AuthorName</a></h6>
                                                             <small>Estate Agents</small>
                                                         </div>
                                                     </div>
