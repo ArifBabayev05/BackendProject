@@ -15,8 +15,9 @@ namespace QuorterBackEnd.Controllers
     {
         CommentaManager commentaManager = new CommentaManager(new EfCommentaDal());
         [HttpGet]
-        public PartialViewResult AddComment()
+        public PartialViewResult AddComment(int id)
         {
+            ViewBag.i = id;
             return PartialView();
         }
 
