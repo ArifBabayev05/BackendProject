@@ -36,6 +36,19 @@ namespace QuorterBackEnd.Controllers
         {
             return View();
         }
+        [HttpGet]
+        public IActionResult Add()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Add(Feature2 feature2)
+        {
+            _featureManager.TAdd(feature2);
+            return RedirectToAction("Index", "Shop");
+
+
+        }
 
 
         //[HttpGet]
@@ -44,7 +57,7 @@ namespace QuorterBackEnd.Controllers
         //    return View();
         //}
 
-        
+
     }
 }
 

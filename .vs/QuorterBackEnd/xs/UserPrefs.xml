@@ -1,94 +1,77 @@
 ﻿<Properties StartupConfiguration="{73B10379-1501-4F5D-9940-85767F5F99E0}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="QuorterBackEnd/Views/Shared/Components/_Email/Default.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="QuorterBackEnd/Views/Shared/Components/_TeamList/Default.cshtml">
     <Files>
-      <File FileName="QuorterBackEnd/ViewComponents/Team/_TeamPartial.cs" Line="16" Column="1" />
-      <File FileName="QuorterBackEnd/ViewComponents/Faq/_FaqPartial.cs" Line="15" Column="10" />
-      <File FileName="QuorterBackEnd/ViewComponents/Faq/_CounterPartial.cs" Line="1" Column="1" />
-      <File FileName="QuorterBackEnd/Views/Shared/Components/_BrandLogoPartial/Default.cshtml" Line="14" Column="1" />
-      <File FileName="QuorterBackEnd/Views/LayoutPartial/_LoaderPartial.cshtml" Line="1" Column="1" />
-      <File FileName="QuorterBackEnd/Views/LayoutPartial/_FooterPartial.cshtml" Line="1" Column="1" />
-      <File FileName="DAL/Concrete/Context.cs" Line="31" Column="1" />
-      <File FileName="DataEntities/Concrete/MainFocus.cs" Line="1" Column="1" />
-      <File FileName="DataEntities/Concrete/News.cs" Line="1" Column="1" />
-      <File FileName="DataEntities/Concrete/Feature2.cs" Line="1" Column="1" />
-      <File FileName="QuorterBackEnd/Views/LayoutPartial/_ScriptPartial.cshtml" Line="1" Column="1" />
-      <File FileName="QuorterBackEnd/Views/Shop/Index.cshtml" Line="876" Column="4" />
-      <File FileName="QuorterBackEnd/Views/Service/Index.cshtml" Line="263" Column="1" />
-      <File FileName="QuorterBackEnd/Views/RightBar/RightBarInShopPage.cshtml" Line="1" Column="1" />
-      <File FileName="QuorterBackEnd/Views/News/Index.cshtml" Line="1" Column="1" />
-      <File FileName="QuorterBackEnd/Views/Location/Index.cshtml" Line="9" Column="28" />
-      <File FileName="QuorterBackEnd/Views/Faq/Index.cshtml" Line="57" Column="1" />
-      <File FileName="QuorterBackEnd/Views/About/Index.cshtml" Line="15" Column="19" />
-      <File FileName="QuorterBackEnd/ViewComponents/Email/_Email.cs" Line="15" Column="10" />
-      <File FileName="QuorterBackEnd/Controllers/EmailController.cs" Line="18" Column="20" />
-      <File FileName="QuorterBackEnd/Controllers/FaqController.cs" Line="20" Column="15" />
-      <File FileName="QuorterBackEnd/ViewComponents/Default/_BrandLogoPartial.cs" Line="1" Column="1" />
-      <File FileName="QuorterBackEnd/Views/Email/Index.cshtml" Line="63" Column="1" />
-      <File FileName="QuorterBackEnd/Views/News/NewsDetails.cshtml" Line="1" Column="1" />
-      <File FileName="QuorterBackEnd/Views/Shared/_UILayout.cshtml" Line="1" Column="1" />
-      <File FileName="QuorterBackEnd/Views/LayoutPartial/_NavbarPartial.cshtml" Line="147" Column="83" />
-      <File FileName="DataEntities/Concrete/Email.cs" Line="1" Column="1" />
-      <File FileName="DAL/EntityFramework/EfEmailDal.cs" Line="1" Column="1" />
-      <File FileName="DAL/EntityFramework/EfFaqDal.cs" Line="1" Column="1" />
-      <File FileName="DAL/Abstract/IEmailDal.cs" Line="1" Column="1" />
-      <File FileName="DAL/Abstract/IFaqDal.cs" Line="1" Column="1" />
-      <File FileName="Business/Concrete/EmailManager.cs" Line="1" Column="1" />
-      <File FileName="Business/Concrete/FaqManager.cs" Line="1" Column="1" />
-      <File FileName="Business/Abstract/IEmailService.cs" Line="1" Column="1" />
-      <File FileName="Business/Abstract/IFaqService.cs" Line="1" Column="1" />
-      <File FileName="DataEntities/Concrete/Counter.cs" Line="1" Column="1" />
-      <File FileName="DAL/Repository/GenericRepository.cs" Line="1" Column="1" />
-      <File FileName="DAL/EntityFramework/EfTeamDal.cs" Line="1" Column="1" />
-      <File FileName="DAL/EntityFramework/EfMainFocusDal.cs" Line="1" Column="1" />
-      <File FileName="DAL/EntityFramework/EfFeatureDal.cs" Line="1" Column="1" />
-      <File FileName="QuorterBackEnd/ViewComponents/Default/_CounterPartial.cs" Line="1" Column="1" />
-      <File FileName="QuorterBackEnd/Views/Shared/Components/_Email/Default.cshtml" Line="12" Column="46" />
-      <File FileName="QuorterBackEnd/Views/Shared/Components/_ExplorePartial/Default.cshtml" Line="1" Column="1" />
+      <File FileName="QuorterBackEnd/Areas/Member/Controllers/ShopController.cs" Line="43" Column="23" />
+      <File FileName="QuorterBackEnd/Areas/Member/VIews/Shop/Delete.cshtml" Line="9" Column="8" />
+      <File FileName="QuorterBackEnd/Controllers/PropertyController.cs" Line="29" Column="10" />
+      <File FileName="QuorterBackEnd/Views/Property/PropertyDetails.cshtml" Line="263" Column="71" />
+      <File FileName="QuorterBackEnd/ViewComponents/MemberDashboard/_DeletePartial.cs" Line="17" Column="2" />
+      <File FileName="QuorterBackEnd/ViewComponents/MemberDashboard/_TeamList.cs" Line="16" Column="6" />
+      <File FileName="QuorterBackEnd/Views/Shared/Components/_DeletePartial/Default.cshtml" Line="2" Column="22" />
+      <File FileName="QuorterBackEnd/Views/Comment/AddComment.cshtml" Line="1" Column="1" />
       <File FileName="QuorterBackEnd/Views/Shared/Components/_CounterPartial/Default.cshtml" Line="1" Column="1" />
       <File FileName="QuorterBackEnd/Views/Shared/Components/_CommentaList/Default.cshtml" Line="1" Column="1" />
-      <File FileName="QuorterBackEnd/Views/Shared/Components/_AboutPartial/Default.cshtml" Line="1" Column="1" />
+      <File FileName="QuorterBackEnd/Areas/Member/VIews/Profile/Index.cshtml" Line="12" Column="36" />
+      <File FileName="QuorterBackEnd/Areas/Member/Controllers/ProfileController.cs" Line="55" Column="15" />
+      <File FileName="QuorterBackEnd/Controllers/ShopController.cs" Line="1" Column="1" />
+      <File FileName="QuorterBackEnd/Areas/Member/VIews/Dashboard/Index.cshtml" Line="169" Column="23" />
+      <File FileName="QuorterBackEnd/Areas/Member/Controllers/DashboardController.cs" Line="27" Column="10" />
+      <File FileName="QuorterBackEnd/Areas/Member/Controllers/TeamController.cs" Line="32" Column="1" />
+      <File FileName="Business/Concrete/TeamManager.cs" Line="1" Column="1" />
+      <File FileName="QuorterBackEnd/Areas/Member/Controllers/MessageController.cs" Line="1" Column="1" />
+      <File FileName="QuorterBackEnd/Areas/Member/VIews/Team/Add.cshtml" Line="32" Column="25" />
+      <File FileName="QuorterBackEnd/Areas/Member/VIews/Shop/Add.cshtml" Line="11" Column="19" />
+      <File FileName="QuorterBackEnd/Views/Shared/Components/_TeamList/Default.cshtml" Line="8" Column="15" />
+      <File FileName="QuorterBackEnd/Controllers/TeamController.cs" Line="1" Column="1" />
+      <File FileName="QuorterBackEnd/Areas/Member/Controllers/CommentController.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="QuorterBackEnd" expanded="True">
             <Node name="Business" expanded="True">
-              <Node name="Abstract" expanded="True" />
               <Node name="Concrete" expanded="True" />
+              <Node name="ValidationRules" expanded="True" />
             </Node>
-            <Node name="DAL" expanded="True">
-              <Node name="Abstract" expanded="True" />
-              <Node name="Concrete" expanded="True" />
-              <Node name="EntityFramework" expanded="True" />
-              <Node name="Repository" expanded="True" />
-            </Node>
-            <Node name="DataEntities" expanded="True">
-              <Node name="Concrete" expanded="True" />
-            </Node>
+            <Node name="DataEntities" expanded="True" />
             <Node name="QuorterBackEnd" expanded="True">
-              <Node name="Areas" expanded="True" />
+              <Node name="Areas" expanded="True">
+                <Node name="Member" expanded="True">
+                  <Node name="Controllers" expanded="True" />
+                  <Node name="Models" expanded="True" />
+                  <Node name="VIews" expanded="True">
+                    <Node name="Dashboard" expanded="True" />
+                    <Node name="Profile" expanded="True" />
+                    <Node name="Shop" expanded="True" />
+                    <Node name="Team" expanded="True" />
+                  </Node>
+                </Node>
+              </Node>
               <Node name="Controllers" expanded="True" />
               <Node name="ViewComponents" expanded="True">
                 <Node name="Default" expanded="True" />
                 <Node name="Email" expanded="True" />
                 <Node name="Faq" expanded="True" />
+                <Node name="MemberDashboard" expanded="True" />
               </Node>
               <Node name="Views" expanded="True">
-                <Node name="Email" expanded="True" />
-                <Node name="Faq" expanded="True" />
-                <Node name="LayoutPartial" expanded="True" />
-                <Node name="Location" expanded="True" />
-                <Node name="MemberLayoutPartial" expanded="True" />
-                <Node name="News" expanded="True" />
+                <Node name="Comment" expanded="True" />
+                <Node name="Property" expanded="True" />
                 <Node name="Shared" expanded="True">
                   <Node name="Components" expanded="True">
-                    <Node name="_AboutPartial" expanded="True" />
-                    <Node name="_BrandLogoPartial" expanded="True" />
                     <Node name="_CommentaList" expanded="True" />
                     <Node name="_CounterPartial" expanded="True" />
-                    <Node name="_Email" expanded="True" />
-                    <Node name="_ExplorePartial" expanded="True" />
+                    <Node name="_DeletePartial" expanded="True" />
+                    <Node name="_TeamList" expanded="True" />
                   </Node>
+                </Node>
+                <Node name="Shop" expanded="True" />
+                <Node name="Team" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="assets" expanded="True">
+                  <Node name="assets" expanded="True" />
+                  <Node name="uploads" expanded="True" />
                 </Node>
               </Node>
             </Node>

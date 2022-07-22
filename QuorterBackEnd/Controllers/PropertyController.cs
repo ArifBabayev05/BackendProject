@@ -33,6 +33,19 @@ namespace QuorterBackEnd.Controllers
         {
             return View();
         }
+        [HttpGet]
+        public IActionResult Addlist(int id)
+        {
+            ViewBag.i = id;
+            var values = propertyManager.TGetById(id);
+            return View(values);
+        }
+
+        [HttpPost]
+        public IActionResult Addlist(Property property)
+        {
+            return View();
+        }
     }
 }
 
