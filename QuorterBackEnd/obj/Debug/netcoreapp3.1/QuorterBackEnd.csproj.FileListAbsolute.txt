@@ -378,3 +378,6 @@
 /Users/babayev_/Desktop/Quorter2/QuorterBackEnd/obj/Debug/netcoreapp3.1/Razor/Areas/Member/VIews/Team/Add.cshtml.g.cs
 /Users/babayev_/Desktop/Quorter2/QuorterBackEnd/obj/Debug/netcoreapp3.1/Razor/Views/Shop/Add.cshtml.g.cs
 /Users/babayev_/Desktop/Quorter2/QuorterBackEnd/obj/Debug/netcoreapp3.1/Razor/Areas/Member/VIews/Shop/Update.cshtml.g.cs
+/Users/babayev_/Desktop/Quorter2/QuorterBackEnd/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Components/_TopRated/Default.cshtml.g.cs
+/Users/babayev_/Desktop/Quorter2/QuorterBackEnd/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Components/_Leatest/Default.cshtml.g.cs
+/Users/babayev_/Desktop/Quorter2/QuorterBackEnd/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Components/_TopProps/Default.cshtml.g.cs

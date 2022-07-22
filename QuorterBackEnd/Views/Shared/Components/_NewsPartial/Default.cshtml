@@ -18,18 +18,18 @@
                 <div class="col-lg-12">
                     <div class="ltn__blog-item ltn__blog-item-3">
                         <div class="ltn__blog-img">
-                            <a href="/News/NewsDetails/@item.Id"><img src="~/assets/uploads/@item.MainImage" alt="#"></a>
+                            <a asp-action="newsdetails" asp-controller="news" asp-route-id="@item.Id"><img src="~/assets/uploads/@item.MainImage" alt="#"></a>
                         </div>
                         <div class="ltn__blog-brief">
                             <div class="ltn__blog-meta">
                                 <ul>
                                     <li class="ltn__blog-author">
-                                        <a href="#"><i class="far fa-user"></i>by: @item.AuthorName</a>
+                                        <a asp-controller="Team" asp-action="Index"><i class="far fa-user"></i>by: @item.AuthorName</a>
                                     </li>
                                     
                                 </ul>
                             </div>
-                            <h3 class="ltn__blog-title"><a href="/News/NewsDetails/@item.Id">@item.Title</a></h3>
+                            <h3 class="ltn__blog-title"><a asp-action="newsdetails" asp-controller="news" asp-route-id="@item.Id">@item.Title</a></h3>
                             <div class="ltn__blog-meta-btn">
                                 <div class="ltn__blog-meta">
                                     <ul>
@@ -37,7 +37,7 @@
                                     </ul>
                                 </div>
                                 <div class="ltn__blog-btn">
-                                    <a asp-action="newsdetails" asp-controller="news">Read more</a>
+                                    <a asp-action="newsdetails" asp-controller="news" asp-route-id="@item.Id">Read more</a>
                                 </div>
                             </div>
                         </div>

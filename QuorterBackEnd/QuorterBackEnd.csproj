@@ -72,6 +72,12 @@
     <None Remove="Views\Shared\Components\_DeletePartial\" />
     <None Remove="Areas\Member\VIews\Team\" />
     <None Remove="Views\AddList\" />
+    <None Remove="Views\Shared\Components\_TopRated\" />
+    <None Remove="ViewComponents\TopRated\" />
+    <None Remove="Views\Shared\Components\_Leatest\" />
+    <None Remove="ViewComponents\Leatest\" />
+    <None Remove="Views\Shared\Components\_TopProps\" />
+    <None Remove="ViewComponents\TopProps\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Default\" />
@@ -139,6 +145,12 @@
     <Folder Include="Views\Shared\Components\_DeletePartial\" />
     <Folder Include="Areas\Member\VIews\Team\" />
     <Folder Include="Views\AddList\" />
+    <Folder Include="Views\Shared\Components\_TopRated\" />
+    <Folder Include="ViewComponents\TopRated\" />
+    <Folder Include="Views\Shared\Components\_Leatest\" />
+    <Folder Include="ViewComponents\Leatest\" />
+    <Folder Include="Views\Shared\Components\_TopProps\" />
+    <Folder Include="ViewComponents\TopProps\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Business\Business.csproj">

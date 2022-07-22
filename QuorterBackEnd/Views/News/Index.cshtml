@@ -34,7 +34,7 @@
                     {
                         <div class="ltn__blog-item ltn__blog-item-5">
                             <div class="ltn__blog-img">
-                                <a href="blog-details.html"><img src="~/assets/uploads/@item.MainImage" alt="Image"></a>
+                                <a asp-controller="News" asp-action="Newsdetails" asp-route-id="@item.Id"><img src="~/assets/uploads/@item.MainImage" alt="Image"></a>
                             </div>
                             <div class="ltn__blog-brief">
                                 <div class="ltn__blog-meta">
@@ -45,7 +45,7 @@
                                     </ul>
                                 </div>
                                 <h3 class="ltn__blog-title">
-                                    <a href="blog-details.html">
+                                    <a asp-controller="News" asp-action="Newsdetails" asp-route-id="@item.Id">
                                         @item.Title
                                     </a>
                                 </h3>
@@ -67,7 +67,7 @@
                                     <div class="ltn__blog-meta">
                                         <ul>
                                             <li class="ltn__blog-author">
-                                                <a href="#"><img src="~/assets/uploads/@item.AuthorImage" alt="#">By: @item.AuthorName</a>
+                                                <a asp-controller="Team" asp-action="Index" img src="~/assets/uploads/@item.AuthorImage" alt="#">By: @item.AuthorName</a>
                                             </li>
                                         </ul>
                                     </div>
