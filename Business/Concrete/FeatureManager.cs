@@ -37,7 +37,7 @@ namespace Business.Concrete
 
         public void TUpdate(Feature2 t)
         {
-            throw new NotImplementedException();
+            _featureDal.Update(t);
         }
     }
 }
