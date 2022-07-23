@@ -1,7 +1,7 @@
 ﻿@using DataEntities.Concrete
 @model List<AppUser>
 
-    <h1>Role List</h1>
+    <h1>User List</h1>
 
     <table class="table table-bordered">
         <tr>
@@ -15,11 +15,13 @@
         {
             <tr>
                 <td>@item.UserName</td>
-                <td><a href="/Member/Admin/AssignRole/@item.Id" class="btn btn-danger">Add Role</a></td>
+                <td><a href="/Member/Admin/AssignRole/@item.Id" class="btn btn-info">Add Role</a></td>
 
 
             </tr>
         }
 
     </table>
+
+<a class="btn btn-primary" href="/Member/Admin/Index">Go Back</a>
 

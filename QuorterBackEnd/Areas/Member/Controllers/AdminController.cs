@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using DataEntities.Concrete;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using QuorterBackEnd.Areas.Member.Models;
 using QuorterBackEnd.Models;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -104,6 +105,28 @@ namespace QuorterBackEnd.Areas.Member.Controllers
         {
             var values = _userManager.Users.ToList();
             return View(values);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> AssignRole(int id)
+        {
+            var user = _userManager.Users.FirstOrDefault(x => x.Id == id);
+            var roles = _roleManager.Roles.ToList();
+
+            TempData["UserId"] = user.Id;
+
+            var userRoles = await _userManager.GetRolesAsync(user);
+
+            List<RoleAsignViewModel> model = new List<RoleAsignViewModel>();
+            foreach (var item in roles)
+            {
+                RoleAsignViewModel models = new RoleAsignViewModel();
+                models.RoleId = item.Id;
+                models.Name = item.Name;
+                models.Exist = userRoles.Contains(item.Name);
+                model.Add(models);
+            }
+            return View(model);
         }
     }
 }
