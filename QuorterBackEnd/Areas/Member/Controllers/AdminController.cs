@@ -113,11 +113,10 @@ namespace QuorterBackEnd.Areas.Member.Controllers
             var user = _userManager.Users.FirstOrDefault(x => x.Id == id);
             var roles = _roleManager.Roles.ToList();
 
-            //TempData["UserId"] = user.Id;
-            ViewBag.i = user.Id;
+            TempData["UserId"] = user.Id;
 
 
-            var userRoles = await _userManager.GetRolesAsync(user);
+            var userRoles =  await _userManager.GetRolesAsync(user);
 
             List<RoleAsignViewModel> model = new List<RoleAsignViewModel>();
             foreach (var item in roles)
@@ -129,6 +128,24 @@ namespace QuorterBackEnd.Areas.Member.Controllers
                 model.Add(models);
             }
             return View(model);
+        }
+        [HttpPost]
+        public async Task<IActionResult> AssignRole(List<RoleAsignViewModel> model)
+        {
+            var userId =(int) TempData["UserId"];
+            var user = _userManager.Users.FirstOrDefault(x => x.Id == userId);
+            foreach (var item in model)
+            {
+                if (item.Exist)
+                {
+                    await _userManager.AddToRoleAsync(user,item.Name);
+                }
+                else
+                {
+                    await _userManager.RemoveFromRoleAsync(user, item.Name);
+                }
+            }
+            return RedirectToAction("UserRoleList"); 
         }
     }
 }

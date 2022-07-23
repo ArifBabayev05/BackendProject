@@ -15,6 +15,11 @@ namespace Business.Concrete
             _featureDal = featureDal;
         }
 
+        public List<Feature2> List(string p)
+        {
+            return _featureDal.GetListByFilter(x => x.Title == p);
+        }
+
         public void TAdd(Feature2 t)
         {
             _featureDal.Insert(t);
@@ -39,6 +44,8 @@ namespace Business.Concrete
         {
             _featureDal.Update(t);
         }
+
+        
     }
 }
 
