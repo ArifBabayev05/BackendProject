@@ -15,6 +15,8 @@ namespace QuorterBackEnd.Areas.Member.Controllers
 {
     [Area("Member")]
     [Route("Member/[controller]/[action]")]
+    [Authorize(Roles = "Admin,SuperAdmin,Manager")]
+
     public class ProfileController : Controller
     {
 
