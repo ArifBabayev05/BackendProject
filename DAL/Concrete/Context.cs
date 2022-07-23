@@ -32,6 +32,8 @@ namespace DAL.Concrete
         public DbSet<MainSlider> MainSliders { get; set; }
         public DbSet<Email> Emails { get; set; }
 
+        public DbSet<Send> Sends { get; set; }
+
 
     }
 }

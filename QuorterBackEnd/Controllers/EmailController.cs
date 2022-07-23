@@ -14,35 +14,26 @@ namespace QuorterBackEnd.Controllers
 {
     public class EmailController : Controller
     {
-        EmailManager manager = new EmailManager(new EfEmailDal());
+        SendManager manager = new SendManager(new EfSendDal());
         //[HttpGet]
         public IActionResult Index()
         {
             var values = manager.TGetList();
             return View(values);
         }
+        [HttpGet]
+        public IActionResult Send()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Send(Send email)
+        {
+            manager.TAdd(email);
+            return RedirectToAction("Index", "Contact");
+        }
 
-        //[HttpPost]
-        //public IActionResult Index(Email email)
-        //{
-        //    string to = email.To;
-        //    string subject = email.Subject;
-        //    string body = email.Body;
-        //    MailMessage mm = new MailMessage();
-        //    mm.To.Add(to);
-        //    mm.Subject = subject;
-        //    mm.Body = body;
-        //    mm.From = new MailAddress("arif.babayev.2005@gmail.com");
-        //    mm.IsBodyHtml = false;
-        //    SmtpClient smtp = new SmtpClient("smtp.gmail.com");
-        //    smtp.Port = 587;
-        //    smtp.UseDefaultCredentials = false;
-        //    smtp.EnableSsl = true;
-        //    smtp.Credentials = new System.Net.NetworkCredential("arif.babayev.2005@gmail.com", "password");
-        //    smtp.Send(mm);
-        //    ViewBag.message = "Thank You For Subscribing";
-        //    return View();
-        //}
+
     } 
 }
 
