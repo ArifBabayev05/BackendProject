@@ -168,7 +168,7 @@
                                     @if (User.Identity.IsAuthenticated)
                                     {
                                         <li><a >Hi @User.Identity.Name!</a></li>
-                                        <li><a asp-controller="Login" asp-action="SignIn">Log Out</a></li>
+                                        <li><a asp-controller="Login" asp-action="SignOut">Log Out</a></li>
                                     }
                                     else
                                     {

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using DataEntities.Concrete;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using QuorterBackEnd.Areas.Member.Models;
@@ -14,6 +15,7 @@ namespace QuorterBackEnd.Areas.Member.Controllers
 {
     [Area("Member")]
     [Route("Member/[controller]/[action]")]
+    //[Authorize(Roles ="Admin,SuperAdmin ")]
 
     public class AdminController : Controller
     {
