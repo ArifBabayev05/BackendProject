@@ -17,7 +17,7 @@ namespace QuorterBackEnd.Areas.Member.Controllers
 
     [Area("Member")]
     [Route("Member/[controller]/[action]")]
-    [AllowAnonymous]
+    [Authorize(Roles = "Admin,SuperAdmin")]
     //[Route("Member/[controller]/[action]")]
     public class ShopController : Controller
     {

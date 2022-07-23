@@ -15,7 +15,7 @@ namespace QuorterBackEnd.Areas.Member.Controllers
 {
     [Area("Member")]
     [Route("Member/[controller]/[action]")]
-    //[Authorize(Roles ="Admin,SuperAdmin ")]
+    [Authorize(Roles = "Admin,SuperAdmin ")]
 
     public class AdminController : Controller
     {
@@ -27,7 +27,6 @@ namespace QuorterBackEnd.Areas.Member.Controllers
             _roleManager = roleManager;
             _userManager = userManager;
         }
-
         // GET: /<controller>/
         public IActionResult Index()
         {

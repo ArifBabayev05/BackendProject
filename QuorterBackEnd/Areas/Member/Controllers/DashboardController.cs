@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Threading.Tasks;
 using DataEntities.Concrete;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace QuorterBackEnd.Areas.Member.Controllers
 {
     [Area("Member")]
+    [Authorize(Roles = "Admin,SuperAdmin,Manager")]
 
     public class DashboardController : Controller
     {
