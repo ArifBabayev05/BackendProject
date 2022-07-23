@@ -30,6 +30,15 @@ namespace QuorterBackEnd.Controllers
             commentaManager.TAdd(p);
             return RedirectToAction("Index", "Shop");
         }
+        [HttpGet]
+        public IActionResult Delete(int id)
+        {
+            var element = commentaManager.TGetById(id);
+            commentaManager.TDelete(element);
+
+            return RedirectToAction("Index", "Default", "Member");
+
+        }
     }
 }
 

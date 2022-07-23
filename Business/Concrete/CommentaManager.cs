@@ -21,12 +21,12 @@ namespace Business.Concrete
 
         public void TDelete(CommentModel t)
         {
-            throw new NotImplementedException();
+            _commentaDal.Delete(t);
         }
 
         public CommentModel TGetById(int id)
         {
-            throw new NotImplementedException();
+            return _commentaDal.GetById(id);
         }
 
         public List<CommentModel> TGetList()

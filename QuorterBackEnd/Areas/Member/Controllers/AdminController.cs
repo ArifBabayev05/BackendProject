@@ -113,7 +113,9 @@ namespace QuorterBackEnd.Areas.Member.Controllers
             var user = _userManager.Users.FirstOrDefault(x => x.Id == id);
             var roles = _roleManager.Roles.ToList();
 
-            TempData["UserId"] = user.Id;
+            //TempData["UserId"] = user.Id;
+            ViewBag.i = user.Id;
+
 
             var userRoles = await _userManager.GetRolesAsync(user);
 

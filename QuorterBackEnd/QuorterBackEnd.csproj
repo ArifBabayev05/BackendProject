@@ -79,6 +79,8 @@
     <None Remove="Views\Shared\Components\_TopProps\" />
     <None Remove="ViewComponents\TopProps\" />
     <None Remove="Areas\Member\VIews\Admin\" />
+    <None Remove="ViewComponents\Message\" />
+    <None Remove="Views\Shared\Components\_MessageList\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Default\" />
@@ -153,6 +155,8 @@
     <Folder Include="Views\Shared\Components\_TopProps\" />
     <Folder Include="ViewComponents\TopProps\" />
     <Folder Include="Areas\Member\VIews\Admin\" />
+    <Folder Include="ViewComponents\Message\" />
+    <Folder Include="Views\Shared\Components\_MessageList\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Business\Business.csproj">
