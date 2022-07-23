@@ -670,6 +670,27 @@ namespace DAL.Migrations
                     b.ToTable("Properties");
                 });
 
+            modelBuilder.Entity("DataEntities.Concrete.Send", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("MessageUser")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Subject")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Text")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Sends");
+                });
+
             modelBuilder.Entity("DataEntities.Concrete.Slider", b =>
                 {
                     b.Property<int>("ID")

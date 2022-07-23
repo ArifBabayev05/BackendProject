@@ -7,7 +7,7 @@ namespace QuorterBackEnd.ViewComponents.Email
 {
     public class _Email : ViewComponent
     {
-        EmailManager manager = new EmailManager(new EfEmailDal());
+        SendManager manager = new SendManager(new EfSendDal());
         public IViewComponentResult Invoke()
         {
             var values = manager.TGetList();
