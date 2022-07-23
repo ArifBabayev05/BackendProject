@@ -78,6 +78,7 @@
     <None Remove="ViewComponents\Leatest\" />
     <None Remove="Views\Shared\Components\_TopProps\" />
     <None Remove="ViewComponents\TopProps\" />
+    <None Remove="Areas\Member\VIews\Admin\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Default\" />
@@ -151,6 +152,7 @@
     <Folder Include="ViewComponents\Leatest\" />
     <Folder Include="Views\Shared\Components\_TopProps\" />
     <Folder Include="ViewComponents\TopProps\" />
+    <Folder Include="Areas\Member\VIews\Admin\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Business\Business.csproj">

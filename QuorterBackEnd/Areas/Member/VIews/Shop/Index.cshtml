@@ -28,6 +28,8 @@
     <td>@item.CityName</td>
     <td>@item.BuildYear</td>
     <td>@item.CreateDate.ToString("MM/dd/yyyy") </td>
+    <td>@(((DateTime)item.CreateDate).ToString("dd-MMM-yyyy")) </td>
+
 
     <td>@item.AuthorName</td>
     <td>@item.Price</td>

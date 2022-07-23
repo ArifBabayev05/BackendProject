@@ -381,3 +381,8 @@
 /Users/babayev_/Desktop/Quorter2/QuorterBackEnd/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Components/_TopRated/Default.cshtml.g.cs
 /Users/babayev_/Desktop/Quorter2/QuorterBackEnd/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Components/_Leatest/Default.cshtml.g.cs
 /Users/babayev_/Desktop/Quorter2/QuorterBackEnd/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Components/_TopProps/Default.cshtml.g.cs
+/Users/babayev_/Desktop/Quorter2/QuorterBackEnd/obj/Debug/netcoreapp3.1/Razor/Areas/Member/VIews/Admin/Index.cshtml.g.cs
+/Users/babayev_/Desktop/Quorter2/QuorterBackEnd/obj/Debug/netcoreapp3.1/Razor/Areas/Member/VIews/Admin/AddRole.cshtml.g.cs
+/Users/babayev_/Desktop/Quorter2/QuorterBackEnd/obj/Debug/netcoreapp3.1/Razor/Areas/Member/VIews/Admin/Update.cshtml.g.cs
+/Users/babayev_/Desktop/Quorter2/QuorterBackEnd/obj/Debug/netcoreapp3.1/Razor/Areas/Member/VIews/Admin/UserRoleList.cshtml.g.cs
+/Users/babayev_/Desktop/Quorter2/QuorterBackEnd/obj/Debug/netcoreapp3.1/Razor/Areas/Member/VIews/Admin/AssignRole.cshtml.g.cs
