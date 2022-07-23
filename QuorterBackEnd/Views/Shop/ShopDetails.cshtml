@@ -29,7 +29,7 @@
         <div class="row ltn__image-slider-5-active slick-arrow-1 slick-arrow-1-inner ltn__no-gutter-all">
             <div class="col-lg-12">
                 <div class="ltn__img-slide-item-4">
-                    <a href="~/assets/uploads/@Model.SliderImage1" data-rel="lightcase:myCollection">
+                    <a href="#" data-rel="lightcase:myCollection">
                         <img src="~/assets/uploads/@Model.SliderImage1" alt="Image">
                     </a>
                 </div>
@@ -603,16 +603,7 @@
 
                     <div class="ltn__shop-details-tab-content-inner--- ltn__shop-details-tab-inner-2 ltn__product-details-review-inner mb-60">
                         <h4 class="title-2">Customer Reviews</h4>
-                        <div class="product-ratting">
-                            <ul>
-                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                <li><a href="#"><i class="fas fa-star-half-alt"></i></a></li>
-                                <li><a href="#"><i class="far fa-star"></i></a></li>
-                                <li class="review-total"> <a href="#"> ( 95 Reviews )</a></li>
-                            </ul>
-                        </div>
+                        
                         <hr>
                         <!-- comment-area -->
                         @await Component.InvokeAsync("_CommentaList", new { id = ViewBag.i })
@@ -740,7 +731,7 @@
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="portfolio-details.html" title="Compare">
+                                                <a href="" title="Compare">
                                                     <i class="flaticon-add"></i>
                                                 </a>
                                             </li>
@@ -749,7 +740,7 @@
                                 </div>
                                 <div class="product-info-bottom">
                                     <div class="product-price">
-                                        <span>$349,00<label>/Month</label></span>
+                                        <span>@Model.Price<label>/Month</label></span>
                                     </div>
                                 </div>
                             </div>
@@ -838,88 +829,5 @@
     </div>
 </div>
 <!-- SHOP DETAILS AREA END -->
-<!-- PRODUCT SLIDER AREA START -->
-<div class="ltn__product-slider-area ltn__product-gutter pb-70 d-none">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="section-title-area ltn__section-title-2--- text-center---">
-                    <h1 class="section-title">Related Properties</h1>
-                </div>
-            </div>
-        </div>
-        <div class="row ltn__related-product-slider-two-active slick-arrow-1">
-            <!-- ltn__product-item -->
 
-            <div class="col-xl-6 col-sm-6 col-12">
-                <div class="ltn__product-item ltn__product-item-4 ltn__product-item-5 text-center---">
-                    <div class="product-img">
-                        <a href="product-details.html"><img src="~/assets/img/product-3/1.jpg" alt="#"></a>
-                        <div class="real-estate-agent">
-                            <div class="agent-img">
-                                <a href="team-details.html"><img src="~/assets/uploads/AuthorImage" alt="#"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <div class="product-badge">
-                            <ul>
-                                <li class="sale-badg">For Rent</li>
-                            </ul>
-                        </div>
-                        <h2 class="product-title"><a href="product-details.html">New Apartment Nice View</a></h2>
-                        <div class="product-img-location">
-                            <ul>
-                                <li>
-                                    <a href="product-details.html"><i class="flaticon-pin"></i> Belmont Gardens, Chicago</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <ul class="ltn__list-item-2--- ltn__list-item-2-before--- ltn__plot-brief">
-                            <li>
-                                <span>3 </span>
-                                Bed
-                            </li>
-                            <li>
-                                <span>2 </span>
-                                Bath
-                            </li>
-                            <li>
-                                <span>3450 </span>
-                                Square Ft
-                            </li>
-                        </ul>
-                        <div class="product-hover-action">
-                            <ul>
-                                <li>
-                                    <a href="#" title="Quick View" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
-                                        <i class="flaticon-expand"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" title="Wishlist" data-bs-toggle="modal" data-bs-target="#liton_wishlist_modal">
-                                        <i class="flaticon-heart-1"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="portfolio-details.html" title="Compare">
-                                        <i class="flaticon-add"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="product-info-bottom">
-                        <div class="product-price">
-                            <span>$349,00<label>/Month</label></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <!-- ltn__product-item -->
-            <!--  -->
-        </div>
-    </div>
-</div>
-<!-- PRODUCT SLIDER AREA END -->

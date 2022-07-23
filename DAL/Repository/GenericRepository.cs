@@ -12,7 +12,7 @@ namespace DAL.Repository
         public void Delete(T t)
         {
             using var c = new Context();
-            c.Remove(t);
+         c.Remove(t);
             c.SaveChanges();
         }
 
