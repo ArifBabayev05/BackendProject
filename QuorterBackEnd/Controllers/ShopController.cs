@@ -7,8 +7,8 @@ using Business.Concrete;
 using Business.ValidationRules;
 using DAL.EntityFramework;
 using DataEntities.Concrete;
-using FluentValidation.Results;
 using Microsoft.AspNetCore.Mvc;
+
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -19,9 +19,9 @@ namespace QuorterBackEnd.Controllers
     {
         FeatureManager _featureManager = new FeatureManager(new EfFeatureDal());
         // GET: /<controller>/
-        public IActionResult Index()
+        public IActionResult Index(string key)
         {
-
+           
             var values = _featureManager.TGetList();
             return View(values);
         }

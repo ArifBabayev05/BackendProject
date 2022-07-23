@@ -13,6 +13,8 @@ namespace Business.Abstract
 
         T TGetById(int id);
 
+        //List<T> List(T t);
+
     }
 }
 

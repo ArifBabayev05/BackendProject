@@ -15,7 +15,7 @@
         {
             <tr>
                 <td>@item.UserName</td>
-                <td><a href="/Member/Admin/AssignRole/@item.Id" class="btn btn-info">Add Role</a></td>
+                <td><a asp-controller="Admin" asp-action="AssignRole" asp-route-id="@item.Id" asp-area="Member" class="btn btn-info">Add Role</a></td>
 
 
             </tr>

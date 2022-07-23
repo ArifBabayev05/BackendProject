@@ -4,6 +4,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using DAL.Abstract;
 using DAL.Concrete;
+using Microsoft.EntityFrameworkCore;
 
 namespace DAL.Repository
 {
@@ -12,7 +13,7 @@ namespace DAL.Repository
         public void Delete(T t)
         {
             using var c = new Context();
-         c.Remove(t);
+            c.Remove(t);
             c.SaveChanges();
         }
 
@@ -48,6 +49,18 @@ namespace DAL.Repository
             c.Update(t);
             c.SaveChanges();
 
+        }
+
+        public List<T> TList(string p)
+        {
+            using var c = new Context();
+            return c.Set<T>().Include(p).ToList();
+        }
+
+        public List<T> List(Expression<Func<T,bool>> filter)
+        {
+            using var c = new Context();
+            return c.Set<T>().Where(filter).ToList();
         }
     }
 }
