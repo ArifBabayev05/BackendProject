@@ -76,7 +76,7 @@ namespace QuorterBackEnd.Controllers
                 var result = await _signInManager.PasswordSignInAsync(p.userName, p.password, false, true);
                 if (result.Succeeded )
                 {
-                    return RedirectToAction("Index", "Member", new {area = "Member"});
+                    return RedirectToAction("Index", "Default", new {area = "Default"});
                 }
                 else
                 {
@@ -85,6 +85,16 @@ namespace QuorterBackEnd.Controllers
                 
             }
             return View();
+        }
+
+        public async Task<IActionResult> SignOut()
+        {
+            if (User.Identity.IsAuthenticated)
+            {
+                await _signInManager.SignOutAsync();
+
+            }
+            return RedirectToAction("Index", "Default");
         }
     }
 }
