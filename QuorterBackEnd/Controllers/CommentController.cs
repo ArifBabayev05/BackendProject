@@ -17,13 +17,13 @@ namespace QuorterBackEnd.Controllers
         [HttpGet]
         public PartialViewResult AddComment(int id)
         {
-            ViewBag.i = id;
             return PartialView();
         }
 
         [HttpPost]
         public IActionResult AddComment(CommentModel p)
         {
+            //ViewBag.i = p.CommentId;
             p.CommentDate = Convert.ToDateTime(DateTime.Now.ToString("MM/dd/yyyy"));
             p.CommentState = true;
             

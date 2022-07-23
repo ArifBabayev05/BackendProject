@@ -21,12 +21,14 @@ namespace QuorterBackEnd.Controllers
         // GET: /<controller>/
         public IActionResult Index()
         {
+
             var values = _featureManager.TGetList();
             return View(values);
         }
         [HttpGet]
         public IActionResult ShopDetails(int id)
         {
+            
             ViewBag.i = id;
             var values = _featureManager.TGetById(id);
             return View(values);
