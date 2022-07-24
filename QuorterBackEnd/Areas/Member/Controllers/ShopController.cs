@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Business.Concrete;
 using Business.ValidationRules;
+using DAL.Concrete;
 using DAL.EntityFramework;
 using DataEntities.Concrete;
 using FluentValidation.Results;
@@ -21,7 +23,6 @@ namespace QuorterBackEnd.Areas.Member.Controllers
     //[Route("Member/[controller]/[action]")]
     public class ShopController : Controller
     {
-
         FeatureManager featureManager = new FeatureManager(new EfFeatureDal());
         // GET: /<controller>/
         public IActionResult Index()
@@ -37,8 +38,20 @@ namespace QuorterBackEnd.Areas.Member.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Add(Feature2 feature2)
+        public async Task<IActionResult> Add(Feature2 feature2)
         {
+            if (feature2.MainPhoto == null)
+            {
+                var resource = Directory.GetCurrentDirectory();
+                var extension = Path.GetExtension(feature2.Image.FileName);
+                var imageName = Guid.NewGuid() + extension;
+                var saveLocation = resource + "/wwwroot/assets/uploads/" + imageName;
+                var stream = new FileStream(saveLocation, FileMode.Create);
+                await feature2.Image.CopyToAsync(stream);
+
+                feature2.MainPhoto= imageName;
+            }
+
             featureManager.TAdd(feature2);
             return RedirectToAction("Index", "Shop");
 
