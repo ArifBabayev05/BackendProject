@@ -2,6 +2,17 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "excellupload/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/ExcelUpload.dll": {},
+          "lib/Net.SourceForge.Koogra.dll": {}
+        },
+        "runtime": {
+          "lib/ExcelUpload.dll": {},
+          "lib/Net.SourceForge.Koogra.dll": {}
+        }
+      },
       "FluentValidation/11.1.0": {
         "type": "package",
         "compile": {
@@ -1933,6 +1944,20 @@
     }
   },
   "libraries": {
+    "excellupload/1.0.0": {
+      "sha512": "7m8n1kN0mFNbzB3xS4/9MLWUK9qa/y8ePA9u7okdamIYv9/IlFDnVvyTfTK0N6oYtLo1TSUTYfy5lcAlUvm1Fg==",
+      "type": "package",
+      "path": "excellupload/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/Autos.xlsx",
+        "excellupload.1.0.0.nupkg.sha512",
+        "excellupload.nuspec",
+        "lib/ExcelUpload.dll",
+        "lib/Net.SourceForge.Koogra.dll"
+      ]
+    },
     "FluentValidation/11.1.0": {
       "sha512": "Ld7w+2jOmnhQqFkngEGuEWTRa5j6u4Xzli7jKxRtbA5PtuHHcpin01qxvxYL0LomeJuzRMGAOURu2rKONdjKQA==",
       "type": "package",
@@ -6621,7 +6646,8 @@
       "DAL >= 1.0.0",
       "DataEntities >= 1.0.0",
       "Microsoft.AspNetCore.Identity >= 2.2.0",
-      "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 3.1.26"
+      "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 3.1.26",
+      "excellupload >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -6678,6 +6704,10 @@
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
             "target": "Package",
             "version": "[3.1.26, )"
+          },
+          "excellupload": {
+            "target": "Package",
+            "version": "[1.0.0, )"
           }
         },
         "imports": [
@@ -6701,5 +6731,17 @@
         "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'excellupload 1.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "excellupload",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
 }

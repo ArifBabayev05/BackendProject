@@ -36,6 +36,7 @@
           "DataEntities": "1.0.0",
           "Microsoft.AspNetCore.Identity": "2.2.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.1.26",
+          "excellupload": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions.Reference": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies.Reference": "3.1.0.0",
@@ -307,6 +308,22 @@
         },
         "compile": {
           "QuorterBackEnd.dll": {}
+        }
+      },
+      "excellupload/1.0.0": {
+        "runtime": {
+          "lib/ExcelUpload.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          },
+          "lib/Net.SourceForge.Koogra.dll": {
+            "assemblyVersion": "3.1.5.0",
+            "fileVersion": "3.1.5.0"
+          }
+        },
+        "compile": {
+          "lib/ExcelUpload.dll": {},
+          "lib/Net.SourceForge.Koogra.dll": {}
         }
       },
       "FluentValidation/11.1.0": {
@@ -3279,6 +3296,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "excellupload/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7m8n1kN0mFNbzB3xS4/9MLWUK9qa/y8ePA9u7okdamIYv9/IlFDnVvyTfTK0N6oYtLo1TSUTYfy5lcAlUvm1Fg==",
+      "path": "excellupload/1.0.0",
+      "hashPath": "excellupload.1.0.0.nupkg.sha512"
     },
     "FluentValidation/11.1.0": {
       "type": "package",

@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net;
+using System.Net.Mail;
 using System.Threading.Tasks;
 using Business.Concrete;
 using Business.ValidationRules;
@@ -38,7 +40,7 @@ namespace QuorterBackEnd.Areas.Member.Controllers
             return View();
         }
         [HttpPost]
-        public async Task<IActionResult> Add(Feature2 feature2)
+        public async Task<IActionResult> Add(Feature2 feature2,SendEmail email, AppUser appUser)
         {
             if (feature2.MainPhoto == null)
             {
@@ -50,6 +52,37 @@ namespace QuorterBackEnd.Areas.Member.Controllers
                 await feature2.Image.CopyToAsync(stream);
 
                 feature2.MainPhoto= imageName;
+            }
+            string link = Url.Action("Index", "Shop");
+
+            MailMessage mailMessage = new MailMessage();
+            mailMessage.To.Add("arifrb@code.edu.az");
+            mailMessage.From = new MailAddress("arifrb@code.edu.az");
+            mailMessage.Subject = "Quorter Product";
+            mailMessage.Body = "Dear" + User.Identity.Name + $", We Have New Special Product For You. Dont Forget Visit Us" ;
+            mailMessage.IsBodyHtml = true;
+
+            //if (file != null)
+            //{
+            //    mailMessage.Attachments.Add(new Attachment(file.InputStream));
+            //};
+
+
+            SmtpClient smtpClient = new SmtpClient();
+            smtpClient.Credentials = new NetworkCredential("arifrb@code.edu.az", "Idontremember");
+            smtpClient.Port = 587;
+            smtpClient.Host = "smtp.gmail.com";
+            smtpClient.EnableSsl = true;
+
+            try
+            {
+                smtpClient.Send(mailMessage);
+                TempData["Message"] = "Mail Succesfully Sended.";
+
+            }
+            catch (Exception ex)
+            {
+                TempData["Message"] = "Mail Can Not Send. Error Message" + ex.Message;
             }
 
             featureManager.TAdd(feature2);

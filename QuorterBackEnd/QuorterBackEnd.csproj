@@ -83,6 +83,7 @@
     <None Remove="Views\Shared\Components\_MessageList\" />
     <None Remove="Views\EmailPartial\" />
     <None Remove="Views\Mail\" />
+    <None Remove="excellupload" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Default\" />
@@ -176,5 +177,6 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.26" />
+    <PackageReference Include="excellupload" Version="1.0.0" />
   </ItemGroup>
 </Project>
