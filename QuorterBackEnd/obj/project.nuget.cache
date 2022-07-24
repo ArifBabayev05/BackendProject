@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "d4EiZNkqq5rcYtZchaOvnN5ZSFnvL6PDRUQPWCcpejulnYwCplLa+djXDkGk0QTo6zL7L01Fs7K57rjHC7zN3g==",
+  "dgSpecHash": "Ln+3fUujVhw7a1MBpXE1+u8nZjEYBOaTZX0PfeEFS7f17h9/VsJYZtxo8wBezeC7uDqhFL67YPN4CwYjmhnRWA==",
   "success": true,
   "projectFilePath": "/Users/babayev_/Desktop/Quorter2/QuorterBackEnd/QuorterBackEnd.csproj",
   "expectedPackageFiles": [
+    "/Users/babayev_/.nuget/packages/excellupload/1.0.0/excellupload.1.0.0.nupkg.sha512",
     "/Users/babayev_/.nuget/packages/fluentvalidation/11.1.0/fluentvalidation.11.1.0.nupkg.sha512",
     "/Users/babayev_/.nuget/packages/fluentvalidation.aspnetcore/11.1.2/fluentvalidation.aspnetcore.11.1.2.nupkg.sha512",
     "/Users/babayev_/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.1.0/fluentvalidation.dependencyinjectionextensions.11.1.0.nupkg.sha512",
@@ -134,5 +135,16 @@
     "/Users/babayev_/.nuget/packages/system.xml.xmldocument/4.3.0/system.xml.xmldocument.4.3.0.nupkg.sha512",
     "/Users/babayev_/.nuget/packages/system.xml.xmlserializer/4.3.0/system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'excellupload 1.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "excellupload",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
 }

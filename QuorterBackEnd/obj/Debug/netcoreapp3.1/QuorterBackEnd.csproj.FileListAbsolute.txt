@@ -390,3 +390,5 @@
 /Users/babayev_/Desktop/Quorter2/QuorterBackEnd/obj/Debug/netcoreapp3.1/Razor/Views/Login/EmailConfirmation.cshtml.g.cs
 /Users/babayev_/Desktop/Quorter2/QuorterBackEnd/obj/Debug/netcoreapp3.1/Razor/Views/EmailPartial/_EmailPartial.cshtml.g.cs
 /Users/babayev_/Desktop/Quorter2/QuorterBackEnd/obj/Debug/netcoreapp3.1/Razor/Views/Mail/Index.cshtml.g.cs
+/Users/babayev_/Desktop/Quorter2/QuorterBackEnd/bin/Debug/netcoreapp3.1/ExcelUpload.dll
+/Users/babayev_/Desktop/Quorter2/QuorterBackEnd/bin/Debug/netcoreapp3.1/Net.SourceForge.Koogra.dll

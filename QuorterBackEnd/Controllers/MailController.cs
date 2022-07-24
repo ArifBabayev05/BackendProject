@@ -6,6 +6,8 @@ using System.Net.Mail;
 using System.Threading.Tasks;
 using DataEntities.Concrete;
 using Microsoft.AspNetCore.Mvc;
+using System.Web;
+using Microsoft.AspNetCore.Http;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -19,7 +21,7 @@ namespace QuorterBackEnd.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Index(SendEmail email)
+        public IActionResult Index(SendEmail email )
         {
             MailMessage mailMessage = new MailMessage();
             mailMessage.To.Add("arifrb@code.edu.az");
@@ -27,6 +29,12 @@ namespace QuorterBackEnd.Controllers
             mailMessage.Subject ="You Have A Message:"+ email.Title;
             mailMessage.Body = "Dear Admin,You Have Message From:" + User.Identity.Name + ", The Message Is:" + email.Text;
             mailMessage.IsBodyHtml = true;
+
+            //if (file != null)
+            //{
+            //    mailMessage.Attachments.Add(new Attachment(file.InputStream));
+            //};
+
 
             SmtpClient smtpClient = new SmtpClient();
             smtpClient.Credentials = new NetworkCredential("arifrb@code.edu.az","Idontremember");
