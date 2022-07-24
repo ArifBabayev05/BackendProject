@@ -1,37 +1,44 @@
 ﻿<Properties StartupConfiguration="{73B10379-1501-4F5D-9940-85767F5F99E0}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="QuorterBackEnd/Views/Shared/Components/_TeamList/Default.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="QuorterBackEnd/Views/Comment/AddComment.cshtml">
     <Files>
-      <File FileName="QuorterBackEnd/Areas/Member/Controllers/ShopController.cs" Line="43" Column="23" />
-      <File FileName="QuorterBackEnd/Areas/Member/VIews/Shop/Delete.cshtml" Line="9" Column="8" />
-      <File FileName="QuorterBackEnd/Controllers/PropertyController.cs" Line="29" Column="10" />
-      <File FileName="QuorterBackEnd/Views/Property/PropertyDetails.cshtml" Line="263" Column="71" />
-      <File FileName="QuorterBackEnd/ViewComponents/MemberDashboard/_DeletePartial.cs" Line="17" Column="2" />
-      <File FileName="QuorterBackEnd/ViewComponents/MemberDashboard/_TeamList.cs" Line="16" Column="6" />
-      <File FileName="QuorterBackEnd/Views/Shared/Components/_DeletePartial/Default.cshtml" Line="2" Column="22" />
-      <File FileName="QuorterBackEnd/Views/Comment/AddComment.cshtml" Line="1" Column="1" />
-      <File FileName="QuorterBackEnd/Views/Shared/Components/_CounterPartial/Default.cshtml" Line="1" Column="1" />
-      <File FileName="QuorterBackEnd/Views/Shared/Components/_CommentaList/Default.cshtml" Line="1" Column="1" />
-      <File FileName="QuorterBackEnd/Areas/Member/VIews/Profile/Index.cshtml" Line="12" Column="36" />
-      <File FileName="QuorterBackEnd/Areas/Member/Controllers/ProfileController.cs" Line="55" Column="15" />
-      <File FileName="QuorterBackEnd/Controllers/ShopController.cs" Line="1" Column="1" />
-      <File FileName="QuorterBackEnd/Areas/Member/VIews/Dashboard/Index.cshtml" Line="169" Column="23" />
-      <File FileName="QuorterBackEnd/Areas/Member/Controllers/DashboardController.cs" Line="27" Column="10" />
-      <File FileName="QuorterBackEnd/Areas/Member/Controllers/TeamController.cs" Line="32" Column="1" />
-      <File FileName="Business/Concrete/TeamManager.cs" Line="1" Column="1" />
-      <File FileName="QuorterBackEnd/Areas/Member/Controllers/MessageController.cs" Line="1" Column="1" />
-      <File FileName="QuorterBackEnd/Areas/Member/VIews/Team/Add.cshtml" Line="32" Column="25" />
-      <File FileName="QuorterBackEnd/Areas/Member/VIews/Shop/Add.cshtml" Line="11" Column="19" />
-      <File FileName="QuorterBackEnd/Views/Shared/Components/_TeamList/Default.cshtml" Line="8" Column="15" />
-      <File FileName="QuorterBackEnd/Controllers/TeamController.cs" Line="1" Column="1" />
+      <File FileName="QuorterBackEnd/Views/Shop/Index.cshtml" Line="284" Column="47" />
+      <File FileName="QuorterBackEnd/Controllers/ShopController.cs" Line="24" Column="12" />
+      <File FileName="Business/Concrete/FeatureManager.cs" Line="21" Column="10" />
+      <File FileName="Business/Concrete/CommentaManager.cs" Line="39" Column="72" />
+      <File FileName="Business/Concrete/AboutManager.cs" Line="9" Column="42" />
+      <File FileName="Business/Abstract/IGenericService.cs" Line="16" Column="29" />
+      <File FileName="QuorterBackEnd/Areas/Member/Controllers/AdminController.cs" Line="18" Column="45" />
+      <File FileName="QuorterBackEnd/Areas/Member/VIews/Admin/UserRoleList.cshtml" Line="18" Column="111" />
+      <File FileName="QuorterBackEnd/Areas/Member/VIews/Admin/AssignRole.cshtml" Line="4" Column="21" />
+      <File FileName="QuorterBackEnd/Views/Login/SignIn.cshtml" Line="103" Column="24" />
+      <File FileName="QuorterBackEnd/Controllers/LoginController.cs" Line="90" Column="49" />
+      <File FileName="QuorterBackEnd/Areas/Member/Models/UserEditNewModel.cs" Line="5" Column="2" />
+      <File FileName="QuorterBackEnd/Areas/Member/VIews/Shared/_UserLayout.cshtml" Line="1" Column="1" />
+      <File FileName="QuorterBackEnd/Areas/Member/VIews/Team/Add.cshtml" Line="1" Column="1" />
+      <File FileName="QuorterBackEnd/Views/LayoutPartial/_NavbarPartial.cshtml" Line="172" Column="38" />
+      <File FileName="QuorterBackEnd/Views/Shared/_UILayout.cshtml" Line="1" Column="1" />
+      <File FileName="QuorterBackEnd/Views/Shared/_Layout.cshtml" Line="127" Column="63" />
       <File FileName="QuorterBackEnd/Areas/Member/Controllers/CommentController.cs" Line="1" Column="1" />
+      <File FileName="QuorterBackEnd/Areas/Member/Controllers/DashboardController.cs" Line="11" Column="52" />
+      <File FileName="QuorterBackEnd/Areas/Member/Controllers/MessageController.cs" Line="1" Column="1" />
+      <File FileName="QuorterBackEnd/Areas/Member/Controllers/ProfileController.cs" Line="19" Column="1" />
+      <File FileName="QuorterBackEnd/Areas/Member/Controllers/ServiceController.cs" Line="1" Column="1" />
+      <File FileName="QuorterBackEnd/Areas/Member/Controllers/ShopController.cs" Line="20" Column="44" />
+      <File FileName="QuorterBackEnd/Areas/Member/Controllers/TeamController.cs" Line="17" Column="44" />
+      <File FileName="QuorterBackEnd/Views/Property/PropertyDetails.cshtml" Line="268" Column="21" />
+      <File FileName="DAL/Repository/GenericRepository.cs" Line="42" Column="29" />
+      <File FileName="QuorterBackEnd/Controllers/CommentController.cs" Line="1" Column="1" />
+      <File FileName="QuorterBackEnd/Views/Comment/AddComment.cshtml" Line="15" Column="15" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="QuorterBackEnd" expanded="True">
             <Node name="Business" expanded="True">
-              <Node name="Concrete" expanded="True" />
-              <Node name="ValidationRules" expanded="True" />
+              <Node name="Abstract" expanded="True" />
+            </Node>
+            <Node name="DAL" expanded="True">
+              <Node name="Repository" expanded="True" />
             </Node>
             <Node name="DataEntities" expanded="True" />
             <Node name="QuorterBackEnd" expanded="True">
@@ -40,39 +47,42 @@
                   <Node name="Controllers" expanded="True" />
                   <Node name="Models" expanded="True" />
                   <Node name="VIews" expanded="True">
+                    <Node name="Admin" expanded="True" />
                     <Node name="Dashboard" expanded="True" />
                     <Node name="Profile" expanded="True" />
+                    <Node name="Shared" expanded="True" />
                     <Node name="Shop" expanded="True" />
                     <Node name="Team" expanded="True" />
                   </Node>
                 </Node>
               </Node>
               <Node name="Controllers" expanded="True" />
-              <Node name="ViewComponents" expanded="True">
+              <Node name="Properties" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Comment" expanded="True" />
                 <Node name="Default" expanded="True" />
                 <Node name="Email" expanded="True" />
                 <Node name="Faq" expanded="True" />
-                <Node name="MemberDashboard" expanded="True" />
-              </Node>
-              <Node name="Views" expanded="True">
-                <Node name="Comment" expanded="True" />
+                <Node name="LayoutPartial" expanded="True" />
+                <Node name="Location" expanded="True" />
+                <Node name="Login" expanded="True" />
                 <Node name="Property" expanded="True" />
                 <Node name="Shared" expanded="True">
                   <Node name="Components" expanded="True">
+                    <Node name="_AboutPartial" expanded="True" />
                     <Node name="_CommentaList" expanded="True" />
                     <Node name="_CounterPartial" expanded="True" />
                     <Node name="_DeletePartial" expanded="True" />
+                    <Node name="_Email" expanded="True" />
+                    <Node name="_FaqPartial" expanded="True" />
+                    <Node name="_FeaturePartial" expanded="True" />
+                    <Node name="_FeedBackPartial" expanded="True" />
+                    <Node name="_FindNowPartial" expanded="True" />
                     <Node name="_TeamList" expanded="True" />
                   </Node>
                 </Node>
                 <Node name="Shop" expanded="True" />
                 <Node name="Team" expanded="True" />
-              </Node>
-              <Node name="wwwroot" expanded="True">
-                <Node name="assets" expanded="True">
-                  <Node name="assets" expanded="True" />
-                  <Node name="uploads" expanded="True" />
-                </Node>
               </Node>
             </Node>
           </Node>
@@ -83,11 +93,11 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.QuorterBackEnd PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
 </Properties>
