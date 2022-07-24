@@ -81,6 +81,8 @@
     <None Remove="Areas\Member\VIews\Admin\" />
     <None Remove="ViewComponents\Message\" />
     <None Remove="Views\Shared\Components\_MessageList\" />
+    <None Remove="Views\EmailPartial\" />
+    <None Remove="Views\Mail\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Default\" />
@@ -157,6 +159,8 @@
     <Folder Include="Areas\Member\VIews\Admin\" />
     <Folder Include="ViewComponents\Message\" />
     <Folder Include="Views\Shared\Components\_MessageList\" />
+    <Folder Include="Views\EmailPartial\" />
+    <Folder Include="Views\Mail\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Business\Business.csproj">

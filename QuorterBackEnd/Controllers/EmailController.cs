@@ -14,24 +14,23 @@ namespace QuorterBackEnd.Controllers
 {
     public class EmailController : Controller
     {
-        SendManager manager = new SendManager(new EfSendDal());
+        //SendManager manager = new SendManager(new EfSendDal());
         //[HttpGet]
         public IActionResult Index()
         {
-            var values = manager.TGetList();
-            return View(values);
-        }
-        [HttpGet]
-        public IActionResult Send()
-        {
+            
             return View();
         }
         [HttpPost]
-        public IActionResult Send(Send email)
+        public IActionResult Index(Email email)
         {
-            manager.TAdd(email);
-            return RedirectToAction("Index", "Contact");
+            MailMessage mailMessage = new MailMessage();
+            mailMessage.To.Add("arifrb@code.edu.az");
+            mailMessage.From = new MailAddress("arifrb@code.edu.az");
+            mailMessage.Subject = email.Subject;
+            return View();
         }
+        
 
 
     } 
