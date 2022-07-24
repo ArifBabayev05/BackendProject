@@ -1,4 +1,5 @@
-﻿
+﻿@model DataEntities.Concrete.SendEmail
+
 <header class="ltn__header-area ltn__header-5 ltn__header-logo-and-mobile-menu-in-mobile ltn__header-logo-and-mobile-menu ltn__header-transparent gradient-color-4---">
     <!-- ltn__header-top-area start -->
     <div class="ltn__header-top-area top-area-color-white">
@@ -144,7 +145,7 @@
                                                     <li><a asp-action="Add" asp-controller="Shop">Add Listing</a></li>
                                                     <li><a asp-controller="location" asp-action="index">Google Map Locations</a></li>
                                                     <li><a href="404.html">404</a></li>
-                                                    <li><a asp-controller="Email" >Contact</a></li>
+                                                    <li><a asp-controller="Mail">Contact</a></li>
                                                     <li><a href="coming-soon.html">Coming Soon</a></li>
                                                 </ul>
                                             </li>
@@ -164,10 +165,10 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li><a asp-controller="Email" >Contact</a></li>
+                                    <li><a asp-controller="Mail">Contact</a></li>
                                     @if (User.Identity.IsAuthenticated)
                                     {
-                                        <li><a >Hi @User.Identity.Name!</a></li>
+                                        <li><a>Hi @User.Identity.Name!</a></li>
                                         <li><a asp-controller="Login" asp-action="SignOut">Log Out</a></li>
                                     }
                                     else
