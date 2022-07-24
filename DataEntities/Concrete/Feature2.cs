@@ -21,6 +21,9 @@ namespace DataEntities.Concrete
         public int BedCount { get; set; }
         public int BuildYear { get; set; }
         public string MainPhoto { get; set; }
+        [NotMapped]
+        public IFormFile Image { get; set; }
+
         public int SalesManName { get; set; }
 
         //For Gallery
