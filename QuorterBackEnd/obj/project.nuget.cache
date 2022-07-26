@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Ln+3fUujVhw7a1MBpXE1+u8nZjEYBOaTZX0PfeEFS7f17h9/VsJYZtxo8wBezeC7uDqhFL67YPN4CwYjmhnRWA==",
+  "dgSpecHash": "V19ryTgEIfZb1g8klwk3eODWrKTi8UIvaGrkkAqC7gKoN1mql5+gl1AM9bTPbdUfVE/7XN17ILyYit2xy+rP+A==",
   "success": true,
   "projectFilePath": "/Users/babayev_/Desktop/Quorter2/QuorterBackEnd/QuorterBackEnd.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "/Users/babayev_/.nuget/packages/fluentvalidation/11.1.0/fluentvalidation.11.1.0.nupkg.sha512",
     "/Users/babayev_/.nuget/packages/fluentvalidation.aspnetcore/11.1.2/fluentvalidation.aspnetcore.11.1.2.nupkg.sha512",
     "/Users/babayev_/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.1.0/fluentvalidation.dependencyinjectionextensions.11.1.0.nupkg.sha512",
+    "/Users/babayev_/.nuget/packages/jetbrains.annotations/2022.1.0/jetbrains.annotations.2022.1.0.nupkg.sha512",
     "/Users/babayev_/.nuget/packages/microsoft.aspnetcore.authentication/2.2.0/microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "/Users/babayev_/.nuget/packages/microsoft.aspnetcore.authentication.abstractions/2.2.0/microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "/Users/babayev_/.nuget/packages/microsoft.aspnetcore.authentication.cookies/2.2.0/microsoft.aspnetcore.authentication.cookies.2.2.0.nupkg.sha512",
@@ -62,6 +63,8 @@
     "/Users/babayev_/.nuget/packages/microsoft.netcore.targets/1.1.0/microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "/Users/babayev_/.nuget/packages/microsoft.win32.registry/4.5.0/microsoft.win32.registry.4.5.0.nupkg.sha512",
     "/Users/babayev_/.nuget/packages/newtonsoft.json/10.0.1/newtonsoft.json.10.0.1.nupkg.sha512",
+    "/Users/babayev_/.nuget/packages/pagedlist/1.17.0/pagedlist.1.17.0.nupkg.sha512",
+    "/Users/babayev_/.nuget/packages/pagedlist.mvc/4.5.0/pagedlist.mvc.4.5.0.nupkg.sha512",
     "/Users/babayev_/.nuget/packages/runtime.native.system/4.3.0/runtime.native.system.4.3.0.nupkg.sha512",
     "/Users/babayev_/.nuget/packages/runtime.native.system.data.sqlclient.sni/4.4.0/runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "/Users/babayev_/.nuget/packages/runtime.win-arm64.runtime.native.system.data.sqlclient.sni/4.4.0/runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
@@ -133,7 +136,10 @@
     "/Users/babayev_/.nuget/packages/system.xml.readerwriter/4.3.0/system.xml.readerwriter.4.3.0.nupkg.sha512",
     "/Users/babayev_/.nuget/packages/system.xml.xdocument/4.3.0/system.xml.xdocument.4.3.0.nupkg.sha512",
     "/Users/babayev_/.nuget/packages/system.xml.xmldocument/4.3.0/system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "/Users/babayev_/.nuget/packages/system.xml.xmlserializer/4.3.0/system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "/Users/babayev_/.nuget/packages/system.xml.xmlserializer/4.3.0/system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "/Users/babayev_/.nuget/packages/x.pagedlist/8.4.3/x.pagedlist.8.4.3.nupkg.sha512",
+    "/Users/babayev_/.nuget/packages/x.pagedlist.mvc/8.0.7/x.pagedlist.mvc.8.0.7.nupkg.sha512",
+    "/Users/babayev_/.nuget/packages/x.pagedlist.mvc.core/8.4.3/x.pagedlist.mvc.core.8.4.3.nupkg.sha512"
   ],
   "logs": [
     {
@@ -142,6 +148,36 @@
       "warningLevel": 1,
       "message": "Package 'excellupload 1.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
       "libraryId": "excellupload",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'PagedList 1.17.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "PagedList",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'PagedList.Mvc 4.5.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "PagedList.Mvc",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'X.PagedList.Mvc 8.0.7' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "X.PagedList.Mvc",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
       ]

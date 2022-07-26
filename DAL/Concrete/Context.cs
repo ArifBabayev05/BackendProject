@@ -10,6 +10,7 @@ namespace DAL.Concrete
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer("Server=127.0.0.1;Database=QuorterDatas;User Id=sa;Password=MyPass@word");
+            
         }
 
         public DbSet<About> Abouts{ get; set; }

@@ -13,6 +13,8 @@ using DataEntities.Concrete;
 using FluentValidation.Results;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using X.PagedList;
+using X.PagedList.Mvc;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -27,9 +29,11 @@ namespace QuorterBackEnd.Areas.Member.Controllers
     {
         FeatureManager featureManager = new FeatureManager(new EfFeatureDal());
         // GET: /<controller>/
-        public IActionResult Index()
+        public IActionResult Index(int page = 1)
         {
-            var values = featureManager.TGetList();
+            //var values = featureManager.TGetList();
+            var values = featureManager.TGetList().ToPagedList(page,2);
+
             return View(values);
         }
 
@@ -62,10 +66,6 @@ namespace QuorterBackEnd.Areas.Member.Controllers
             mailMessage.Body = "Dear" + User.Identity.Name + $", We Have New Special Product For You. Dont Forget Visit Us" ;
             mailMessage.IsBodyHtml = true;
 
-            //if (file != null)
-            //{
-            //    mailMessage.Attachments.Add(new Attachment(file.InputStream));
-            //};
 
 
             SmtpClient smtpClient = new SmtpClient();
