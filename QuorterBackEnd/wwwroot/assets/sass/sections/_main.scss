@@ -2185,6 +2185,23 @@ blockquote {
     Pagination
 ---------------------------------------------------- */
 /* ltn__pagination-3 */
+ul.pagination {
+    margin: 15px;
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 20px;
+    border-color: black;
+    background-color: pink;
+    justify-content: center;
+    font-family: inherit;
+    text-decoration: underline;
+    font-weight: 600;
+
+    a{
+        font-size:40px
+
+    }
+}
 .ltn__pagination {
     ul {
         margin: 0;

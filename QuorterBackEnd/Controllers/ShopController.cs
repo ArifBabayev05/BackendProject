@@ -4,10 +4,11 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Business.Concrete;
-using Business.ValidationRules;
 using DAL.EntityFramework;
 using DataEntities.Concrete;
 using Microsoft.AspNetCore.Mvc;
+using X.PagedList;
+using X.PagedList.Mvc;
 
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -19,12 +20,14 @@ namespace QuorterBackEnd.Controllers
     {
         FeatureManager _featureManager = new FeatureManager(new EfFeatureDal());
         // GET: /<controller>/
-        public IActionResult Index(string key)
+        public IActionResult Index(int page = 1)
         {
-           
-            var values = _featureManager.TGetList();
+            //var values = featureManager.TGetList();
+            var values = _featureManager.TGetList().ToPagedList(page, 2);
+
             return View(values);
         }
+
         [HttpGet]
         public IActionResult ShopDetails(int id)
         {

@@ -1,5 +1,8 @@
-﻿@using DataEntities.Concrete
-@model List<Feature2>
+﻿@*@using DataEntities.Concrete*@
+@using X.PagedList;
+@using X.PagedList.Mvc.Core; 
+
+@model IPagedList<DataEntities.Concrete.Feature2>
 
 <h1>Current Products</h1>
 
@@ -41,4 +44,40 @@
         }
 
 </table>
+
+@Html.PagedListPager((IPagedList)Model,page=>Url.Action("Index", new {page}))
+<style>
+
+
+    ul.pagination {
+        margin: 15px;
+        padding: 10px;
+        border-radius: 20px;
+        border-color: black;
+        justify-content: center;
+        font-family: inherit;
+        text-decoration: underline;
+        font-weight: 600;
+    }
+
+    .pagination a {
+        margin: 0 10px;
+        color: black;
+        background-color: pink;
+        padding: 20px;
+        border-radius: 50px;
+        border: 1px solid;
+        border-color: gray;
+    }
+
+    .pagination span {
+        margin: 0 10px;
+        color: black;
+        background-color: pink;
+        padding: 20px;
+        border-radius: 50px;
+        border: 1px solid;
+        border-color: gray;
+    }
+</style>
 <a asp-controller="shop" asp-action="Add" asp-area="Member" class="btn btn-success">Add New Product</a>

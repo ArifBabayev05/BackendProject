@@ -84,6 +84,10 @@
     <None Remove="Views\EmailPartial\" />
     <None Remove="Views\Mail\" />
     <None Remove="excellupload" />
+    <None Remove="PagedList.Mvc" />
+    <None Remove="X.PagedList" />
+    <None Remove="X.PagedList.Mvc.Core" />
+    <None Remove="X.PagedList.Mvc" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Default\" />
@@ -178,5 +182,9 @@
     <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.26" />
     <PackageReference Include="excellupload" Version="1.0.0" />
+    <PackageReference Include="PagedList.Mvc" Version="4.5.0" />
+    <PackageReference Include="X.PagedList" Version="8.4.3" />
+    <PackageReference Include="X.PagedList.Mvc.Core" Version="8.4.3" />
+    <PackageReference Include="X.PagedList.Mvc" Version="8.0.7" />
   </ItemGroup>
 </Project>
