@@ -73,7 +73,7 @@
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <!-- Search Widget -->
-                                        <form asp-controller="Shop" asp-action="Index" method="post">
+                                        <form asp-controller="Shop" asp-action="Index"  >
                                             <div class="ltn__search-widget mb-30">
                                                 <form action="#">
                                                     <input type="text" placeholder="Search your keyword...">
@@ -81,6 +81,10 @@
                                                 </form>
                                             </div>
                                         </form>
+                                        @*@Html.BeginForm()
+                                        {
+                                            @Html.TextBox("key",null, new {@class = "form-control", @placeholder="Search A Product"})
+                                        }*@
                                     </div>
 
                                     <!-- ltn__product-item -->

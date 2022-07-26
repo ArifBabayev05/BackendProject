@@ -21,14 +21,15 @@ namespace QuorterBackEnd.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddComment(CommentModel p)
+        public IActionResult AddComment(CommentModel p,int id)
         {
-            //ViewBag.i = p.CommentId;
+            //ViewBag.i = p.CommentId;            
+
             p.CommentDate = Convert.ToDateTime(DateTime.Now.ToString("MM/dd/yyyy"));
             p.CommentState = true;
-            
+
             commentaManager.TAdd(p);
-            return RedirectToAction("Index", "Shop");
+            return RedirectToAction("Index", "Shop", new { id= commentaManager.TGetById(id)});
         }
         [HttpGet]
         public IActionResult Delete(int id)
@@ -36,7 +37,7 @@ namespace QuorterBackEnd.Controllers
             var element = commentaManager.TGetById(id);
             commentaManager.TDelete(element);
 
-            return RedirectToAction("Index", "Default", "Member");
+            return RedirectToAction("Index", "Member");
 
         }
     }

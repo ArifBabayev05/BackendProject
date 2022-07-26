@@ -88,6 +88,8 @@
     <None Remove="X.PagedList" />
     <None Remove="X.PagedList.Mvc.Core" />
     <None Remove="X.PagedList.Mvc" />
+    <None Remove="ViewComponents\Mail\" />
+    <None Remove="Areas\Member\VIews\Slider\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Default\" />
@@ -166,6 +168,8 @@
     <Folder Include="Views\Shared\Components\_MessageList\" />
     <Folder Include="Views\EmailPartial\" />
     <Folder Include="Views\Mail\" />
+    <Folder Include="ViewComponents\Mail\" />
+    <Folder Include="Areas\Member\VIews\Slider\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Business\Business.csproj">

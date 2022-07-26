@@ -8,7 +8,7 @@
     <div class="card card-body blur shadow-blur mx-4 mt-n6 overflow-hidden">
         <div class="row gx-4">
             <h2>Add New Product</h2>
-            <form asp-action="Update" asp-controller="Shop" method="post" enctype="multipart/form-data">
+            <form asp-action="Update" asp-controller="Shop" enctype="multipart/form-data">
                 <div class="row gx-4">
 
                     <div class=" my-auto">
@@ -37,14 +37,20 @@
                             <input type="text" class="form-control" asp-for="AuthorName" placeholder="Name of Saler">
                             <br />
 
+                            <div class="form-group">
+                                <label>Choose Main Image</label>
+                                <input type="file" asp-for="Image">
+                            </div>
 
 
-                         
+
+
+
 
 
 
                             <br />
-                            <button class=" btn btn-primary">Add Product</button>
+                            <button class=" btn btn-primary">Update Product</button>
                         </div>
 
                     </div>
