@@ -1,48 +1,35 @@
 ﻿<Properties StartupConfiguration="{73B10379-1501-4F5D-9940-85767F5F99E0}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="QuorterBackEnd/Areas/Member/VIews/Dashboard/Index.cshtml">
+  <MonoDevelop.Ide.ItemProperties.QuorterBackEnd PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="QuorterBackEnd/QuorterBackEnd.csproj">
     <Files>
-      <File FileName="QuorterBackEnd/Controllers/ShopController.cs" Line="30" Column="1" />
-      <File FileName="QuorterBackEnd/Views/Shop/Index.cshtml" Line="282" Column="110" />
-      <File FileName="Business/Concrete/FeatureManager.cs" Line="38" Column="8" />
-      <File FileName="DAL/Abstract/IGenericDal.cs" Line="13" Column="25" />
-      <File FileName="DAL/Repository/GenericRepository.cs" Line="26" Column="32" />
-      <File FileName="Business/Abstract/IFeatureService.cs" Line="6" Column="48" />
-      <File FileName="Business/Abstract/IGenericService.cs" Line="12" Column="26" />
-      <File FileName="Business/Concrete/AboutManager.cs" Line="32" Column="37" />
-      <File FileName="Business/Concrete/CarouselManager.cs" Line="33" Column="38" />
+      <File FileName="QuorterBackEnd/Views/News/NewsDetails.cshtml" Line="186" Column="18" />
+      <File FileName="QuorterBackEnd/Views/Mail/Index.cshtml" Line="1" Column="39" />
+      <File FileName="QuorterBackEnd/ViewComponents/Mail/_MailPartial.cs" Line="9" Column="24" />
+      <File FileName="QuorterBackEnd/ViewComponents/Location/_LocationPartial.cs" Line="15" Column="10" />
+      <File FileName="QuorterBackEnd/Controllers/MailController.cs" Line="37" Column="1" />
+      <File FileName="QuorterBackEnd/Controllers/SendMailController.cs" Line="1" Column="1" />
+      <File FileName="Business/Concrete/EmailManager.cs" Line="1" Column="1" />
+      <File FileName="Business/Concrete/SendManager.cs" Line="1" Column="1" />
       <File FileName="QuorterBackEnd/QuorterBackEnd.csproj" Line="1" Column="1" />
-      <File FileName="QuorterBackEnd/Views/Shared/_Layout.cshtml" Line="394" Column="1" />
-      <File FileName="QuorterBackEnd/Views/LayoutPartial/_NavbarPartial.cshtml" Line="161" Column="38" />
-      <File FileName="QuorterBackEnd/Areas/Member/VIews/Admin/Index.cshtml" Line="10" Column="1" />
-      <File FileName="QuorterBackEnd/Areas/Member/VIews/Shared/_UserLayout.cshtml" Line="21" Column="29" />
-      <File FileName="QuorterBackEnd/Views/MemberLayoutPartial/_Navbar2Partial.cshtml" Line="1" Column="1" />
-      <File FileName="QuorterBackEnd/Views/MemberLayoutPartial/_NavbarPartial.cshtml" Line="72" Column="6" />
-      <File FileName="QuorterBackEnd/Areas/Member/VIews/Dashboard/Index.cshtml" Line="29" Column="28" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="QuorterBackEnd" expanded="True">
             <Node name="Business" expanded="True">
-              <Node name="Abstract" expanded="True" />
-              <Node name="Concrete" expanded="True" />
+              <Node name="Concrete" expanded="True">
+                <Node name="SendManager.cs" selected="True" />
+              </Node>
             </Node>
             <Node name="DAL" expanded="True">
-              <Node name="Abstract" expanded="True" />
-              <Node name="Concrete" expanded="True" />
               <Node name="Repository" expanded="True" />
             </Node>
-            <Node name="DataEntities" expanded="True">
-              <Node name="Concrete" expanded="True" />
-            </Node>
+            <Node name="DataEntities" expanded="True" />
             <Node name="QuorterBackEnd" expanded="True">
               <Node name="Areas" expanded="True">
                 <Node name="Member" expanded="True">
-                  <Node name="Controllers" expanded="True" />
                   <Node name="Models" expanded="True" />
                   <Node name="VIews" expanded="True">
                     <Node name="Admin" expanded="True" />
@@ -55,16 +42,12 @@
                 </Node>
               </Node>
               <Node name="Controllers" expanded="True" />
-              <Node name="Properties" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="Email" expanded="True" />
-                <Node name="Faq" expanded="True" />
-                <Node name="LayoutPartial" expanded="True" />
+              <Node name="ViewComponents" expanded="True">
                 <Node name="Location" expanded="True" />
-                <Node name="Login" expanded="True" />
                 <Node name="Mail" expanded="True" />
-                <Node name="MemberLayoutPartial" expanded="True" />
-                <Node name="Property" expanded="True" />
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="Mail" expanded="True" />
                 <Node name="Shared" expanded="True">
                   <Node name="Components" expanded="True">
                     <Node name="_AboutPartial" expanded="True" />
@@ -77,10 +60,21 @@
                     <Node name="_FeedBackPartial" expanded="True" />
                     <Node name="_FindNowPartial" expanded="True" />
                     <Node name="_TeamList" expanded="True" />
+                    <Node name="_TeamPartial" expanded="True" />
                   </Node>
                 </Node>
                 <Node name="Shop" expanded="True" />
                 <Node name="Team" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="assets" expanded="True">
+                  <Node name="css" expanded="True" />
+                  <Node name="sass" expanded="True">
+                    <Node name="elements" expanded="True" />
+                    <Node name="global" expanded="True" />
+                    <Node name="sections" expanded="True" />
+                  </Node>
+                </Node>
               </Node>
             </Node>
           </Node>
@@ -91,7 +85,8 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.QuorterBackEnd PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>

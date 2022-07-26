@@ -13,6 +13,8 @@ using DataEntities.Concrete;
 using FluentValidation.Results;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using QuorterBackEnd.Areas.Member.Models;
+using QuorterBackEnd.Models;
 using X.PagedList;
 using X.PagedList.Mvc;
 
@@ -110,14 +112,25 @@ namespace QuorterBackEnd.Areas.Member.Controllers
             return View(value);
         }
         [HttpPost]
-        public IActionResult Update(Feature2 feature2)
+        public async Task<IActionResult> Update(Feature2 feature2)
         {
+            if (feature2.MainPhoto == null)
+            {
+                var resource = Directory.GetCurrentDirectory();
+                var extension = Path.GetExtension(feature2.Image.FileName);
+                var imageName = Guid.NewGuid() + extension;
+                var saveLocation = resource + "/wwwroot/assets/uploads/" + imageName;
+                var stream = new FileStream(saveLocation, FileMode.Create);
+                await feature2.Image.CopyToAsync(stream);
 
+                feature2.MainPhoto = imageName;
+            }
             featureManager.TUpdate(feature2);
             return RedirectToAction("Index", "Shop");
 
 
         }
+
 
 
     }

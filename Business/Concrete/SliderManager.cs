@@ -38,7 +38,7 @@ namespace Business.Concrete
 
         public void TUpdate(MainSlider t)
         {
-            throw new NotImplementedException();
+            _sliderDal.Update(t);
         }
     }
 }

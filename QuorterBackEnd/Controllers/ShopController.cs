@@ -27,6 +27,15 @@ namespace QuorterBackEnd.Controllers
 
             return View(values);
         }
+        //public async Task<IActionResult> Index(string key)
+        //{
+        //    var values = _featureManager.TGetList();
+        //    if (!string.IsNullOrEmpty(key))
+        //    {
+        //        values = await values.Where(x => x.Title.Contains(key)).ToListAsync();
+        //    }
+        //    return View(values);
+        //}
 
         [HttpGet]
         public IActionResult ShopDetails(int id)
@@ -58,11 +67,6 @@ namespace QuorterBackEnd.Controllers
         }
 
 
-        //[HttpGet]
-        //public IActionResult Add()
-        //{
-        //    return View();
-        //}
 
 
     }

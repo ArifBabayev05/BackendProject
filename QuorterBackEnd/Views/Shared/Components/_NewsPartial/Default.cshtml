@@ -33,7 +33,7 @@
                             <div class="ltn__blog-meta-btn">
                                 <div class="ltn__blog-meta">
                                     <ul>
-                                        <li class="ltn__blog-date"><i class="far fa-calendar-alt"></i>@item.CreateDate</li>
+                                        <li class="ltn__blog-date"><i class="far fa-calendar-alt"></i>@(((DateTime)item.CreateDate).ToString("dd-MMM-yyyy"))</li>
                                     </ul>
                                 </div>
                                 <div class="ltn__blog-btn">

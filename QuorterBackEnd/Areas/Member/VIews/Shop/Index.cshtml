@@ -9,10 +9,10 @@
 
 <table class="table table-bordered">
     <tr>
-        <th>#</th>
+
         <th>City</th>
+        <th>Title Of Product</th>
         <th>Build Year</th>
-        <th>Create Date</th>
 
         <th>Saler Man Name</th>
         <th>Price</th>
@@ -27,9 +27,13 @@
     @foreach (var item in Model)
         {
 <tr>
+
     <td>@item.CityName</td>
+    <td>@item.Title</td>
     <td>@item.BuildYear</td>
-    <td>@item.CreateDate.ToString("MM/dd/yyyy") </td>
+    <td>@item.AuthorName</td>
+
+    <td>@item.Price</td>
     <td>@(((DateTime)item.CreateDate).ToString("dd-MMM-yyyy")) </td>
 
 
