@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using Business.Abstract;
 using DAL.Abstract;
 using DataEntities.Concrete;
@@ -19,6 +20,10 @@ namespace Business.Concrete
         {
             return _featureDal.GetListByFilter(x => x.Title == p);
         }
+
+
+            
+
 
         public void TAdd(Feature2 t)
         {

@@ -20,23 +20,14 @@ namespace QuorterBackEnd.Controllers
     {
         FeatureManager _featureManager = new FeatureManager(new EfFeatureDal());
         // GET: /<controller>/
-        public IActionResult Index(int page = 1)
+        public IActionResult Index( int page = 1)
         {
-            //var values = featureManager.TGetList();
+
             var values = _featureManager.TGetList().ToPagedList(page, 2);
 
             return View(values);
         }
-        //public async Task<IActionResult> Index(string key)
-        //{
-        //    var values = _featureManager.TGetList();
-        //    if (!string.IsNullOrEmpty(key))
-        //    {
-        //        values = await values.Where(x => x.Title.Contains(key)).ToListAsync();
-        //    }
-        //    return View(values);
-        //}
-
+        
         [HttpGet]
         public IActionResult ShopDetails(int id)
         {
