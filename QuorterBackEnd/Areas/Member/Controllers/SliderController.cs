@@ -55,7 +55,7 @@ namespace QuorterBackEnd.Areas.Member.Controllers
 
                 feature2.Image = imageName;
             }
-            string link = Url.Action("Index", "Shop");
+            string link = Url.Action("Index", "Slider");
 
             //MailMessage mailMessage = new MailMessage();
             //mailMessage.To.Add("arifrb@code.edu.az");
@@ -84,7 +84,7 @@ namespace QuorterBackEnd.Areas.Member.Controllers
             //}
 
             featureManager.TAdd(feature2);
-            return RedirectToAction("Index", "Shop");
+            return RedirectToAction("Index", "Slider");
 
 
         }
@@ -95,7 +95,7 @@ namespace QuorterBackEnd.Areas.Member.Controllers
             var element = featureManager.TGetById(id);
             featureManager.TDelete(element);
 
-            return RedirectToAction("Index", "Shop");
+            return RedirectToAction("Index", "Slider");
 
         }
 

@@ -96,6 +96,11 @@ namespace QuorterBackEnd.Controllers
             }
             return RedirectToAction("Index", "Default");
         }
+
+        public IActionResult ForgotPassword()
+        {
+            return View();
+        }
     }
 }
 

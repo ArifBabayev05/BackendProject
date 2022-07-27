@@ -30,7 +30,7 @@
     <td>@item.Body</td>
 
     <td><a asp-controller="slider" asp-action="Update" asp-route-id="@item.Id" asp-area="Member" class="btn btn-info">Update</a></td>
-    <td><a asp-controller="slider" asp-action="Delete" asp-route-id="@item.Id" asp-area="Member" class="btn btn-danger">Delete</a></td>
+    <td><a asp-controller="slider" asp-action="Delete" asp-route-id="@item.Id" asp-area="Member"  onclick="return confirm('Are You Sure?')" class="btn btn-danger">Delete</a></td>
 
 
 </tr>

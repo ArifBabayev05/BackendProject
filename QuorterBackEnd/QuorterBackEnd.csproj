@@ -90,6 +90,11 @@
     <None Remove="X.PagedList.Mvc" />
     <None Remove="ViewComponents\Mail\" />
     <None Remove="Areas\Member\VIews\Slider\" />
+    <None Remove="Twilio.AspNet.Common" />
+    <None Remove="Twilio.AspNet.Core" />
+    <None Remove="Twilio.AspNet.Mvc" />
+    <None Remove="Views\Sms\" />
+    <None Remove="Views\MyAccount\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Default\" />
@@ -170,6 +175,8 @@
     <Folder Include="Views\Mail\" />
     <Folder Include="ViewComponents\Mail\" />
     <Folder Include="Areas\Member\VIews\Slider\" />
+    <Folder Include="Views\Sms\" />
+    <Folder Include="Views\MyAccount\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Business\Business.csproj">
@@ -186,9 +193,15 @@
     <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.26" />
     <PackageReference Include="excellupload" Version="1.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="6.0.0" />
+    <PackageReference Include="Nexmo.Csharp.Client" Version="5.2.0" />
     <PackageReference Include="PagedList.Mvc" Version="4.5.0" />
+    <PackageReference Include="Twilio" Version="5.78.0" />
     <PackageReference Include="X.PagedList" Version="8.4.3" />
     <PackageReference Include="X.PagedList.Mvc.Core" Version="8.4.3" />
     <PackageReference Include="X.PagedList.Mvc" Version="8.0.7" />
+    <PackageReference Include="Twilio.AspNet.Common" Version="5.77.0" />
+    <PackageReference Include="Twilio.AspNet.Core" Version="5.77.0" />
+    <PackageReference Include="Twilio.AspNet.Mvc" Version="5.77.0" />
   </ItemGroup>
 </Project>
