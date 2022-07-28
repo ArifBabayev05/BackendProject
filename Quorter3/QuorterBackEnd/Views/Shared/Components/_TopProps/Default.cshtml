@@ -1,0 +1,29 @@
+﻿@using DataEntities.Concrete
+@model List<Property>
+
+<div class="widget ltn__top-rated-product-widget">
+    <h4 class="ltn__widget-title ltn__widget-title-border-2">Rated Properties</h4>
+    <ul>
+        @foreach (var item in Model)
+            {
+        <li>
+            <div class="top-rated-product-item clearfix">
+                <div class="top-rated-product-img">
+                    <a asp-controller="Property" asp-action="PropertyDetails" asp-route-id="@item.Id"><img src="~/assets/uploads/@item.Image" alt="#"></a>
+                </div>
+                <div class="top-rated-product-info">
+
+                    <h6><a asp-controller="Property" asp-action="PropertyDetails" asp-route-id="@item.Id">@item.Title </a></h6>
+                    <div class="product-price">
+                        <span>@item.PropertyCount Property</span>
+
+                    </div>
+                </div>
+            </div>
+        </li>
+            }
+
+
+
+    </ul>
+</div>

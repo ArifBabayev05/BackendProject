@@ -1,0 +1,207 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Views\Default\" />
+    <None Remove="Views\LayoutPartial\" />
+    <None Remove="ViewComponents\" />
+    <None Remove="ViewComponents\Default\" />
+    <None Remove="Views\Shared\Components\" />
+    <None Remove="Views\Shared\Components\_SliderPartial\" />
+    <None Remove="Views\Shared\Components\_FindNowPartial\" />
+    <None Remove="Views\Shared\Components\_MainFocusPartial\" />
+    <None Remove="Views\Shared\Components\_PropertyPartial\" />
+    <None Remove="Views\Shared\Components\_FeaturePartial\" />
+    <None Remove="Views\Shared\Components\_VideoPartial\" />
+    <None Remove="Views\Shared\Components\_FeedbackPartial\" />
+    <None Remove="Views\Shared\Components\_BrandLogoPartial\" />
+    <None Remove="Views\Shared\Components\_NewsPartial\" />
+    <None Remove="Views\Shared\Components\_ExplorePartial\" />
+    <None Remove="Views\Shared\Components\_UtilitizeCard\" />
+    <None Remove="Views\Shared\Components\_UtilitizeMobile\" />
+    <None Remove="Views\Shared\Components\_CounterPartial\" />
+    <None Remove="Views\Shop\" />
+    <None Remove="ViewComponents\Commenta\" />
+    <None Remove="Views\Shared\Components\_CommentaList\" />
+    <None Remove="Views\Comment\" />
+    <None Remove="Microsoft.AspNetCore.Identity" />
+    <None Remove="Microsoft.AspNetCore.Identity.EntityFrameworkCore" />
+    <None Remove="Views\Login\" />
+    <None Remove="Areas\" />
+    <None Remove="Areas\Member\" />
+    <None Remove="Areas\Member\Controller\" />
+    <None Remove="Areas\Member\Data\" />
+    <None Remove="Areas\Member\Models\" />
+    <None Remove="Areas\Member\VIews\" />
+    <None Remove="Areas\Member\VIews\Comment\" />
+    <None Remove="Areas\Member\VIews\Profile\" />
+    <None Remove="Areas\Member\VIews\Message\" />
+    <None Remove="Areas\Member\VIews\Shared\" />
+    <None Remove="Views\MemberLayoutPartial\" />
+    <None Remove="Areas\Member\VIews\Shop\" />
+    <None Remove="Areas\Member\VIews\Dashboard\" />
+    <None Remove="Areas\Member\VIews\Service\" />
+    <None Remove="Views\Service\" />
+    <None Remove="Views\Property\" />
+    <None Remove="Views\RightBar\" />
+    <None Remove="Views\News\" />
+    <None Remove="Views\About\" />
+    <None Remove="ViewComponents\About\" />
+    <None Remove="Views\Shared\Components\_FeedBackPartial\" />
+    <None Remove="ViewComponents\Team\" />
+    <None Remove="Views\Team\" />
+    <None Remove="Views\Shared\Components\_TeamPartial\" />
+    <None Remove="Views\Shared\Components\_AboutPartial\" />
+    <None Remove="Views\Faq\" />
+    <None Remove="ViewComponents\Faq\" />
+    <None Remove="Views\Shared\Components\_FaqPartial\" />
+    <None Remove="Views\Location\" />
+    <None Remove="ViewComponents\Location\" />
+    <None Remove="Views\Shared\Components\_LocationPartial\" />
+    <None Remove="Views\MailPartial\" />
+    <None Remove="ViewComponents\Slider\" />
+    <None Remove="ViewComponents\MemberDashboard\" />
+    <None Remove="Views\Shared\Components\TeamList\" />
+    <None Remove="Views\SendMail\" />
+    <None Remove="Views\Email\" />
+    <None Remove="ViewComponents\Email\" />
+    <None Remove="Views\Shared\Components\_Email\" />
+    <None Remove="Views\Shared\Components\_DeletePartial\" />
+    <None Remove="Areas\Member\VIews\Team\" />
+    <None Remove="Views\AddList\" />
+    <None Remove="Views\Shared\Components\_TopRated\" />
+    <None Remove="ViewComponents\TopRated\" />
+    <None Remove="Views\Shared\Components\_Leatest\" />
+    <None Remove="ViewComponents\Leatest\" />
+    <None Remove="Views\Shared\Components\_TopProps\" />
+    <None Remove="ViewComponents\TopProps\" />
+    <None Remove="Areas\Member\VIews\Admin\" />
+    <None Remove="ViewComponents\Message\" />
+    <None Remove="Views\Shared\Components\_MessageList\" />
+    <None Remove="Views\EmailPartial\" />
+    <None Remove="Views\Mail\" />
+    <None Remove="excellupload" />
+    <None Remove="PagedList.Mvc" />
+    <None Remove="X.PagedList" />
+    <None Remove="X.PagedList.Mvc.Core" />
+    <None Remove="X.PagedList.Mvc" />
+    <None Remove="ViewComponents\Mail\" />
+    <None Remove="Areas\Member\VIews\Slider\" />
+    <None Remove="Twilio.AspNet.Common" />
+    <None Remove="Twilio.AspNet.Core" />
+    <None Remove="Twilio.AspNet.Mvc" />
+    <None Remove="Views\Sms\" />
+    <None Remove="Views\MyAccount\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Default\" />
+    <Folder Include="Views\LayoutPartial\" />
+    <Folder Include="ViewComponents\" />
+    <Folder Include="ViewComponents\Default\" />
+    <Folder Include="Views\Shared\Components\" />
+    <Folder Include="Views\Shared\Components\_SliderPartial\" />
+    <Folder Include="Views\Shared\Components\_FindNowPartial\" />
+    <Folder Include="Views\Shared\Components\_MainFocusPartial\" />
+    <Folder Include="Views\Shared\Components\_PropertyPartial\" />
+    <Folder Include="Views\Shared\Components\_FeaturePartial\" />
+    <Folder Include="Views\Shared\Components\_VideoPartial\" />
+    <Folder Include="Views\Shared\Components\_FeedbackPartial\" />
+    <Folder Include="Views\Shared\Components\_BrandLogoPartial\" />
+    <Folder Include="Views\Shared\Components\_NewsPartial\" />
+    <Folder Include="Views\Shared\Components\_ExplorePartial\" />
+    <Folder Include="Views\Shared\Components\_UtilitizeCard\" />
+    <Folder Include="Views\Shared\Components\_UtilitizeMobile\" />
+    <Folder Include="Views\Shared\Components\_CounterPartial\" />
+    <Folder Include="Views\Shop\" />
+    <Folder Include="ViewComponents\Commenta\" />
+    <Folder Include="Views\Shared\Components\_CommentaList\" />
+    <Folder Include="Views\Comment\" />
+    <Folder Include="Views\Login\" />
+    <Folder Include="Areas\" />
+    <Folder Include="Areas\Member\" />
+    <Folder Include="Areas\Member\Controllers\" />
+    <Folder Include="Areas\Member\Data\" />
+    <Folder Include="Areas\Member\Models\" />
+    <Folder Include="Areas\Member\VIews\" />
+    <Folder Include="Areas\Member\VIews\Comment\" />
+    <Folder Include="Areas\Member\VIews\Profile\" />
+    <Folder Include="Areas\Member\VIews\Message\" />
+    <Folder Include="Areas\Member\VIews\Shared\" />
+    <Folder Include="Views\MemberLayoutPartial\" />
+    <Folder Include="Areas\Member\VIews\Shop\" />
+    <Folder Include="Areas\Member\VIews\Dashboard\" />
+    <Folder Include="Areas\Member\VIews\Service\" />
+    <Folder Include="Views\Service\" />
+    <Folder Include="Views\Property\" />
+    <Folder Include="Views\RightBar\" />
+    <Folder Include="Views\News\" />
+    <Folder Include="Views\About\" />
+    <Folder Include="ViewComponents\About\" />
+    <Folder Include="Views\Shared\Components\_FeedBackPartial\" />
+    <Folder Include="ViewComponents\Team\" />
+    <Folder Include="Views\Team\" />
+    <Folder Include="Views\Shared\Components\_TeamPartial\" />
+    <Folder Include="Views\Shared\Components\_AboutPartial\" />
+    <Folder Include="Views\Faq\" />
+    <Folder Include="ViewComponents\Faq\" />
+    <Folder Include="Views\Shared\Components\_FaqPartial\" />
+    <Folder Include="Views\Location\" />
+    <Folder Include="ViewComponents\Location\" />
+    <Folder Include="Views\Shared\Components\_LocationPartial\" />
+    <Folder Include="Views\Newsletter\" />
+    <Folder Include="ViewComponents\Slider\" />
+    <Folder Include="ViewComponents\MemberDashboard\" />
+    <Folder Include="Views\Shared\Components\_TeamList\" />
+    <Folder Include="Views\SendMail\" />
+    <Folder Include="Views\Email\" />
+    <Folder Include="ViewComponents\Email\" />
+    <Folder Include="Views\Shared\Components\_Email\" />
+    <Folder Include="Views\Shared\Components\_DeletePartial\" />
+    <Folder Include="Areas\Member\VIews\Team\" />
+    <Folder Include="Views\AddList\" />
+    <Folder Include="Views\Shared\Components\_TopRated\" />
+    <Folder Include="ViewComponents\TopRated\" />
+    <Folder Include="Views\Shared\Components\_Leatest\" />
+    <Folder Include="ViewComponents\Leatest\" />
+    <Folder Include="Views\Shared\Components\_TopProps\" />
+    <Folder Include="ViewComponents\TopProps\" />
+    <Folder Include="Areas\Member\VIews\Admin\" />
+    <Folder Include="ViewComponents\Message\" />
+    <Folder Include="Views\Shared\Components\_MessageList\" />
+    <Folder Include="Views\EmailPartial\" />
+    <Folder Include="Views\Mail\" />
+    <Folder Include="ViewComponents\Mail\" />
+    <Folder Include="Areas\Member\VIews\Slider\" />
+    <Folder Include="Views\Sms\" />
+    <Folder Include="Views\MyAccount\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Business\Business.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\DataEntities\DataEntities.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.26" />
+    <PackageReference Include="excellupload" Version="1.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="6.0.0" />
+    <PackageReference Include="Nexmo.Csharp.Client" Version="5.2.0" />
+    <PackageReference Include="PagedList.Mvc" Version="4.5.0" />
+    <PackageReference Include="Twilio" Version="5.78.0" />
+    <PackageReference Include="X.PagedList" Version="8.4.3" />
+    <PackageReference Include="X.PagedList.Mvc.Core" Version="8.4.3" />
+    <PackageReference Include="X.PagedList.Mvc" Version="8.0.7" />
+    <PackageReference Include="Twilio.AspNet.Common" Version="5.77.0" />
+    <PackageReference Include="Twilio.AspNet.Core" Version="5.77.0" />
+    <PackageReference Include="Twilio.AspNet.Mvc" Version="5.77.0" />
+  </ItemGroup>
+</Project>

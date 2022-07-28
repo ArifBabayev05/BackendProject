@@ -1,0 +1,32 @@
+﻿@using DataEntities.Concrete
+@model List<CommentModel>
+
+<div class="col-12 col-xl-4">
+    <div class="card h-100">
+        <div class="card-header pb-0 p-3">
+            <h6 class="mb-0">Platform Settings</h6>
+        </div>
+        <div class="card-body p-3">
+            <h6 class="text-uppercase text-body text-xs font-weight-bolder">Messages</h6>
+            <ul class="list-group">
+               
+                @foreach (var item in Model)
+                {
+                    <li class="list-group-item border-0 px-0">
+                        <div class="form-check form-switch ps-0">
+                            <span>@item.CommentUser : @item.CommentContent </span>
+                            <div class="d-flex">
+                                <a class="btn btn-info mx-2" href="/Shop/ShopDetails/@item.Feature2Id"> View </a>
+                                <a class="btn btn-danger mx-2" href="/comment/delete/@item.CommentId"> Delete</a>
+
+                            </div>
+                        </div>
+                    </li>
+
+                }
+
+            </ul>
+
+        </div>
+    </div>
+</div>

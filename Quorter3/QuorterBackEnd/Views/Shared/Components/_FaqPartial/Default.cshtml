@@ -1,0 +1,19 @@
+﻿@using DataEntities.Concrete
+@model List<Faq>
+<div id="accordion_2">
+    <!-- card -->
+    @foreach (var item in Model)
+    {
+        <div class="card">
+            <h6 class="collapsed ltn__card-title" data-bs-toggle="collapse" data-bs-target="#faq-item-2-1" aria-expanded="false">
+                @item.Title
+            </h6>
+            <div id="faq-item-2-1" class="collapse" data-bs-parent="#accordion_2">
+                <div class="card-body">
+                    <p>@item.Content</p>
+                </div>
+            </div>
+        </div>
+    }
+
+</div>

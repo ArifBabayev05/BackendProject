@@ -1,0 +1,87 @@
+﻿@*@using DataEntities.Concrete*@
+@using X.PagedList;
+@using X.PagedList.Mvc.Core; 
+
+@model IPagedList<DataEntities.Concrete.Feature2>
+
+<h1>Current Products</h1>
+
+
+<table class="table table-bordered">
+    <tr>
+
+        <th>City</th>
+        <th>Title Of Product</th>
+        <th>Build Year</th>
+
+        <th>Saler Man Name</th>
+        <th>Price</th>
+
+        <th>Update</th>
+        <th>Delete</th>
+
+
+
+    </tr>
+
+    @foreach (var item in Model)
+        {
+<tr>
+
+    <td>@item.CityName</td>
+    <td>@item.Title</td>
+    <td>@item.BuildYear</td>
+    <td>@item.AuthorName</td>
+
+    <td>@item.Price</td>
+    <td>@(((DateTime)item.CreateDate).ToString("dd-MMM-yyyy")) </td>
+
+
+    <td>@item.AuthorName</td>
+    <td>@item.Price</td>
+
+    <td><a asp-controller="shop" asp-action="Update" asp-route-id="@item.Id" asp-area="Member" class="btn btn-info">Update</a></td>
+    <td><a asp-controller="shop" asp-action="Delete" asp-route-id="@item.Id" asp-area="Member" class="btn btn-danger">Delete</a></td>
+
+
+</tr>
+        }
+
+</table>
+
+@Html.PagedListPager((IPagedList)Model,page=>Url.Action("Index", new {page}))
+<style>
+
+
+    ul.pagination {
+        margin: 15px;
+        padding: 10px;
+        border-radius: 20px;
+        border-color: black;
+        justify-content: center;
+        font-family: inherit;
+        text-decoration: underline;
+        font-weight: 600;
+    }
+
+    .pagination a {
+        margin: 0 10px;
+        color: black;
+        background-color: pink;
+        padding: 20px;
+        border-radius: 50px;
+        border: 1px solid;
+        border-color: gray;
+    }
+
+    .pagination span {
+        margin: 0 10px;
+        color: black;
+        background-color: pink;
+        padding: 20px;
+        border-radius: 50px;
+        border: 1px solid;
+        border-color: gray;
+    }
+</style>
+<a asp-controller="shop" asp-action="Add" asp-area="Member" class="btn btn-success">Add New Product</a>

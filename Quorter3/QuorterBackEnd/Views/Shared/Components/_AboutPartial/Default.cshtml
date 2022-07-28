@@ -1,0 +1,62 @@
+﻿@using DataEntities.Concrete
+@model List<About>
+
+<div class="ltn__about-us-area pt-120--- pb-90 mt--30">
+    @foreach (var Model in Model)
+    {
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 align-self-center">
+                    <div class="about-us-img-wrap about-img-left">
+                        <img src="~/assets/uploads/@Model.Image" alt="About Us Image">
+                        <div class="about-us-img-info about-us-img-info-2 about-us-img-info-3">
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 align-self-center">
+                    <div class="about-us-info-wrap">
+                        <div class="section-title-area ltn__section-title-2--- mb-20">
+                            <h6 class="section-subtitle section-subtitle-2 ltn__secondary-color">About Us</h6>
+                            <h1 class="section-title">
+                                @Model.Title<span>.</span>
+                            </h1>
+                            <p>
+                                @Model.Description
+                            </p>
+                        </div>
+                        <ul class="ltn__list-item-half clearfix">
+                            <li>
+                                <i class="flaticon-home-2"></i>
+                                @Model.Adds
+                            </li>
+                            <li>
+                                <i class="flaticon-mountain"></i>
+                                @Model.Add2
+                            </li>
+                            <li>
+                                <i class="flaticon-heart"></i>
+                                @Model.Add3
+
+                            </li>
+                            <li>
+                                <i class="flaticon-secure"></i>
+                                @Model.Add4
+
+                            </li>
+                        </ul>
+                        <div class="ltn__callout bg-overlay-theme-05  mt-30">
+                            <p>
+                                @Model.Comment
+                            </p>
+                        </div>
+                        <div class="btn-wrapper animated">
+                            <a asp-controller="service" asp-action="Index" class="theme-btn-1 btn btn-effect-1">OUR SERVICES</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

@@ -1,0 +1,34 @@
+﻿@using DataEntities.Concrete
+@model List<AppRole>
+
+<h1>Role Manager</h1>
+
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+
+        <th>Update</th>
+        <th>Delete</th>
+
+
+
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Name</td>
+            <td><a asp-controller="Admin" asp-action="Update" asp-route-id="@item.Id" asp-area="Member" class="btn btn-info">Update</a></td>
+            <td><a asp-controller="Admin" asp-action="Delete" asp-route-id="@item.Id" asp-area="Member" class="btn btn-danger">Delete</a></td>
+
+
+
+        </tr>
+    }
+
+</table>
+<a href="/Member/Admin/AddRole" class="btn btn-success">Add New Role</a>
+<a href="/Member/Admin/UserRoleList" class="btn btn-info">User Role List</a>
+
+

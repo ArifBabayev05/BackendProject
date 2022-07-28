@@ -1,0 +1,92 @@
+﻿<Properties StartupConfiguration="{73B10379-1501-4F5D-9940-85767F5F99E0}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.QuorterBackEnd PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="QuorterBackEnd/QuorterBackEnd.csproj">
+    <Files>
+      <File FileName="QuorterBackEnd/Views/News/NewsDetails.cshtml" Line="186" Column="18" />
+      <File FileName="QuorterBackEnd/Views/Mail/Index.cshtml" Line="1" Column="39" />
+      <File FileName="QuorterBackEnd/ViewComponents/Mail/_MailPartial.cs" Line="9" Column="24" />
+      <File FileName="QuorterBackEnd/ViewComponents/Location/_LocationPartial.cs" Line="15" Column="10" />
+      <File FileName="QuorterBackEnd/Controllers/MailController.cs" Line="37" Column="1" />
+      <File FileName="QuorterBackEnd/Controllers/SendMailController.cs" Line="1" Column="1" />
+      <File FileName="Business/Concrete/EmailManager.cs" Line="1" Column="1" />
+      <File FileName="Business/Concrete/SendManager.cs" Line="1" Column="1" />
+      <File FileName="QuorterBackEnd/QuorterBackEnd.csproj" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="QuorterBackEnd" expanded="True">
+            <Node name="Business" expanded="True">
+              <Node name="Concrete" expanded="True">
+                <Node name="SendManager.cs" selected="True" />
+              </Node>
+            </Node>
+            <Node name="DAL" expanded="True">
+              <Node name="Repository" expanded="True" />
+            </Node>
+            <Node name="DataEntities" expanded="True" />
+            <Node name="QuorterBackEnd" expanded="True">
+              <Node name="Areas" expanded="True">
+                <Node name="Member" expanded="True">
+                  <Node name="Models" expanded="True" />
+                  <Node name="VIews" expanded="True">
+                    <Node name="Admin" expanded="True" />
+                    <Node name="Dashboard" expanded="True" />
+                    <Node name="Profile" expanded="True" />
+                    <Node name="Shared" expanded="True" />
+                    <Node name="Shop" expanded="True" />
+                    <Node name="Team" expanded="True" />
+                  </Node>
+                </Node>
+              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="ViewComponents" expanded="True">
+                <Node name="Location" expanded="True" />
+                <Node name="Mail" expanded="True" />
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="Mail" expanded="True" />
+                <Node name="Shared" expanded="True">
+                  <Node name="Components" expanded="True">
+                    <Node name="_AboutPartial" expanded="True" />
+                    <Node name="_CommentaList" expanded="True" />
+                    <Node name="_CounterPartial" expanded="True" />
+                    <Node name="_DeletePartial" expanded="True" />
+                    <Node name="_Email" expanded="True" />
+                    <Node name="_FaqPartial" expanded="True" />
+                    <Node name="_FeaturePartial" expanded="True" />
+                    <Node name="_FeedBackPartial" expanded="True" />
+                    <Node name="_FindNowPartial" expanded="True" />
+                    <Node name="_TeamList" expanded="True" />
+                    <Node name="_TeamPartial" expanded="True" />
+                  </Node>
+                </Node>
+                <Node name="Shop" expanded="True" />
+                <Node name="Team" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="assets" expanded="True">
+                  <Node name="css" expanded="True" />
+                  <Node name="sass" expanded="True">
+                    <Node name="elements" expanded="True" />
+                    <Node name="global" expanded="True" />
+                    <Node name="sections" expanded="True" />
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
