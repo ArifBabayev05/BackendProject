@@ -8,7 +8,7 @@
     <div class="card card-body blur shadow-blur mx-4 mt-n6 overflow-hidden">
         <div class="row gx-4">
             <h2>Add New Product</h2>
-            <form asp-action="Add" asp-controller="Slider" method="post" enctype="multipart/form-data">
+            <form asp-action="Add" asp-controller="Slider"  method="post" enctype="multipart/form-data">
                 <div class="row gx-4">
 
                     <div class=" my-auto">
@@ -25,7 +25,7 @@
 
                             <div class="form-group">
                                 <label>Choose Main Image</label>
-                                <input type="file" asp-for="Image">
+                                <input type="file" accept="image/*"  asp-for="Image">
                             </div>
 
                             <br />

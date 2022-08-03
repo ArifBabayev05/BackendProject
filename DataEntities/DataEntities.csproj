@@ -6,7 +6,6 @@
 
   <ItemGroup>
     <None Remove="Microsoft.EntityFrameworkCore" />
-    <None Remove="Concrete\" />
     <None Remove="Microsoft.EntityFrameworkCore.Tools" />
     <None Remove="Microsoft.EntityFrameworkCore.SqlServer" />
     <None Remove="Microsoft.AspNetCore.Identity" />
@@ -29,8 +28,5 @@
     <PackageReference Include="X.PagedList" Version="8.4.3" />
     <PackageReference Include="X.PagedList.Mvc.Core" Version="8.4.3" />
     <PackageReference Include="X.PagedList.Mvc" Version="8.0.7" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Concrete\" />
   </ItemGroup>
 </Project>

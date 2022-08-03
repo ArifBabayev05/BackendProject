@@ -399,12 +399,6 @@
 /Users/babayev_/Desktop/Quorter2/QuorterBackEnd/obj/Debug/netcoreapp3.1/Razor/Areas/Member/VIews/Slider/Add.cshtml.g.cs
 /Users/babayev_/Desktop/Quorter2/QuorterBackEnd/obj/Debug/netcoreapp3.1/Razor/Areas/Member/VIews/Slider/Update.cshtml.g.cs
 /Users/babayev_/Desktop/Quorter2/QuorterBackEnd/bin/Debug/netcoreapp3.1/jose-jwt.dll
-/Users/babayev_/Desktop/Quorter2/QuorterBackEnd/bin/Debug/netcoreapp3.1/System.Web.Mvc.dll
-/Users/babayev_/Desktop/Quorter2/QuorterBackEnd/bin/Debug/netcoreapp3.1/System.Web.Razor.dll
-/Users/babayev_/Desktop/Quorter2/QuorterBackEnd/bin/Debug/netcoreapp3.1/System.Web.Helpers.dll
-/Users/babayev_/Desktop/Quorter2/QuorterBackEnd/bin/Debug/netcoreapp3.1/System.Web.WebPages.Deployment.dll
-/Users/babayev_/Desktop/Quorter2/QuorterBackEnd/bin/Debug/netcoreapp3.1/System.Web.WebPages.Razor.dll
-/Users/babayev_/Desktop/Quorter2/QuorterBackEnd/bin/Debug/netcoreapp3.1/System.Web.WebPages.dll
 /Users/babayev_/Desktop/Quorter2/QuorterBackEnd/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.JsonPatch.dll
 /Users/babayev_/Desktop/Quorter2/QuorterBackEnd/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Mvc.Razor.Host.dll
 /Users/babayev_/Desktop/Quorter2/QuorterBackEnd/bin/Debug/netcoreapp3.1/Microsoft.CodeAnalysis.dll
@@ -413,14 +407,12 @@
 /Users/babayev_/Desktop/Quorter2/QuorterBackEnd/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyModel.dll
 /Users/babayev_/Desktop/Quorter2/QuorterBackEnd/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Globalization.CultureInfoCache.dll
 /Users/babayev_/Desktop/Quorter2/QuorterBackEnd/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Abstractions.dll
-/Users/babayev_/Desktop/Quorter2/QuorterBackEnd/bin/Debug/netcoreapp3.1/Microsoft.Web.Infrastructure.dll
 /Users/babayev_/Desktop/Quorter2/QuorterBackEnd/bin/Debug/netcoreapp3.1/Nexmo.Api.dll
 /Users/babayev_/Desktop/Quorter2/QuorterBackEnd/bin/Debug/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll
 /Users/babayev_/Desktop/Quorter2/QuorterBackEnd/bin/Debug/netcoreapp3.1/Twilio.dll
 /Users/babayev_/Desktop/Quorter2/QuorterBackEnd/bin/Debug/netcoreapp3.1/Twilio.AspNet.Common.dll
 /Users/babayev_/Desktop/Quorter2/QuorterBackEnd/bin/Debug/netcoreapp3.1/Twilio.AspNet.Core.dll
 /Users/babayev_/Desktop/Quorter2/QuorterBackEnd/bin/Debug/netcoreapp3.1/Twilio.AspNet.Mvc.dll
-/Users/babayev_/Desktop/Quorter2/QuorterBackEnd/bin/Debug/netcoreapp3.1/X.PagedList.Web.Common.dll
 /Users/babayev_/Desktop/Quorter2/QuorterBackEnd/obj/Debug/netcoreapp3.1/Razor/Views/Sms/Send.cshtml.g.cs
 /Users/babayev_/Desktop/Quorter2/QuorterBackEnd/obj/Debug/netcoreapp3.1/Razor/Views/MyAccount/Index.cshtml.g.cs
 /Users/babayev_/Desktop/Quorter3/QuorterBackEnd/bin/Debug/netcoreapp3.1/appsettings.Development.json
