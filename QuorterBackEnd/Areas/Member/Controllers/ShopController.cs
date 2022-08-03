@@ -25,7 +25,7 @@ namespace QuorterBackEnd.Areas.Member.Controllers
 
     [Area("Member")]
     [Route("Member/[controller]/[action]")]
-    [Authorize(Roles = "Admin,SuperAdmin")]
+    [Authorize(Roles = "Admin,SuperAdmin,Manager")]
     //[Route("Member/[controller]/[action]")]
     public class ShopController : Controller
     {
@@ -65,7 +65,7 @@ namespace QuorterBackEnd.Areas.Member.Controllers
             mailMessage.To.Add("arifrb@code.edu.az");
             mailMessage.From = new MailAddress("arifrb@code.edu.az");
             mailMessage.Subject = "Quorter Product";
-            mailMessage.Body = "Dear" + User.Identity.Name + $", We Have New Special Product For You. Dont Forget Visit Us" ;
+            mailMessage.Body = "Dear " + User.Identity.Name + $", We Have New Special Product For You. Dont Forget Visit Us" ;
             mailMessage.IsBodyHtml = true;
 
 

@@ -21,7 +21,7 @@ namespace QuorterBackEnd.Areas.Member.Controllers
 {
     [Area("Member")]
     [Route("Member/[controller]/[action]")]
-    [Authorize(Roles = "Admin,SuperAdmin")]
+    [Authorize(Roles = "Admin,SuperAdmin,Manager")]
     public class SliderController : Controller
     {
         
@@ -108,7 +108,7 @@ namespace QuorterBackEnd.Areas.Member.Controllers
             return View(value);
         }
         [HttpPost]
-        public async Task<IActionResult> Update(MainSlider feature2)
+        public IActionResult Update(MainSlider feature2)
         {
             //if (feature2.Image == null)
             //{

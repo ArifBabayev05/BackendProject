@@ -1,53 +1,66 @@
 ﻿<Properties StartupConfiguration="{73B10379-1501-4F5D-9940-85767F5F99E0}|Default">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.QuorterBackEnd PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="QuorterBackEnd/Views/Shared/_Layout.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="QuorterBackEnd/Areas/Member/Controllers/ShopController.cs">
     <Files>
       <File FileName="QuorterBackEnd/wwwroot/assets/js/main.js" Line="66" Column="1" />
       <File FileName="QuorterBackEnd/Views/Shop/Index.cshtml" Line="118" Column="64" />
-      <File FileName="QuorterBackEnd/Views/Shared/_Layout.cshtml" Line="1" Column="1" />
+      <File FileName="QuorterBackEnd/Views/Shared/_Layout.cshtml" Line="196" Column="138" />
       <File FileName="QuorterBackEnd/Views/Shared/_UILayout.cshtml" Line="1" Column="1" />
+      <File FileName="QuorterBackEnd/Areas/Member/Controllers/SliderController.cs" Line="123" Column="16" />
+      <File FileName="QuorterBackEnd/Areas/Member/VIews/Shop/Index.cshtml" Line="35" Column="1" />
+      <File FileName="QuorterBackEnd/Areas/Member/Controllers/ShopController.cs" Line="102" Column="54" />
+      <File FileName="QuorterBackEnd/Views/Mail/Index.cshtml" Line="109" Column="1" />
+      <File FileName="QuorterBackEnd/Views/Faq/Index.cshtml" Line="1" Column="1" />
+      <File FileName="QuorterBackEnd/Views/Shop/ShopDetails.cshtml" Line="366" Column="1" />
+      <File FileName="QuorterBackEnd/Views/LayoutPartial/_NavbarPartial.cshtml" Line="158" Column="49" />
+      <File FileName="DAL/Concrete/Context.cs" Line="19" Column="1" />
+      <File FileName="DAL/Abstract/IAboutDal.cs" Line="1" Column="1" />
+      <File FileName="Business/Concrete/CarouselManager.cs" Line="1" Column="1" />
+      <File FileName="QuorterBackEnd/Controllers/LoginController.cs" Line="41" Column="38" />
+      <File FileName="QuorterBackEnd/Controllers/ShopController.cs" Line="1" Column="1" />
+      <File FileName="QuorterBackEnd/Areas/Member/VIews/Slider/Add.cshtml" Line="19" Column="16" />
+      <File FileName="QuorterBackEnd/Areas/Member/VIews/Slider/Update.cshtml" Line="29" Column="1" />
+      <File FileName="QuorterBackEnd/Areas/Member/VIews/Shop/Update.cshtml" Line="42" Column="69" />
+      <File FileName="QuorterBackEnd/Areas/Member/VIews/Shop/Add.cshtml" Line="44" Column="68" />
+      <File FileName="QuorterBackEnd/Areas/Member/VIews/Profile/Index.cshtml" Line="32" Column="25" />
+      <File FileName="Business/Concrete/AboutManager.cs" Line="11" Column="12" />
+      <File FileName="Business/Abstract/IAboutService.cs" Line="1" Column="1" />
+      <File FileName="Business/Abstract/ICommentaService.cs" Line="1" Column="1" />
+      <File FileName="Business/Abstract/ICarouselService.cs" Line="1" Column="1" />
+      <File FileName="Business/Abstract/IFaqService.cs" Line="1" Column="1" />
+      <File FileName="DAL/EntityFramework/EfAboutDal.cs" Line="1" Column="1" />
+      <File FileName="DAL/Abstract/ICarouselDal.cs" Line="1" Column="1" />
+      <File FileName="DataEntities/Model/About.cs" Line="1" Column="1" />
+      <File FileName="DAL/EntityFramework/EfCarouselDal.cs" Line="12" Column="2" />
+      <File FileName="DAL/Repository/GenericRepository.cs" Line="46" Column="32" />
+      <File FileName="QuorterBackEnd/Models/UserRegisterViewModel.cs" Line="1" Column="1" />
+      <File FileName="DataEntities/Model/Send.cs" Line="1" Column="1" />
+      <File FileName="DataEntities/Model/SendEmail.cs" Line="8" Column="1" />
+      <File FileName="DataEntities/Model/Counter.cs" Line="1" Column="1" />
+      <File FileName="DataEntities/Model/Contact.cs" Line="1" Column="1" />
+      <File FileName="DataEntities/Model/AppUser.cs" Line="1" Column="1" />
+      <File FileName="DataEntities/Model/Faq.cs" Line="1" Column="1" />
+      <File FileName="DataEntities/Model/Feature2.cs" Line="23" Column="46" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="QuorterBackEnd" expanded="True">
-            <Node name="Business" expanded="True">
-              <Node name="Abstract" expanded="True" />
-              <Node name="Concrete" expanded="True" />
-            </Node>
             <Node name="DAL" expanded="True">
               <Node name="Abstract" expanded="True" />
-              <Node name="EntityFramework" expanded="True" />
+              <Node name="Concrete" expanded="True" />
               <Node name="Repository" expanded="True" />
             </Node>
-            <Node name="DataEntities" expanded="True">
-              <Node name="Concrete" expanded="True" />
-            </Node>
             <Node name="QuorterBackEnd" expanded="True">
-              <Node name="Views" expanded="True">
-                <Node name="MyAccount" expanded="True" />
-                <Node name="News" expanded="True" />
-                <Node name="Shared" expanded="True">
-                  <Node name="_Layout.cshtml" selected="True" />
-                </Node>
-                <Node name="Shop" expanded="True" />
-              </Node>
-              <Node name="wwwroot" expanded="True">
-                <Node name="assets" expanded="True">
-                  <Node name="js" expanded="True" />
-                  <Node name="sass" expanded="True">
-                    <Node name="elements" expanded="True" />
-                    <Node name="global" expanded="True" />
-                    <Node name="sections" expanded="True" />
+              <Node name="Areas" expanded="True">
+                <Node name="Member" expanded="True">
+                  <Node name="Controllers" expanded="True" />
+                  <Node name="VIews" expanded="True">
+                    <Node name="Slider" expanded="True" />
                   </Node>
                 </Node>
               </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -57,4 +70,11 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.QuorterBackEnd PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
